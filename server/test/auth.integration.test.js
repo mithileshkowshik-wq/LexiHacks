@@ -35,6 +35,7 @@ mock.module('../services/emailService.js', {
 const { default: authRoutes } = await import('../routes/auth.js');
 
 const originalFindOne = Account.findOne;
+const originalCreate = Account.create;
 
 let records;
 let server;
@@ -85,10 +86,16 @@ beforeEach(async () => {
     }
     return null;
   };
+  Account.create = async (fields) => {
+    const account = { name: '', phoneNumber: '', role: '', organisation: '', ...fields };
+    records.push(account);
+    return account;
+  };
 });
 
 after(async () => {
   Account.findOne = originalFindOne;
+  Account.create = originalCreate;
   await new Promise((resolve, reject) =>
     server.close((error) => (error ? reject(error) : resolve()))
   );
@@ -100,6 +107,59 @@ async function request(path, options) {
 }
 
 describe('auth API integration', () => {
+  function register(fields) {
+    return request('/api/auth/register', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(fields),
+    });
+  }
+
+  test('POST /register creates an account and signs it straight in', async () => {
+    const { response, body } = await register({
+      username: ' New@DAS ',
+      email: 'new@example.com',
+      password: 'NewPass@1',
+    });
+
+    assert.equal(response.status, 201);
+    assert.equal(typeof body.token, 'string');
+    assert.equal(body.username, 'New@DAS');
+    assert.equal(body.email, 'new@example.com');
+    assert.equal(body.passwordHash, undefined);
+    const stored = records.find((account) => account.username === 'New@DAS');
+    assert.ok(await bcrypt.compare('NewPass@1', stored.passwordHash));
+  });
+
+  test('POST /register rejects a username that is already taken', async () => {
+    const { response, body } = await register({
+      username: 'Sandy@DAS',
+      email: 'other@example.com',
+      password: 'NewPass@1',
+    });
+
+    assert.equal(response.status, 409);
+    assert.equal(body.message, 'That username is taken');
+  });
+
+  test('POST /register rejects missing fields, a bad email and a weak password', async () => {
+    const missing = await register({ username: 'New@DAS', password: 'NewPass@1' });
+    assert.equal(missing.response.status, 400);
+
+    const badEmail = await register({ username: 'New@DAS', email: 'nope', password: 'NewPass@1' });
+    assert.equal(badEmail.response.status, 400);
+    assert.equal(badEmail.body.message, 'Enter a valid email address');
+
+    const weak = await register({
+      username: 'New@DAS',
+      email: 'new@example.com',
+      password: 'weak',
+    });
+    assert.equal(weak.response.status, 400);
+    assert.match(weak.body.message, /^Password must have/);
+    assert.equal(records.length, 1);
+  });
+
   test('POST /login succeeds with the correct username and password', async () => {
     const { response, body } = await request('/api/auth/login', {
       method: 'POST',
@@ -229,7 +289,7 @@ describe('auth API integration', () => {
     assert.ok(await bcrypt.compare('NewPass@456', records[0].passwordHash));
   });
 
-  test('GET /account requires a session and only ever returns the caller\'s own account', async () => {
+  test("GET /account requires a session and only ever returns the caller's own account", async () => {
     const anonymous = await request('/api/auth/account');
     assert.equal(anonymous.response.status, 401);
 

@@ -15,6 +15,7 @@ import ErrorTrendsPage from './pages/ErrorTrendsPage.jsx';
 import RecommendationsPage from './pages/RecommendationsPage.jsx';
 import StyleguidePage from './pages/StyleguidePage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
+import SignupPage from './pages/SignupPage.jsx';
 import ForgotPasswordPage from './pages/ForgotPasswordPage.jsx';
 import ResetPasswordPage from './pages/ResetPasswordPage.jsx';
 import AccountPage from './pages/AccountPage.jsx';
@@ -27,6 +28,7 @@ createRoot(document.getElementById('root')).render(
             whether or not there's a session, since RequireAuth below sends
             signed-out visitors here in the first place. */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/reset-password/:token" element={<ResetPasswordPage />} />
 

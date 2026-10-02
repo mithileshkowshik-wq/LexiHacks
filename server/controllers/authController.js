@@ -38,6 +38,51 @@ const login = async (req, res) => {
   res.status(200).json({ ...toClientAccount(account), token: signToken(account) });
 };
 
+// Open self sign-up. Answers with the same shape as login (account + token)
+// so the new user lands signed in.
+const register = async (req, res) => {
+  const { password } = req.body;
+  const username = typeof req.body.username === 'string' ? req.body.username.trim() : '';
+  const email = typeof req.body.email === 'string' ? req.body.email.trim() : '';
+  if (!username || !email || !password) {
+    res.status(400);
+    throw new Error('Username, email and password are required');
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    res.status(400);
+    throw new Error('Enter a valid email address');
+  }
+
+  const problems = validatePasswordStrength(password);
+  if (problems.length > 0) {
+    res.status(400);
+    throw new Error(`Password must have ${problems.join(', ')}`);
+  }
+
+  if (await Account.findOne({ username })) {
+    res.status(409);
+    throw new Error('That username is taken');
+  }
+
+  let account;
+  try {
+    account = await Account.create({
+      username,
+      email,
+      passwordHash: await bcrypt.hash(password, SALT_ROUNDS),
+    });
+  } catch (err) {
+    // Two sign-ups racing for the same username: the unique index wins.
+    if (err?.code === 11000) {
+      res.status(409);
+      throw new Error('That username is taken', { cause: err });
+    }
+    throw err;
+  }
+
+  res.status(201).json({ ...toClientAccount(account), token: signToken(account) });
+};
+
 // req.username comes from the verified token (requireAuth), never from a
 // param or body the caller controls — this route only ever answers "my own
 // account", never anyone else's.
@@ -132,4 +177,4 @@ const resetPassword = async (req, res) => {
   res.status(200).json({ message: 'Your password has been updated.' });
 };
 
-export { login, forgotPassword, resetPassword, getAccount, changePassword };
+export { login, register, forgotPassword, resetPassword, getAccount, changePassword };

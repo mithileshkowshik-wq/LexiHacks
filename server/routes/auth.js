@@ -1,6 +1,7 @@
 import express from 'express';
 import {
   login,
+  register,
   forgotPassword,
   resetPassword,
   getAccount,
@@ -10,9 +11,10 @@ import requireAuth from '../middleware/requireAuth.js';
 
 const router = express.Router();
 
-// These three have to stay reachable while signed out — they're how a
+// These have to stay reachable while signed out — they're how a
 // session gets established (or recovered) in the first place.
 router.post('/login', login);
+router.post('/register', register);
 router.post('/forgot-password', forgotPassword);
 router.post('/reset-password/:token', resetPassword);
 

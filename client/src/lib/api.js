@@ -232,6 +232,12 @@ export function login({ username, password }) {
   return request('/auth/login', { method: 'POST', body: { username, password } });
 }
 
+// POST /api/auth/register  { username, email, password }  ->  account + token,
+// the same shape as login(), so the new user is signed straight in.
+export function register({ username, email, password }) {
+  return request('/auth/register', { method: 'POST', body: { username, email, password } });
+}
+
 // POST /api/auth/forgot-password  { username }  ->  { message }
 // Always resolves 200 whether or not the username exists, so the caller
 // can't use this to discover which usernames are registered.

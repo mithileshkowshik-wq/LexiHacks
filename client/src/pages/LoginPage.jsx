@@ -88,6 +88,9 @@ export default function LoginPage() {
         <Link to="/forgot-password" className="auth-card__link">
           Forgot password?
         </Link>
+        <Link to="/signup" className="auth-card__link">
+          New to LexiPath? Create an account
+        </Link>
       </form>
     </div>
   );

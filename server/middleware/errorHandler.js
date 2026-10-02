@@ -8,6 +8,7 @@ const TITLES = {
   [constants.NOT_FOUND]: 'Not found',
   [constants.FORBIDDEN]: 'Forbidden',
   [constants.UNAUTHORIZED]: 'Unauthorized',
+  [constants.CONFLICT]: 'Conflict',
   [constants.UNPROCESSABLE_ENTITY]: 'Unprocessable entity',
   [constants.INTERNAL_SERVER_ERROR]: 'Internal server error',
 };
