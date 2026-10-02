@@ -1,4 +1,4 @@
-import { useId } from 'react';
+import { useId, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { categoryFor } from '../lib/categories.js';
@@ -17,10 +17,9 @@ const shortDate = new Intl.DateTimeFormat('en-SG', {
   month: 'short',
 });
 
-// All five categories are drawn as their own line at once — per the
-// wireframe, symbol + label at the line end, never a detached legend and
-// never colour as the only way to tell two series apart.
+// Focus on one category at a time; the full dataset remains available below.
 export default function TrendChart({ samples, excludedIds, onOpenSample }) {
+  const [chosenCategory, setChosenCategory] = useState(null);
   const titleId = useId();
   const descriptionId = useId();
   const included = samples.filter((sample) => !excludedIds.has(String(sample.sampleId)));
@@ -33,19 +32,23 @@ export default function TrendChart({ samples, excludedIds, onOpenSample }) {
     ])
   );
 
-  const chartWidth = Math.max(960, 350 + Math.max(samples.length - 1, 1) * 190);
+  const defaultCategory = TREND_CATEGORIES.reduce(
+    (best, item) => (categoryTotals[item] > categoryTotals[best] ? item : best),
+    TREND_CATEGORIES[0]
+  );
+  const activeCategory = chosenCategory ?? defaultCategory;
+  const activeLabel = categoryFor(activeCategory).label;
+  const latest = included.at(-1)?.counts[activeCategory] ?? 0;
+  const previous = included.at(-2)?.counts[activeCategory] ?? 0;
+  const chartWidth = Math.max(640, 120 + Math.max(samples.length - 1, 1) * 110);
   const chartHeight = 390;
-  // Right margin widened versus the single-series layout, to leave room for
-  // up to five end-of-line labels beyond the last plotted sample.
-  const plot = { left: 62, top: 36, right: chartWidth - 118, bottom: 285 };
+  // A compact plot leaves room for the axis labels without a detached legend.
+  const plot = { left: 62, top: 36, right: chartWidth - 40, bottom: 285 };
   const plotWidth = plot.right - plot.left;
   const plotHeight = plot.bottom - plot.top;
-  const maxValue = Math.max(
-    0,
-    ...included.flatMap((sample) => TREND_CATEGORIES.map((item) => sample.counts[item]))
-  );
-  const axisMax = Math.max(4, Math.ceil(maxValue / 2) * 2);
+  const maxValue = Math.max(0, ...included.map((sample) => sample.counts[activeCategory]));
   const tickCount = 4;
+  const axisMax = Math.max(1, Math.ceil(maxValue / tickCount)) * tickCount;
 
   const xForIndex = (index) =>
     samples.length === 1
@@ -53,7 +56,7 @@ export default function TrendChart({ samples, excludedIds, onOpenSample }) {
       : plot.left + (index / (samples.length - 1)) * plotWidth;
   const yForValue = (value) => plot.bottom - (value / axisMax) * plotHeight;
 
-  const series = TREND_CATEGORIES.map((item) => {
+  const series = [activeCategory].map((item) => {
     const points = samples
       .map((sample, sampleIndex) => ({ sample, sampleIndex }))
       .filter(({ sample }) => includedIds.has(String(sample.sampleId)))
@@ -66,28 +69,13 @@ export default function TrendChart({ samples, excludedIds, onOpenSample }) {
     return { item, config: SERIES[item], category: categoryFor(item), points };
   });
 
-  // End-of-line labels sit at each series' final value, nudged apart
-  // vertically so two categories converging on the same count never overlap.
-  const MIN_LABEL_GAP = 18;
-  const endLabels = series
-    .filter((s) => s.points.length > 0)
-    .map((s) => ({ item: s.item, category: s.category, y: s.points.at(-1).y }))
-    .sort((a, b) => a.y - b.y);
-  for (let i = 1; i < endLabels.length; i++) {
-    if (endLabels[i].y - endLabels[i - 1].y < MIN_LABEL_GAP) {
-      endLabels[i].y = endLabels[i - 1].y + MIN_LABEL_GAP;
-    }
-  }
-  const endLabelY = Object.fromEntries(endLabels.map((label) => [label.item, label.y]));
-  const lastX = samples.length ? xForIndex(samples.length - 1) : plot.right;
-
   return (
     <section className="trend-chart-card" aria-labelledby={titleId}>
       <div className="trend-chart-card__head">
         <div>
-          <span className="eyebrow">Category movement</span>
+          <span className="eyebrow">One category at a time</span>
           <h2 id={titleId} className="trend-chart-card__title">
-            Errors by category over time
+            {activeLabel} over time
           </h2>
         </div>
       </div>
@@ -97,29 +85,43 @@ export default function TrendChart({ samples, excludedIds, onOpenSample }) {
           const itemCategory = categoryFor(item);
           const itemConfig = SERIES[item];
           return (
-            <span key={item} className={`trend-category-option trend-category-option--${item}`}>
+            <button
+              type="button"
+              key={item}
+              className={`trend-category-option trend-category-option--${item}${item === activeCategory ? ' trend-category-option--active' : ''}`}
+              aria-pressed={item === activeCategory}
+              onClick={() => setChosenCategory(item)}
+            >
               <svg className="trend-category-option__marker" viewBox="0 0 20 20" aria-hidden="true">
                 <SeriesMarker marker={itemConfig.marker} x={10} y={10} small />
               </svg>
               <span>{itemCategory.label}</span>
               <strong>{categoryTotals[item]}</strong>
-            </span>
+            </button>
           );
         })}
       </div>
 
+      <p className="trend-chart-card__focus" aria-live="polite">
+        Latest sample:{' '}
+        <strong>
+          {latest} {latest === 1 ? 'error' : 'errors'}
+        </strong>
+        {included.length > 1 && <> · Previous sample: {previous}</>}
+      </p>
       <p className="trend-chart-card__hint">Select a point to open that sample’s error report.</p>
 
+      <p className="trend-chart-mobile-hint">Scroll sideways to see more samples.</p>
       <div className="trend-chart-scroll" tabIndex="0" aria-label="Scrollable trends chart">
         <svg
           className="trend-chart"
           viewBox={`0 0 ${chartWidth} ${chartHeight}`}
-          style={{ width: `${chartWidth}px`, minWidth: `${chartWidth}px` }}
+          style={{ width: '100%', minWidth: `${chartWidth}px` }}
           aria-labelledby={`${titleId} ${descriptionId}`}
         >
           <desc id={descriptionId}>
-            Line chart showing phonological, orthographic, morphological, capitalisation and
-            punctuation errors across the selected writing samples, one line per category.
+            Line chart showing {activeLabel.toLowerCase()} errors across selected writing samples.
+            Counts are per sample, not a score.
           </desc>
 
           <text
@@ -233,30 +235,11 @@ export default function TrendChart({ samples, excludedIds, onOpenSample }) {
                     <circle className="trend-point__hit" cx={x} cy={y} r="22" />
                     <circle className="trend-point__focus" cx={x} cy={y} r="11" />
                     <SeriesMarker marker={config.marker} x={x} y={y} />
+                    <text className="trend-point__count" x={x} y={y - 16} textAnchor="middle">
+                      {count}
+                    </text>
                   </g>
                 ))}
-
-                {/* Line-end label: symbol + full category name, per the wireframe —
-                    never colour/position alone. */}
-                <g
-                  className="trend-endlabel"
-                  transform={`translate(${lastX + 16}, ${endLabelY[item]})`}
-                >
-                  <svg
-                    className="trend-endlabel__marker"
-                    viewBox="0 0 20 20"
-                    width="14"
-                    height="14"
-                    x="0"
-                    y="-7"
-                    aria-hidden="true"
-                  >
-                    <SeriesMarker marker={config.marker} x={10} y={10} small />
-                  </svg>
-                  <text className="trend-endlabel__text" x="18" y="4">
-                    {category.label}
-                  </text>
-                </g>
               </g>
             );
           })}

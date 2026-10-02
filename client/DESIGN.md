@@ -324,3 +324,13 @@ Keep suggestion records acceptance, Dismiss excludes an error without deleting i
 reopens the decision. Change category opens an inline panel. Category filters and the form for
 adding a missed error are collapsed initially. Finish review unlocks once every suggestion has
 a decision. Existing completed reviews remain completed until a decision is undone.
+
+## 16. Compact error trends (October 2026)
+
+Use the same compact plain header as writing review. Date range stays visible; individual
+sample selection remains collapsed. One summary surface leads with the factual latest versus
+previous error count, then the most common category and selected sample count. Avoid calling
+raw count changes improvement: tasks differ in length and difficulty. The chart focuses on one
+category, defaulting to the most frequent; squared labelled buttons switch categories, and
+points show their counts and open the underlying report. Category shares remain visible; the full data table stays in a collapsed section. Preserve exclusion markers and chronological sample
+positions. This supersedes the student band header in §14.

@@ -115,29 +115,29 @@ export default function ErrorTrendsPage() {
   }
 
   return (
-    <div className="trends-page">
-      <header className="profile__head trends-head">
+    <div className="trends-page trends-page--compact">
+      <header className="trends-head">
         <div className="profile__id">
           <Button variant="tertiary" icon="chevronLeft" to={`/students/${studentId}`}>
-            Back to profile
+            {student.name}
           </Button>
-          <span className="eyebrow">Error trends</span>
-          <h1 className="profile__name">{student.name}</h1>
+          <span className="eyebrow">Writing progress</span>
+          <h1 className="profile__name">Error trends</h1>
           <div className="trends-head__meta">
             <span className="grade">{student.currentGrade}</span>
-            <span>Errors per category across analysed samples</span>
+            <span>{plural(allSamples.length, 'analysed sample')}</span>
           </div>
         </div>
         <div className="profile__actions">
-          <Button variant="secondary" icon="recommendations" to={`/students/${studentId}/recommendations`}>
+          <Button
+            variant="secondary"
+            icon="recommendations"
+            to={`/students/${studentId}/recommendations`}
+          >
             View recommendations
           </Button>
         </div>
       </header>
-
-      <TrendSummary summary={summary} />
-
-      <CategoryProportions summary={summary} />
 
       <section className="trend-controls" aria-labelledby="trend-controls-title">
         <div className="trend-controls__range">
@@ -193,7 +193,7 @@ export default function ErrorTrendsPage() {
             </span>
           </summary>
           <fieldset className="trend-controls__samples">
-            <legend className="sr-only">Samples included</legend>
+            <legend className="sr-only">Samples compared</legend>
             {rangedSamples.length === 0 ? (
               <p className="trend-controls__none">No analysed samples in this date range.</p>
             ) : (
@@ -224,8 +224,11 @@ export default function ErrorTrendsPage() {
         </details>
       </section>
 
+      <TrendSummary summary={summary} />
+
       {includedSamples.length >= 2 ? (
         <TrendChart
+          key={studentId}
           samples={rangedSamples}
           excludedIds={excludedIds}
           onOpenSample={(sampleId) => navigate(`/samples/${sampleId}`)}
@@ -239,6 +242,13 @@ export default function ErrorTrendsPage() {
           selected={includedSamples.length}
         />
       )}
+      {summary.totalErrors > 0 && (
+        <CategoryProportions summary={summary} />
+      )}
+      <p className="trends-page__note">
+        Counts show tagged errors per sample, including AI suggestions awaiting review. They are not
+        a score; samples can differ in length and difficulty.
+      </p>
     </div>
   );
 }
@@ -248,26 +258,30 @@ function TrendSummary({ summary }) {
   const comparison = summary.comparison;
   const comparisonCopy = comparison
     ? {
-        improving: { label: 'Improving', symbol: '↘' },
-        steady: { label: 'Steady', symbol: '→' },
+        improving: { label: 'Fewer errors', symbol: '↘' },
+        steady: { label: 'Same count', symbol: '→' },
         'more-errors': { label: 'More errors', symbol: '↗' },
       }[comparison.state]
     : null;
 
   return (
     <section className="trend-summary" aria-label="Trend summary">
-      <article className="trend-summary__card">
-        <span className="trend-summary__label">Samples included</span>
-        <strong className="trend-summary__value">{summary.sampleCount}</strong>
+      <article
+        className={`trend-summary__card${comparison ? ` trend-summary__card--${comparison.state}` : ''}`}
+      >
+        <span className="trend-summary__label">Latest vs previous</span>
+        <strong className="trend-summary__comparison">
+          {comparisonCopy ? `${comparisonCopy.symbol} ${comparisonCopy.label}` : 'Not enough data'}
+        </strong>
         <span className="trend-summary__detail">
-          {summary.firstDate
-            ? `${longDate.format(new Date(summary.firstDate))} – ${longDate.format(new Date(summary.lastDate))}`
-            : 'No analysed samples selected'}
+          {comparison
+            ? `${comparison.previousTotal} errors → ${comparison.latestTotal} errors overall`
+            : 'Select at least two analysed samples'}
         </span>
       </article>
 
       <article className="trend-summary__card">
-        <span className="trend-summary__label">Most frequent category</span>
+        <span className="trend-summary__label">Most common in this range</span>
         <strong className="trend-summary__category">
           {summary.mostFrequent ? (
             <>
@@ -285,17 +299,13 @@ function TrendSummary({ summary }) {
         </span>
       </article>
 
-      <article
-        className={`trend-summary__card${comparison ? ` trend-summary__card--${comparison.state}` : ''}`}
-      >
-        <span className="trend-summary__label">Vs previous sample</span>
-        <strong className="trend-summary__comparison">
-          {comparisonCopy ? `${comparisonCopy.symbol} ${comparisonCopy.label}` : 'Not enough data'}
-        </strong>
+      <article className="trend-summary__card">
+        <span className="trend-summary__label">Samples compared</span>
+        <strong className="trend-summary__value">{summary.sampleCount}</strong>
         <span className="trend-summary__detail">
-          {comparison
-            ? `${comparison.previousTotal} errors → ${comparison.latestTotal} errors overall`
-            : 'Select at least two analysed samples'}
+          {summary.firstDate
+            ? `${longDate.format(new Date(summary.firstDate))} – ${longDate.format(new Date(summary.lastDate))}`
+            : 'No analysed samples selected'}
         </span>
       </article>
     </section>
