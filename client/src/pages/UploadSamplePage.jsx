@@ -90,10 +90,13 @@ export default function UploadSamplePage() {
   // attempt as any other and 2d renders from that real 422 response
   // instead of a client-guessed one.
   function addFiles(picked) {
+    // FileList is live: resetting the picker or ending a drop event can empty
+    // it before React runs this queued update. Keep the selected File objects.
+    const selectedFiles = Array.from(picked);
     setAlert(null); // a fresh pick clears the previous complaint
     setFiles((current) => {
       const merged = [...current];
-      for (const file of [...picked]) {
+      for (const file of selectedFiles) {
         // The same scan dropped twice shouldn't become two pages.
         const alreadyChosen = merged.some(
           (f) => f.file.name === file.name && f.file.size === file.size
