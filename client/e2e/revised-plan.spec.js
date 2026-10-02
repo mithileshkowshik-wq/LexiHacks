@@ -93,8 +93,9 @@ async function runCase(page, id) {
   if (useCase === 'UC4') {
     await withSession(page);
     await page.goto(`/students/${STUDENT}/trends`);
-    await expect(page.getByRole('heading', { name: 'Synthetic Learner' })).toBeVisible();
-    await expect(page.getByText('Most frequent category')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Error trends' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Synthetic Learner' })).toBeVisible();
+    await expect(page.getByText('Most common in this range')).toBeVisible();
     if (number === 2) {
       await page.locator('#trend-range').selectOption('custom');
       await expect(page.locator('#trend-custom-from')).toBeVisible();
