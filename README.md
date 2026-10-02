@@ -8,6 +8,7 @@ LexiPath helps educators review literacy errors in handwritten work. Upload a sc
 - [Where to find code and documents](docs/README.md)
 - [Full setup instructions](SETUP_GUIDE.md)
 - [Tests and checks](docs/TESTING.md)
+- [Download the optional GNHK dataset](docs/GNHK_DATASET.md)
 - [App workflow, data and RAG](docs/APP-WORKFLOW.md)
 - [Google Cloud deployment](GOOGLE_CLOUD.md)
 
