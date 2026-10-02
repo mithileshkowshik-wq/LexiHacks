@@ -1,14 +1,7 @@
-// One flagged error in the review list (wireframe 3a), including the two
-// inline panels from 3b — reclassify and remove-confirm. They open under the
-// card rather than in a modal, per DESIGN.md §9 ("forms live on an inline
-// card, not a modal").
-//
-// Card states: normal · selected · uncertain · removed.
-//   uncertain = confidenceScore below the threshold; derived, never stored,
-//               so "Confirm tag" writes confidenceScore: 1 to clear it.
-//   removed   = the educator dismissed it. The error is KEPT, not deleted
-//               (server/models/sample.js) so the decision stays visible and
-//               reversible — hence "Restore tag".
+// A review suggestion compares the original crop, AI reading and correction.
+// Reclassification stays inline; keep and dismiss decisions are reversible.
+// Low confidence invites a closer look until the teacher has reviewed it.
+// Dismissed errors stay in the array so they can be restored.
 //
 // `written` is printed exactly as the child wrote it and is never corrected,
 // spellchecked or paraphrased anywhere here. That is a product invariant
@@ -16,16 +9,13 @@
 
 import { useState } from 'react';
 import Button from './Button.jsx';
+import HandwritingCrop from './HandwritingCrop.jsx';
 import CategoryChip from './CategoryChip.jsx';
-import {
-  RECLASSIFY_ORDER,
-  categoryFor,
-  confidenceLabel,
-  isUncertain,
-} from '../lib/categories.js';
+import { RECLASSIFY_ORDER, categoryFor, isUncertain } from '../lib/categories.js';
 
 export default function ErrorCard({
   error,
+  imageUrl,
   selected,
   multiPage,
   busy,
@@ -36,9 +26,11 @@ export default function ErrorCard({
   onReclassify,
   onDismiss,
   onRestore,
-  onConfirm,
+  onKeep,
+  onUndo,
+  reviewed = false,
 }) {
-  const [panel, setPanel] = useState(null); // null | 'reclassify' | 'remove'
+  const [panel, setPanel] = useState(null); // null | 'reclassify'
   const [choice, setChoice] = useState(error.category);
 
   const cat = categoryFor(error.category);
@@ -55,11 +47,11 @@ export default function ErrorCard({
       <article className="ecard ecard--removed" ref={innerRef}>
         <div className="ecard__top">
           <span className="ecard__word">{error.written}</span>
-          <span className="ecard__removed-note">Removed — not counted</span>
+          <span className="ecard__removed-note">Dismissed — not counted</span>
         </div>
         <div className="ecard__actions">
           <Button variant="secondary" icon="undo" onClick={onRestore} disabled={busy}>
-            Restore tag
+            Undo dismissal
           </Button>
         </div>
         {failure && <p className="ecard__failure">{failure}</p>}
@@ -71,95 +63,79 @@ export default function ErrorCard({
     <article
       ref={innerRef}
       className={
-        'ecard' +
-        (selected ? ' ecard--selected' : '') +
-        (uncertain ? ' ecard--uncertain' : '')
+        'ecard' + (selected ? ' ecard--selected' : '') + (uncertain && !reviewed ? ' ecard--uncertain' : '')
       }
       aria-current={selected ? 'true' : undefined}
     >
-      {uncertain && (
-        <p className="ecard__flag">Uncertain — AI needs your judgement</p>
-      )}
-
-      {/* The whole card body selects the error, so clicking anywhere near it
-          highlights the matching outline on the scan. */}
-      {/* Spans, not divs: a <button> may only contain phrasing content, and
-          the layout is all CSS anyway. */}
+      {uncertain && !reviewed && <p className="ecard__flag">Needs a closer look</p>}
       <button type="button" className="ecard__pick" onClick={onSelect}>
-        <span className="ecard__top">
-          <span className="ecard__no" aria-hidden="true">
-            {error.n}
+        <span className="ecard__heading">
+          <span>
+            Suggestion {error.n} · <span className="ecard__category-name">{cat.label}</span>
           </span>
-          <span className="ecard__word">{error.written}</span>
-          <span className="ecard__said">student wrote — shown exactly as written</span>
+          {reviewed && <span className="ecard__kept">Kept</span>}
         </span>
-
-        <span className="ecard__meta">
-          <CategoryChip category={error.category} />
-          <span className="ecard__conf">
-            <span className="ecard__conf-label">confidence</span>
-            <span className="ecard__bar" aria-hidden="true">
-              <span
-                className="ecard__bar-fill"
-                style={{ width: `${Math.round(error.confidenceScore * 100)}%` }}
-              />
+        <span className="ecard__comparison">
+          <HandwritingCrop imageUrl={imageUrl} box={error.locationOnScan} />
+          <span className="ecard__words">
+            <span>
+              <span className="ecard__word-label">AI read</span>
+              <strong>{error.written}</strong>
             </span>
-            <span className="ecard__conf-val">{confidenceLabel(error, confidenceThreshold)}</span>
-          </span>
-        </span>
-
-        {(error.intended || error.note) && (
-          <span className="ecard__reading">
             {error.intended && (
-              <span className="ecard__intended">
-                AI reads this as “{error.intended}”
-              </span>
+              <>
+                <span className="ecard__arrow" aria-hidden="true">
+                  →
+                </span>
+                <span>
+                  <span className="ecard__word-label">Suggested</span>
+                  <strong>{error.intended}</strong>
+                </span>
+              </>
             )}
-            {error.note && <span className="ecard__note">{error.note}</span>}
           </span>
-        )}
-
-        <span className="ecard__tags">
-          {multiPage && error.locationOnScan && (
-            <span className="ecard__page">p.{error.locationOnScan.page + 1}</span>
-          )}
-          {!error.locationOnScan && (
-            <span className="ecard__page ecard__page--none">Not located on the scan</span>
-          )}
-          {selected && (
-            <span className="ecard__state">selected — outlined on scan</span>
-          )}
         </span>
-      </button>
-
-      <div className="ecard__actions">
-        {uncertain && (
-          <Button variant="primary" icon="check" onClick={onConfirm} disabled={busy}>
-            Confirm tag
-          </Button>
+        {error.note && <span className="ecard__note">{error.note}</span>}
+        {multiPage && error.locationOnScan && (
+          <span className="ecard__page">Page {error.locationOnScan.page + 1}</span>
         )}
-        <Button
-          variant="secondary"
-          icon="swap"
-          onClick={() => (panel === 'reclassify' ? setPanel(null) : openReclassify())}
+        {!error.locationOnScan && (
+          <span className="ecard__page ecard__page--none">Not located on the scan</span>
+        )}
+      </button>
+      <div className="ecard__actions">
+        {reviewed ? (
+          <>
+            <span className="ecard__decision-note">Included in the report</span>
+            <Button variant="tertiary" onClick={onUndo} disabled={busy}>
+              Undo
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button variant="primary" icon="check" onClick={onKeep} disabled={busy}>
+              Keep suggestion
+            </Button>
+            <Button variant="tertiary" onClick={onDismiss} disabled={busy}>
+              Dismiss
+            </Button>
+          </>
+        )}
+        <button
+          type="button"
+          className="ecard__change"
           disabled={busy}
+          onClick={() => (panel === 'reclassify' ? setPanel(null) : openReclassify())}
           aria-expanded={panel === 'reclassify'}
         >
-          Reclassify
-        </Button>
-        <Button
-          variant="tertiary"
-          icon="trash"
-          onClick={() => setPanel(panel === 'remove' ? null : 'remove')}
-          disabled={busy}
-          aria-expanded={panel === 'remove'}
-        >
-          Remove tag
-        </Button>
+          Change category
+        </button>
       </div>
-
-      {failure && <p className="ecard__failure">{failure}</p>}
-
+      {failure && (
+        <p className="ecard__failure" role="alert">
+          {failure}
+        </p>
+      )}
       {panel === 'reclassify' && (
         <div className="epanel">
           <div className="epanel__head">
@@ -208,31 +184,13 @@ export default function ErrorCard({
         </div>
       )}
 
-      {panel === 'remove' && (
-        <div className="epanel">
-          <p className="epanel__ask">Remove this tag?</p>
-          <p className="epanel__text">
-            “{error.written}” will no longer be counted as a {cat.label.toLowerCase()}{' '}
-            error. The scan itself is never changed, and you can restore the tag
-            afterwards.
-          </p>
-          <div className="epanel__actions">
-            <Button variant="tertiary" onClick={() => setPanel(null)}>
-              Keep tag
-            </Button>
-            <Button
-              variant="primary"
-              onClick={() => {
-                setPanel(null);
-                onDismiss();
-              }}
-              disabled={busy}
-            >
-              Remove tag
-            </Button>
-          </div>
-        </div>
-      )}
+      <details className="ecard__details">
+        <summary>AI details</summary>
+        <p>
+          AI confidence: {Math.round(error.confidenceScore * 100)}%. This is a model estimate, not a
+          teacher decision.
+        </p>
+      </details>
     </article>
   );
 }

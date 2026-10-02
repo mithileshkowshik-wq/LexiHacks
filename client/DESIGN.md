@@ -311,3 +311,16 @@ The summary is one bordered surface with internal dividers rather than three com
 small screens its sections stack, the category switcher scrolls horizontally, and the fixed-width
 chart scrolls rather than shrinking its labels and sample names below a legible size. The complete
 five-category dataset remains available in the accessible table below the chart.
+
+## 15. Approved compact writing review (October 2026)
+
+The writing review uses a compact plain header with student back-link, assignment title,
+suggestion count and reviewed progress. Dates and analysis status live under Sample details.
+The original page sits alongside a compact list of suggestions. Each card compares the
+original handwriting crop, AI-read `written` text and suggested `intended` text, followed by
+one explanation. Routine confidence scores live under AI details; uncertain, unreviewed
+suggestions show “Needs a closer look”. Teacher review decisions are separate from confidence.
+Keep suggestion records acceptance, Dismiss excludes an error without deleting it, and Undo
+reopens the decision. Change category opens an inline panel. Category filters and the form for
+adding a missed error are collapsed initially. Finish review unlocks once every suggestion has
+a decision. Existing completed reviews remain completed until a decision is undone.

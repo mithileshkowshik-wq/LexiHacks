@@ -169,3 +169,58 @@ test('mark reviewed rejects unsupported status values before saving', async () =
     Sample.findById = originalFindById;
   }
 });
+
+test('keeping and undoing a suggestion persists review state without changing AI confidence or text', async () => {
+  const originalFindById = Sample.findById;
+  let saves = 0;
+  const sample = {
+    _id: 'sample-review',
+    student: 'student-review',
+    title: 'Synthetic review',
+    status: 'ANALYSED',
+    taskType: 'ESSAY',
+    pages: [{ imagePath: '/private/synthetic.png' }],
+    errors: [
+      {
+        written: 'tom',
+        intended: 'Tom',
+        category: 'capitalisation',
+        confidenceScore: 0.4,
+        dismissed: false,
+      },
+    ],
+    save: async () => {
+      saves += 1;
+    },
+  };
+  Sample.findById = async () => sample;
+  try {
+    const res = responseRecorder();
+    await reclassifyError(
+      { params: { sampleId: sample._id, errorIndex: '0' }, body: { reviewed: true } },
+      res
+    );
+    assert.equal(res.payload.errors[0].reviewed, true);
+    assert.equal(res.payload.errors[0].confidenceScore, 0.4);
+    assert.equal(res.payload.errors[0].written, 'tom');
+    assert.equal(res.payload.errors[0].dismissed, false);
+    sample.status = 'REVIEWED';
+    await reclassifyError(
+      { params: { sampleId: sample._id, errorIndex: '0' }, body: { reviewed: false } },
+      res
+    );
+    assert.equal(res.payload.errors[0].reviewed, false);
+    assert.equal(res.payload.analysisStatus, 'ANALYSED');
+    assert.equal(saves, 2);
+    await assert.rejects(
+      reclassifyError(
+        { params: { sampleId: sample._id, errorIndex: '0' }, body: { reviewed: 'yes' } },
+        res
+      ),
+      /Reviewed must be boolean/
+    );
+    assert.equal(saves, 2);
+  } finally {
+    Sample.findById = originalFindById;
+  }
+});

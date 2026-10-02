@@ -27,6 +27,8 @@ function setGlobal(key, value) {
 setGlobal('window', dom.window);
 setGlobal('document', dom.window.document);
 setGlobal('navigator', dom.window.navigator);
+// Node 25 provides its own storage stub; browser tests need jsdom storage.
+setGlobal('localStorage', dom.window.localStorage);
 // Silences React's "not wrapped in act()" warnings outside a Jest/Vitest
 // environment, where RTL can't auto-detect that it's running in a test.
 setGlobal('IS_REACT_ACT_ENVIRONMENT', true);

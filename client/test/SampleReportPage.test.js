@@ -68,7 +68,14 @@ const sample = {
     },
   ],
   statistics: {
-    categoryCounts: { phonological: 2, orthographic: 0, morphological: 0, capitalisation: 1, punctuation: 1, unsure: 0 },
+    categoryCounts: {
+      phonological: 2,
+      orthographic: 0,
+      morphological: 0,
+      capitalisation: 1,
+      punctuation: 1,
+      unsure: 0,
+    },
     total: 4,
   },
 };
@@ -78,7 +85,11 @@ const errorUpdates = [];
 mock.module('../src/lib/api.js', {
   namedExports: {
     getSample: async () => sample,
-    getStudent: async () => ({ studentId: 'student-1', name: 'Wei Jie Lim', currentGrade: 'Primary 4' }),
+    getStudent: async () => ({
+      studentId: 'student-1',
+      name: 'Wei Jie Lim',
+      currentGrade: 'Primary 4',
+    }),
     getLatestRecommendations: async () => null,
     sampleImageUrl: (id, page) => `/mock-api/samples/${id}/images/${page}`,
     // Static imports require every named export SampleReportPage.jsx pulls
@@ -119,7 +130,11 @@ test('groups live errors by category, in CATEGORY_ORDER, skipping categories wit
   await waitFor(() => screen.getByText('Journal Entry'));
 
   const headings = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
-  assert.deepEqual(headings, ['Phonological — 2 errors', 'Capitalisation — 1 error', 'Punctuation — 1 error']);
+  assert.deepEqual(headings, [
+    'Phonological — 2 errors',
+    'Capitalisation — 1 error',
+    'Punctuation — 1 error',
+  ]);
 });
 
 test('dismissed errors are excluded from the groups and tucked behind "Show removed tag(s)"', async () => {
@@ -127,17 +142,18 @@ test('dismissed errors are excluded from the groups and tucked behind "Show remo
   await waitFor(() => screen.getByText('Journal Entry'));
 
   assert.equal(screen.queryByText('recieve'), null);
-  assert.ok(screen.getByText('Show 1 removed tag'));
+  assert.ok(screen.getByText('Show 1 dismissed suggestion'));
 
-  fireEvent.click(screen.getByText('Show 1 removed tag'));
+  fireEvent.click(screen.getByText('Show 1 dismissed suggestion'));
   assert.ok(screen.getByText('recieve'));
-  assert.ok(screen.getByText('Hide 1 removed tag'));
+  assert.ok(screen.getByText('Hide 1 dismissed suggestion'));
 });
 
 test('the category filter narrows the visible groups to the chosen category', async () => {
   renderReport();
   await waitFor(() => screen.getByText('Journal Entry'));
 
+  fireEvent.click(screen.getByText('Filter by category'));
   const filterGroup = within(screen.getByRole('group', { name: 'Filter errors by category' }));
   fireEvent.click(filterGroup.getByText('Capitalisation'));
 
@@ -150,6 +166,8 @@ test('an educator can submit an error the AI missed', async () => {
   renderReport();
   await waitFor(() => screen.getByText('Journal Entry'));
 
+  assert.equal(screen.queryByLabelText('Written text'), null);
+  fireEvent.click(screen.getByText('+ Add missed error'));
   fireEvent.change(screen.getByLabelText('Written text'), { target: { value: 'becos' } });
   fireEvent.change(screen.getByLabelText('Error category'), {
     target: { value: 'phonological' },

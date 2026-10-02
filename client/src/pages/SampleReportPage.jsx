@@ -18,6 +18,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {
   getSample,
+  sampleImageUrl,
   getStudent,
   getLatestRecommendations,
   generateRecommendations,
@@ -56,6 +57,7 @@ export default function SampleReportPage() {
   const [selected, setSelected] = useState(null);
   const [filter, setFilter] = useState(null);
   const [showRemoved, setShowRemoved] = useState(false);
+  const [adding, setAdding] = useState(false);
   const [missedError, setMissedError] = useState({ written: '', category: '' });
   const [busy, setBusy] = useState(null); // errorIndex currently being written
   const [failure, setFailure] = useState(null); // { errorIndex, message }
@@ -79,6 +81,7 @@ export default function SampleReportPage() {
     setSelected(null);
     setFilter(null);
     setShowRemoved(false);
+    setAdding(false);
     setMissedError({ written: '', category: '' });
     setBusy(null);
     setFailure(null);
@@ -105,7 +108,12 @@ export default function SampleReportPage() {
         )
       )
       .then(({ sample, student }) => {
-        if (live) setState({ status: 'ready', sample, student });
+        if (live) {
+          setState({ status: 'ready', sample, student });
+          const first = sample.errors?.find((error) => !error.dismissed);
+          setSelected(first?.errorIndex ?? null);
+          setPage(first?.locationOnScan?.page ?? 0);
+        }
       })
       .catch((err) => {
         if (!live) return;
@@ -263,7 +271,10 @@ export default function SampleReportPage() {
   async function addMissedError(event) {
     event.preventDefault();
     const saved = await patchError('new', missedError, { counted: true });
-    if (saved) setMissedError({ written: '', category: '' });
+    if (saved) {
+      setMissedError({ written: '', category: '' });
+      setAdding(false);
+    }
   }
 
   // Marking done ends the visit to this sample, so hand the educator back to
@@ -314,7 +325,7 @@ export default function SampleReportPage() {
   const analysedLabel = sample.analysedAt
     ? `analysed ${formatUploaded(sample.analysedAt)}`
     : 'analysed by AI';
-  const subline = [
+  const sampleDetails = [
     `Uploaded ${formatUploaded(sample.uploadedAt)}`,
     analysedLabel,
     `${plural(sample.statistics.total, 'error')} tagged`,
@@ -323,8 +334,12 @@ export default function SampleReportPage() {
     .filter(Boolean)
     .join(' · ');
 
+  const reviewedCount = reviewed
+    ? sample.errors.length
+    : sample.errors.filter((error) => error.reviewed || error.dismissed).length;
+  const subline = `${plural(sample.errors.length, 'suggestion')} · ${reviewedCount} of ${sample.errors.length} reviewed`;
   return (
-    <div className="report">
+    <div className="report report--compact">
       <ReportHead
         sample={sample}
         student={student}
@@ -343,14 +358,21 @@ export default function SampleReportPage() {
               variant="primary"
               icon="check"
               onClick={finishReview}
-              disabled={busy === 'review'}
-              disabledHint="Saving…"
+              disabled={busy !== null || reviewedCount < sample.errors.length}
+              disabledHint={busy !== null ? 'Saving…' : 'Review each suggestion first'}
             >
-              Mark review done
+              Finish review
             </Button>
           )
         }
       />
+
+      <details className="report__details">
+        <summary>Sample details</summary>
+        <p>
+          {sampleDetails} · <StatusPill analysisStatus={sample.analysisStatus} />
+        </p>
+      </details>
 
       {failure?.errorIndex === 'review' && <p className="report__failure">{failure.message}</p>}
 
@@ -423,46 +445,16 @@ export default function SampleReportPage() {
         </div>
 
         <section className="report__list" aria-label="Flagged errors">
-          <CategoryFilter counts={counts} active={filter} onToggle={setFilter} />
-
-          <form className="report__add-error" onSubmit={addMissedError}>
-            <h2 className="report__add-error-title">Add an error the AI missed</h2>
-            <label className="field">
-              <span className="field__label">Written text</span>
-              <input
-                className="field__input"
-                value={missedError.written}
-                onChange={(event) =>
-                  setMissedError((current) => ({ ...current, written: event.target.value }))
-                }
-                required
-              />
-            </label>
-            <label className="field">
-              <span className="field__label">Error category</span>
-              <select
-                className="field__input"
-                value={missedError.category}
-                onChange={(event) =>
-                  setMissedError((current) => ({ ...current, category: event.target.value }))
-                }
-                required
-              >
-                <option value="">Choose a category</option>
-                {RECLASSIFY_ORDER.map((category) => (
-                  <option key={category} value={category}>
-                    {categoryFor(category).label}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <Button type="submit" variant="secondary" disabled={busy === 'new'}>
-              Add missed error
-            </Button>
-            {failure?.errorIndex === 'new' && (
-              <p className="report__add-error-failure">{failure.message}</p>
-            )}
-          </form>
+          <div className="report__list-intro">
+            <h2>Review suggestions</h2>
+            <p>Compare the handwriting, then keep or dismiss.</p>
+          </div>
+          {Object.values(counts).filter((count) => count > 0).length > 1 && (
+            <details className="report__filters">
+              <summary>Filter by category</summary>
+              <CategoryFilter counts={counts} active={filter} onToggle={setFilter} />
+            </details>
+          )}
 
           <div className="report__cards">
             {shown.length === 0 && (
@@ -486,9 +478,14 @@ export default function SampleReportPage() {
                   <ErrorCard
                     key={error.errorIndex}
                     error={error}
+                    imageUrl={
+                      error.locationOnScan
+                        ? sampleImageUrl(sampleId, error.locationOnScan.page)
+                        : undefined
+                    }
                     multiPage={sample.imageCount > 1}
                     selected={selected === error.errorIndex}
-                    busy={busy === error.errorIndex}
+                    busy={busy !== null}
                     failure={failure?.errorIndex === error.errorIndex ? failure.message : null}
                     confidenceThreshold={sample.confidenceThreshold}
                     innerRef={(node) => {
@@ -502,7 +499,9 @@ export default function SampleReportPage() {
                     onDismiss={() =>
                       patchError(error.errorIndex, { dismissed: true }, { counted: true })
                     }
-                    onConfirm={() => patchError(error.errorIndex, { confidenceScore: 1 })}
+                    reviewed={reviewed || error.reviewed}
+                    onKeep={() => patchError(error.errorIndex, { reviewed: true })}
+                    onUndo={() => patchError(error.errorIndex, { reviewed: false })}
                   />
                 ))}
               </section>
@@ -516,22 +515,73 @@ export default function SampleReportPage() {
                   onClick={() => setShowRemoved((v) => !v)}
                   aria-expanded={showRemoved}
                 >
-                  {showRemoved ? 'Hide' : 'Show'} {plural(removed.length, 'removed tag')}
+                  {showRemoved ? 'Hide' : 'Show'} {plural(removed.length, 'dismissed suggestion')}
                 </button>
                 {showRemoved &&
                   removed.map((error) => (
                     <ErrorCard
                       key={error.errorIndex}
                       error={error}
-                      busy={busy === error.errorIndex}
+                      busy={busy !== null}
                       failure={failure?.errorIndex === error.errorIndex ? failure.message : null}
                       confidenceThreshold={sample.confidenceThreshold}
-                      onRestore={() => patchError(error.errorIndex, { dismissed: false })}
+                      onRestore={() =>
+                        patchError(error.errorIndex, { dismissed: false, reviewed: false })
+                      }
                     />
                   ))}
               </div>
             )}
           </div>
+          <div className="report__add-toggle">
+            <button type="button" onClick={() => setAdding(!adding)} aria-expanded={adding}>
+              {adding ? '− Close form' : '+ Add missed error'}
+            </button>
+          </div>
+          {adding && (
+            <form className="report__add-error" onSubmit={addMissedError}>
+              <h2 className="report__add-error-title">Add an error the AI missed</h2>
+              <label className="field">
+                <span className="field__label">Written text</span>
+                <input
+                  className="field__input"
+                  value={missedError.written}
+                  onChange={(event) =>
+                    setMissedError((current) => ({ ...current, written: event.target.value }))
+                  }
+                  required
+                />
+              </label>
+              <label className="field">
+                <span className="field__label">Error category</span>
+                <select
+                  className="field__input"
+                  value={missedError.category}
+                  onChange={(event) =>
+                    setMissedError((current) => ({ ...current, category: event.target.value }))
+                  }
+                  required
+                >
+                  <option value="">Choose a category</option>
+                  {RECLASSIFY_ORDER.map((category) => (
+                    <option key={category} value={category}>
+                      {categoryFor(category).label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <Button type="submit" variant="secondary" disabled={busy === 'new'}>
+                Add missed error
+              </Button>
+              {failure?.errorIndex === 'new' && (
+                <p className="report__add-error-failure">{failure.message}</p>
+              )}
+            </form>
+          )}
+          <p className="report__review-hint">
+            AI suggestions can be wrong. Dismiss a suggestion when the handwriting is already
+            correct.
+          </p>
         </section>
       </div>
     </div>
@@ -540,16 +590,15 @@ export default function SampleReportPage() {
 
 function ReportHead({ sample, student, backTo, subline, action }) {
   return (
-    <header className="profile__head report__head">
+    <header className="report__head">
       <div className="profile__id">
         <Button variant="tertiary" icon="chevronLeft" to={backTo}>
           {student ? student.name : 'Back to profile'}
         </Button>
-        <span className="eyebrow">Error report</span>
+        <span className="eyebrow">Writing review</span>
         <h1 className="report__title">{sample.title}</h1>
         <p className="report__sub">
           <span>{subline}</span>
-          <StatusPill analysisStatus={sample.analysisStatus} />
         </p>
       </div>
       {action && <div className="profile__actions">{action}</div>}
@@ -562,7 +611,7 @@ function ReportSkeleton() {
     <div className="report" aria-hidden="true">
       <header className="profile__head report__head">
         <div className="profile__id">
-          <span className="eyebrow">Error report</span>
+          <span className="eyebrow">Writing review</span>
           <div className="skel skel--title" />
           <div className="skel skel--pill" />
         </div>

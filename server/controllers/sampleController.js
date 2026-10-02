@@ -119,6 +119,7 @@ function toClientSample(sample) {
       locationOnScan: flagged.locationOnScan,
       note: flagged.note,
       dismissed: flagged.dismissed,
+      reviewed: flagged.reviewed ?? false,
     })),
   };
 }
@@ -287,9 +288,10 @@ const reclassifyError = async (req, res) => {
   const hasCategory = Object.hasOwn(body, 'category');
   const hasDismissed = Object.hasOwn(body, 'dismissed');
   const hasConfidence = Object.hasOwn(body, 'confidenceScore');
-  if (!hasCategory && !hasDismissed && !hasConfidence) {
+  const hasReviewed = Object.hasOwn(body, 'reviewed');
+  if (!hasCategory && !hasDismissed && !hasConfidence && !hasReviewed) {
     res.status(400);
-    throw new Error('Provide category, dismissed, or confidenceScore');
+    throw new Error('Provide category, dismissed, confidenceScore, or reviewed');
   }
   if (hasCategory && !ERROR_CATEGORIES.includes(body.category)) {
     res.status(400);
@@ -307,6 +309,14 @@ const reclassifyError = async (req, res) => {
   ) {
     res.status(400);
     throw new Error('Confidence score must be between 0 and 1');
+  }
+  if (hasReviewed && typeof body.reviewed !== 'boolean') {
+    res.status(400);
+    throw new Error('Reviewed must be boolean');
+  }
+  if (hasReviewed) {
+    sample.errors[index].reviewed = body.reviewed;
+    if (!body.reviewed && sample.status === 'REVIEWED') sample.status = 'ANALYSED';
   }
   if (hasCategory) sample.errors[index].category = body.category;
   if (hasDismissed) sample.errors[index].dismissed = body.dismissed;

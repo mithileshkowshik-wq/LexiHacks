@@ -74,7 +74,9 @@ async function runCase(page, id) {
       await expect(page.getByRole('heading', { name: 'Sample not found' })).toBeVisible();
     } else {
       await expect(page.getByText('becos', { exact: true })).toBeVisible();
-      await expect(page.getByText(/Phonological/i).first()).toBeVisible();
+      await expect(
+        page.locator('.ecard__category-name').filter({ hasText: 'Phonological' }).first()
+      ).toBeVisible();
     }
     return;
   }
@@ -98,7 +100,12 @@ async function runCase(page, id) {
       await expect(page.locator('#trend-custom-from')).toBeVisible();
       await expect(page.locator('#trend-custom-to')).toBeVisible();
     }
-    if (number === 3) await expect(page.getByText('2', { exact: true }).first()).toBeVisible();
+    if (number === 3) {
+      await page.locator('#trend-range').selectOption({ label: 'All time' });
+      await expect(
+        page.getByRole('region', { name: 'Trend summary' }).getByText('2', { exact: true }).first()
+      ).toBeVisible();
+    }
     return;
   }
 
@@ -106,11 +113,18 @@ async function runCase(page, id) {
     await withSession(page);
     await page.goto(`/samples/${SAMPLE}`);
     await expect(page.getByText('becos', { exact: true })).toBeVisible();
-    await expect(page.getByText(/Phonological/i).first()).toBeVisible();
-    if (number === 2) await expect(page.getByText(/1 error/i).first()).toBeVisible();
-    if (number === 3)
-      await expect(page.getByRole('button', { name: /Mark review done/i })).toBeVisible();
-    if (number === 4) await expect(page.getByText(/Add an error the AI missed/i)).toBeVisible();
+    await expect(
+      page.locator('.ecard__category-name').filter({ hasText: 'Phonological' }).first()
+    ).toBeVisible();
+    if (number === 2) await expect(page.getByText(/1 suggestion/i).first()).toBeVisible();
+    if (number === 3) {
+      await page.getByRole('button', { name: 'Keep suggestion' }).click();
+      await expect(page.getByRole('button', { name: 'Finish review' })).toBeVisible();
+    }
+    if (number === 4) {
+      await page.getByRole('button', { name: '+ Add missed error', exact: true }).click();
+      await expect(page.getByText(/Add an error the AI missed/i)).toBeVisible();
+    }
     return;
   }
 

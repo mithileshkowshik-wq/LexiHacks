@@ -67,6 +67,11 @@ const DEMO_ERRORS = [
   },
 ];
 
+const DEMO_HANDWRITING =
+  'data:image/svg+xml,' +
+  encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600"><rect width="1000" height="600" fill="white"/><text x="100" y="86" font-family="cursive" font-size="28">becos</text></svg>'
+  );
 const noop = () => {};
 
 const SWATCHES = [
@@ -228,12 +233,13 @@ export default function StyleguidePage() {
         <div className="guide__row guide__row--stack">
           <ErrorCard
             error={DEMO_ERRORS[0]}
+            imageUrl={DEMO_HANDWRITING}
             selected
             multiPage
             onSelect={noop}
             onReclassify={noop}
             onDismiss={noop}
-            onConfirm={noop}
+            onKeep={noop}
           />
           <ErrorCard
             error={DEMO_ERRORS[1]}
@@ -241,7 +247,7 @@ export default function StyleguidePage() {
             onSelect={noop}
             onReclassify={noop}
             onDismiss={noop}
-            onConfirm={noop}
+            onKeep={noop}
           />
           <ErrorCard error={DEMO_ERRORS[2]} onRestore={noop} />
         </div>

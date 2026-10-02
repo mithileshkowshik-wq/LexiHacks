@@ -54,15 +54,12 @@ test('live demo: Gemini analysis feeds trends, recommendations, and password per
   await signIn(page, ORIGINAL_PASSWORD);
   await page.getByRole('link', { name: /Live Demo Learner/ }).click();
   await page.getByRole('link', { name: 'Upload writing sample' }).click();
-  await page.locator('.dropzone').evaluate(
-    (dropzone, base64) => {
-      const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0));
-      const transfer = new DataTransfer();
-      transfer.items.add(new File([bytes], 'synthetic-writing.png', { type: 'image/png' }));
-      dropzone.dispatchEvent(new DragEvent('drop', { bubbles: true, dataTransfer: transfer }));
-    },
-    uploadBuffer.toString('base64')
-  );
+  await page.locator('.dropzone').evaluate((dropzone, base64) => {
+    const bytes = Uint8Array.from(atob(base64), (character) => character.charCodeAt(0));
+    const transfer = new DataTransfer();
+    transfer.items.add(new File([bytes], 'synthetic-writing.png', { type: 'image/png' }));
+    dropzone.dispatchEvent(new DragEvent('drop', { bubbles: true, dataTransfer: transfer }));
+  }, uploadBuffer.toString('base64'));
   await expect.poll(() => pageErrors.map((error) => error.message)).toEqual([]);
   await expect(page.getByText('synthetic-writing.png', { exact: true })).toBeVisible();
   await page.getByLabel('Sample title').fill('Live Gemini synthetic writing');
@@ -72,7 +69,8 @@ test('live demo: Gemini analysis feeds trends, recommendations, and password per
     timeout: 120_000,
   });
   await page.getByRole('link', { name: 'Open error report' }).click();
-  await expect(page.getByText(/\d+ errors? tagged/)).toBeVisible();
+  await expect(page.getByText(/\d+ suggestions?/)).toBeVisible();
+  await page.getByText('Sample details', { exact: true }).click();
   await expect(page.getByText(/analysed/i).first()).toBeVisible();
 
   await page.goto('/students/64b000000000000000000201/trends');

@@ -72,8 +72,8 @@ export default function ScanViewer({
             <Icon name="page" size={26} />
             <p className="scan__broken-title">This page can’t be shown</p>
             <p className="scan__broken-text">
-              PDF uploads aren’t displayed yet. The AI still read this page, so its
-              errors are listed on the right.
+              PDF uploads aren’t displayed yet. The AI still read this page, so its errors are
+              listed on the right.
             </p>
           </div>
         ) : (
@@ -90,7 +90,7 @@ export default function ScanViewer({
             const { x, y, z, w } = error.locationOnScan;
             const selected = error.errorIndex === selectedIndex;
             const uncertain = isUncertain(error, confidenceThreshold);
-            const { label, short } = categoryFor(error.category);
+            const { label } = categoryFor(error.category);
             return (
               <button
                 key={error.errorIndex}
@@ -111,7 +111,7 @@ export default function ScanViewer({
                 aria-label={`Error ${error.n}, “${error.written}”, ${label}`}
               >
                 <span className="scan-box__tag">
-                  {error.n} · {short}
+                  {error.n}
                   {uncertain && '?'}
                 </span>
               </button>
@@ -124,7 +124,7 @@ export default function ScanViewer({
   return (
     <div className="scan">
       <div className="scan__bar">
-        <span className="scan__label">scanned sample · zoom</span>
+        <span className="scan__label">Original page</span>
         <div className="scan__zoom">
           <button
             type="button"
@@ -186,11 +186,7 @@ export default function ScanViewer({
                     <Icon name="page" size={16} />
                   </span>
                 ) : (
-                  <img
-                    src={sampleImageUrl(sampleId, i)}
-                    alt=""
-                    onError={() => markBroken(i)}
-                  />
+                  <img src={sampleImageUrl(sampleId, i)} alt="" onError={() => markBroken(i)} />
                 )}
                 <span className="scan__thumb-no">{i + 1}</span>
               </button>
@@ -204,9 +200,7 @@ export default function ScanViewer({
 
       <div className="scan__viewport">{renderPage()}</div>
 
-      <p className="scan__hint">
-        Click an outline to select its card on the right, and the other way round.
-      </p>
+      <p className="scan__hint">Click an outline to select its suggestion.</p>
 
       {expanded && (
         <div
