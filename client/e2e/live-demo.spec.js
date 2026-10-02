@@ -74,11 +74,12 @@ test('live demo: Gemini analysis feeds trends, recommendations, and password per
   await expect(page.getByText(/analysed/i).first()).toBeVisible();
 
   await page.goto('/students/64b000000000000000000201/trends');
-  await expect(page.getByRole('heading', { name: 'Live Demo Learner' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Error trends' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Live Demo Learner' })).toBeVisible();
   await expect(page.getByRole('region', { name: 'Trend summary' })).toContainText(
-    'Samples included2'
+    'Samples compared2'
   );
-  await expect(page.getByRole('heading', { name: 'Errors by category over time' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /over time$/ })).toBeVisible();
   await expect(page.getByLabel('Category totals in the selected range')).toBeVisible();
 
   await page.getByRole('link', { name: 'View recommendations' }).click();
