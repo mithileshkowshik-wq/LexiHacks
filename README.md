@@ -2,6 +2,8 @@
 
 LexiPath helps educators review literacy errors in handwritten work. Upload a scan, let the AI suggest errors, review the suggestions, and explore trends and recommendations.
 
+**Live app:** https://lexipath-583617897775.us-central1.run.app ([sign up](https://lexipath-583617897775.us-central1.run.app/signup) for an account; use fictional data only).
+
 ## Start here
 
 - [Using the app and your .env file](docs/GETTING_STARTED.md)
