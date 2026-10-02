@@ -32,7 +32,7 @@ COPY server/services ./services
 COPY server/utils ./utils
 COPY server/scripts ./scripts
 COPY --from=frontend /build/client/dist ./public
-RUN mkdir -p samples && chown node:node samples
+RUN mkdir -p samples /app/knowledge && chown node:node samples /app/knowledge
 USER node
 EXPOSE 8080
 CMD ["node", "server.js"]

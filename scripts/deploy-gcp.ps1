@@ -10,6 +10,11 @@ $repo = Split-Path -Parent $PSScriptRoot
 $runtimeAccount = "lexipath-runtime@$ProjectId.iam.gserviceaccount.com"
 $builderAccount = "projects/$ProjectId/serviceAccounts/lexipath-builder@$ProjectId.iam.gserviceaccount.com"
 $bucket = "$ProjectId-lexipath-scans"
+$knowledgeBucket = "$ProjectId-lexipath-knowledge"
+foreach ($manifest in @('gemini-canonical-markdown.jsonl', 'blob-upload-manifest.json', 'worksheet-sections.json')) {
+    & gcloud storage objects describe "gs://$knowledgeBucket/_manifests/$manifest" "--project=$ProjectId" '--format=value(name)' | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw 'Upload the prepared teaching corpus with scripts/upload-knowledge.ps1 before deploying.' }
+}
 foreach ($secret in @('lexipath-mongodb-uri', 'lexipath-gemini-api-key', 'lexipath-jwt-secret')) {
     $state = & gcloud secrets versions describe $SecretVersion "--secret=$secret" "--project=$ProjectId" '--format=value(state)'
     if ($LASTEXITCODE -ne 0 -or $state -ne 'ENABLED') { throw "Add an enabled version $SecretVersion of $secret in Secret Manager before deploying." }
@@ -26,6 +31,7 @@ $arguments = @(
     '--min=1', '--max=1', '--max-instances=1', '--no-cpu-throttling',
     '--network=lexipath-network', '--subnet=lexipath-subnet', '--vpc-egress=all-traffic',
     "--add-volume=mount-path=/app/server/samples,type=cloud-storage,bucket=$bucket,mount-options=uid=1000;gid=1000",
+    "--add-volume=mount-path=/app/knowledge,type=cloud-storage,bucket=$knowledgeBucket,readonly=true,mount-options=uid=1000;gid=1000",
     '--startup-probe=httpGet.path=/healthz,httpGet.port=8080,timeoutSeconds=5,periodSeconds=10,failureThreshold=24',
     '--allow-unauthenticated'
 )

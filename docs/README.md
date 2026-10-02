@@ -42,6 +42,7 @@ The educator reviews the AI suggestions, corrects categories or dismisses an err
 - [Getting started](GETTING_STARTED.md): everyday use and environment variables.
 - [Full setup guide](../SETUP_GUIDE.md): installation and all service settings.
 - [Tests](TESTING.md): the existing test commands and how to run them.
+- [App workflow and RAG](APP-WORKFLOW.md): current workflow, data storage and teaching-resource retrieval.
 - [Google Cloud](../GOOGLE_CLOUD.md): deployment steps for later.
 - `design/`: original HTML wireframes.
 - `architecture/`: original routes, paths, and sequence diagrams.

@@ -8,9 +8,10 @@ LexiPath helps educators review literacy errors in handwritten work. Upload a sc
 - [Where to find code and documents](docs/README.md)
 - [Full setup instructions](SETUP_GUIDE.md)
 - [Tests and checks](docs/TESTING.md)
+- [App workflow, data and RAG](docs/APP-WORKFLOW.md)
 - [Google Cloud deployment](GOOGLE_CLOUD.md)
 
-On the configured laptop, open **Desktop -> LexiPath** and double-click `Start-LexiPath.cmd`. The app opens at **http://localhost:5173**. The local demo login is `Sandy@DAS` / `Pass@123`.
+On the configured laptop, open **Desktop -> LexiPath** and double-click `Start-LexiPath.cmd`. The app opens at **http://localhost:5173**. For the Atlas database, run `Create-Account-LexiPath.cmd` once and choose your own login. The old `Sandy@DAS` / `Pass@123` account belongs to the local demo database.
 
 ## Folder map
 
@@ -42,7 +43,7 @@ project/
 
 The backend automatically loads `server/.env` each time it starts. Use `Configure-LexiPath.cmd` to edit it, then `Restart-LexiPath.cmd` to reload it. Use `Check-LexiPath.cmd` to check settings without displaying private values.
 
-Required settings: `MONGODB_URI` and `JWT_SECRET`. Live handwriting analysis also needs `GEMINI_API_KEY`. Use `USE_MOCK_AI=true` for demo analysis. Live recommendations need Gemini plus Azure storage settings; use `RECOMMENDATION_USE_MOCKS=true` for demo recommendations.
+Required settings: `MONGODB_URI` and `JWT_SECRET`. Live handwriting analysis also needs `GEMINI_API_KEY`. Use `USE_MOCK_AI=true` for demo analysis. Live recommendations use Gemini and a teaching corpus. This laptop uses `KNOWLEDGE_STORAGE_PROVIDER=mounted` and the prepared `../Data/06 App Knowledge` folder, with no Azure dependency. Use `RECOMMENDATION_USE_MOCKS=true` for demo recommendations.
 
 Do not commit `.env` files or uploaded scans. On Google Cloud, private settings come from Secret Manager instead of a local file.
 
@@ -57,4 +58,4 @@ $runtime = (Resolve-Path '..\work\runtime\node-v24.21.0-win-x64').Path
 $env:PATH = "$runtime;$env:PATH"
 ```
 
-Then run `npm.cmd run dev` from `server` and from `client` in separate terminals. Stop the shortcut-managed app first to free the ports. MongoDB must remain running. Read [the repository guide](docs/README.md) before making changes; UI guidance lives in `client/DESIGN.md`, and agent instructions live in `AGENTS.md`.
+The Desktop shortcuts use installed Node 22 for the backend's Atlas connection and bundled Node 24 for the frontend. For manual startup on this laptop, run `& 'C:\Program Files\nodejs\node.exe' server.js` from `server`, and `npm.cmd run dev` from `client`. Stop the shortcut-managed app first to free the ports. Read [the repository guide](docs/README.md) before making changes; UI guidance lives in `client/DESIGN.md`, and agent instructions live in `AGENTS.md`.

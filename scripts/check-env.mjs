@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
@@ -38,20 +39,37 @@ console.log(
 report("Gemini key", present("GEMINI_API_KEY"), !mockAi);
 const mockRecommendations = settings.RECOMMENDATION_USE_MOCKS !== "false";
 console.log(
-  `Recommendation mode: ${mockRecommendations ? "demo responses" : "live Gemini + Azure"}`,
+  `Recommendation mode: ${mockRecommendations ? "demo responses" : settings.KNOWLEDGE_STORAGE_PROVIDER === "mounted" ? "live Gemini + teaching folder/cloud bucket" : "live Gemini + Azure"}`,
 );
 if (!mockRecommendations) {
   report(
     "Recommendation Gemini key",
     present("GEMINI_RECOMMENDATION_API_KEY") || present("GEMINI_API_KEY"),
   );
-  for (const name of [
-    "AZURE_STORAGE_ACCOUNT_NAME",
-    "AZURE_STORAGE_CONTAINER_NAME",
-    "AZURE_STORAGE_SAS_TOKEN",
-  ]) {
-    report(name, present(name));
-  }
+  if (settings.KNOWLEDGE_STORAGE_PROVIDER === "mounted") {
+    const server = fileURLToPath(new URL("../server/", import.meta.url));
+    const root = settings.KNOWLEDGE_ROOT
+      ? path.resolve(server, settings.KNOWLEDGE_ROOT)
+      : null;
+    report("Teaching resource folder", Boolean(root && fs.existsSync(root)));
+    for (const manifest of [
+      "gemini-canonical-markdown.jsonl",
+      "blob-upload-manifest.json",
+      "worksheet-sections.json",
+    ]) {
+      report(
+        manifest,
+        Boolean(root && fs.existsSync(path.join(root, "_manifests", manifest))),
+      );
+    }
+  } else
+    for (const name of [
+      "AZURE_STORAGE_ACCOUNT_NAME",
+      "AZURE_STORAGE_CONTAINER_NAME",
+      "AZURE_STORAGE_SAS_TOKEN",
+    ]) {
+      report(name, present(name));
+    }
 }
 report("Password-reset email service", present("RESEND_API_KEY"), false);
 if (settings.PORT && settings.PORT !== "5000") {

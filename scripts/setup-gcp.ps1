@@ -30,6 +30,12 @@ if (-not (Test-Cloud @('storage', 'buckets', 'describe', "gs://$bucket"))) {
 }
 Invoke-Cloud @('storage', 'buckets', 'add-iam-policy-binding', "gs://$bucket", "--member=serviceAccount:$runtimeAccount", '--role=roles/storage.objectUser')
 
+$knowledgeBucket = "$ProjectId-lexipath-knowledge"
+if (-not (Test-Cloud @('storage', 'buckets', 'describe', "gs://$knowledgeBucket"))) {
+    Invoke-Cloud @('storage', 'buckets', 'create', "gs://$knowledgeBucket", "--location=$Region", '--uniform-bucket-level-access', '--public-access-prevention')
+}
+Invoke-Cloud @('storage', 'buckets', 'add-iam-policy-binding', "gs://$knowledgeBucket", "--member=serviceAccount:$runtimeAccount", '--role=roles/storage.objectViewer')
+
 foreach ($secret in @('lexipath-mongodb-uri', 'lexipath-gemini-api-key', 'lexipath-jwt-secret', 'lexipath-admin-password')) {
     if (-not (Test-Cloud @('secrets', 'describe', $secret))) {
         Invoke-Cloud @('secrets', 'create', $secret, '--replication-policy=automatic')
@@ -57,5 +63,5 @@ $outboundIp = & gcloud compute addresses describe lexipath-egress "--region=$Reg
 if ($LASTEXITCODE -ne 0) { throw 'Could not read the outbound address.' }
 Write-Host "Add $outboundIp/32 to MongoDB Atlas Network Access."
 Write-Host 'In Secret Manager, add version 1 of the four secrets using the Console.'
-Write-Host 'Then run scripts/deploy-gcp.ps1 with the same ProjectId and Region.'
+Write-Host 'Run scripts/upload-knowledge.ps1 first, then scripts/deploy-gcp.ps1 with the same ProjectId and Region.'
 Write-Host 'Cloud Run, NAT, storage, image builds, and the database can incur charges. This script creates resources only when you run it.'

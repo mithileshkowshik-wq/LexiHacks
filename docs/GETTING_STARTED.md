@@ -6,7 +6,7 @@ Everything is installed. The main Desktop folder is `C:\Users\somes\Desktop\Lexi
 
 1. Double-click `Start-LexiPath.cmd` in that folder.
 2. Open http://localhost:5173.
-3. Sign in with `Sandy@DAS` and `Pass@123` for the local demo database.
+3. For Atlas, double-click `Create-Account-LexiPath.cmd` once and sign in with your chosen account. `Sandy@DAS` / `Pass@123` applies only to the old local demo database.
 4. Open a student, upload a fictional writing sample as JPG, PNG, or PDF, and wait for analysis.
 5. Review the suggestions, adjust categories or dismiss an error, then explore trends and recommendations.
 6. Use `Stop-LexiPath.cmd` when finished. Your saved data stays on disk/in the database.
@@ -22,6 +22,9 @@ LexiPath/
   Restart-LexiPath.cmd        Reload settings
   Configure-LexiPath.cmd      Open server settings
   Check-LexiPath.cmd          Check settings without showing secrets
+  Create-Account-LexiPath.cmd Create your chosen app login in Atlas
+  Rebuild-Knowledge-LexiPath.cmd Rebuild teaching resources and restart
+  Data/                      Original teaching files and generated App Knowledge package
   project/                   The Git repository; open this in your editor
     README.md                Start reading here
     client/                  Website code
@@ -54,7 +57,7 @@ The backend reads this file automatically when it starts. You do not execute the
 | `JWT_SECRET`               | Signing and checking login sessions                               |
 | `USE_MOCK_AI`              | `false` for live analysis, `true` for fixed demo responses        |
 | `RECOMMENDATION_USE_MOCKS` | `false` for live recommendations, `true` for demo recommendations |
-| `AZURE_*`                  | Worksheet and knowledge storage used by live recommendations      |
+| `KNOWLEDGE_ROOT`           | Prepared teaching corpus folder used by live recommendations      |
 | `RESEND_API_KEY`           | Optional password-reset email delivery                            |
 | `PORT`                     | Keep `5000` for these local shortcuts                             |
 | `CLIENT_URL`               | Keep `http://localhost:5173` for local password-reset links       |
@@ -67,14 +70,14 @@ To change a setting:
 
 The running backend keeps the values it loaded at startup until it restarts. Do not put private keys into the client's environment file. `client/.env.local` only needs `VITE_API_URL=http://localhost:5000/api` for this laptop.
 
-Live analysis needs a working Gemini key and internet access. Live recommendations also need working Azure access and manifests; configured credentials are not a guarantee of available quota or an unexpired SAS token. Keep Azure SAS tokens in quotes when copying them into `.env`.
+Live analysis needs a working Gemini key and internet access. Live recommendations now use `Data/06 App Knowledge` and Gemini; Azure is no longer needed in the configured mounted mode. Read [the app workflow guide](APP-WORKFLOW.md) for the data map and recommendation flow.
 
 ## If something does not work
 
 - Settings changes do not appear: save the file and restart.
 - Login works but scan analysis fails: check the Gemini key, model access, and quota.
-- Recommendations fail: check Azure access and token expiry; you can use `RECOMMENDATION_USE_MOCKS=true` as a demo fallback.
-- Database cannot connect: check that MongoDB is running and `MONGODB_URI` points to the intended database.
+- Recommendations fail: check `KNOWLEDGE_ROOT`, the generated manifests, and Gemini access. Rebuild the teaching package after adding source resources.
+- Database cannot connect: for Atlas, check access and the exact `/LexiPath` database name. The Desktop launcher skips starting local MongoDB when Atlas is selected.
 - The shortcut reports missing settings: open Configure and add the indicated values.
 
 Logs live under `work/logs`. They may contain internal details, so avoid sharing whole log files without checking them.

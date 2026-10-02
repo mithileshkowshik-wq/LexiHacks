@@ -1,5 +1,7 @@
 # LexiPath — Local Setup & Testing Guide
 
+For this configured laptop, use [the current workflow guide](docs/APP-WORKFLOW.md). Atlas, live Gemini, and the local teaching package are already configured. Live recommendations support `KNOWLEDGE_STORAGE_PROVIDER=mounted`; no Azure credentials are needed in that mode. Use the Desktop shortcuts for the installed runtimes.
+
 For anyone on the team setting this up fresh. Written against `main` as of commit
 `fec37da` (2026-08-11). Client and server are separate npm packages, not a monorepo —
 install and run both independently.
@@ -20,7 +22,7 @@ intentionally don't duplicate it, see step 4b for the client env file.
   - MongoDB Community Server installed locally ([download](https://www.mongodb.com/try/download/community)), running on the default port 27017, or
   - a free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) cluster (get its connection string).
 - *(Optional, for live AI instead of mock mode)* a Gemini API key, and — for live
-  intervention recommendations specifically — the team's Azure Blob Storage credentials.
+  intervention recommendations specifically — a prepared teaching corpus (mounted locally or from Google Cloud Storage), or Azure credentials if using the legacy Azure provider.
   Ask a teammate for both; don't request new ones unless you need to.
 
 ## 2. Clone / update the repo
