@@ -311,3 +311,26 @@ The summary is one bordered surface with internal dividers rather than three com
 small screens its sections stack, the category switcher scrolls horizontally, and the fixed-width
 chart scrolls rather than shrinking its labels and sample names below a legible size. The complete
 five-category dataset remains available in the accessible table below the chart.
+
+## 15. Approved compact writing review (October 2026)
+
+The writing review uses a compact plain header with student back-link, assignment title,
+suggestion count and reviewed progress. Dates and analysis status live under Sample details.
+The original page sits alongside a compact list of suggestions. Each card compares the
+original handwriting crop, AI-read `written` text and suggested `intended` text, followed by
+one explanation. Routine confidence scores live under AI details; uncertain, unreviewed
+suggestions show “Needs a closer look”. Teacher review decisions are separate from confidence.
+Keep suggestion records acceptance, Dismiss excludes an error without deleting it, and Undo
+reopens the decision. Change category opens an inline panel. Category filters and the form for
+adding a missed error are collapsed initially. Finish review unlocks once every suggestion has
+a decision. Existing completed reviews remain completed until a decision is undone.
+
+## 16. Compact error trends (October 2026)
+
+Use the same compact plain header as writing review. Date range stays visible; individual
+sample selection remains collapsed. One summary surface leads with the factual latest versus
+previous error count, then the most common category and selected sample count. Avoid calling
+raw count changes improvement: tasks differ in length and difficulty. The chart focuses on one
+category, defaulting to the most frequent; squared labelled buttons switch categories, and
+points show their counts and open the underlying report. Category shares remain visible; the full data table stays in a collapsed section. Preserve exclusion markers and chronological sample
+positions. This supersedes the student band header in §14.

@@ -206,6 +206,7 @@ export function sampleImageUrl(sampleId, index) {
 // from one response instead of reconciling locally.
 //
 // A partial update — send only what changes:
+//   { reviewed: true } keep the suggestion; false reopens the decision
 //   { category }         reclassify (must be one of ERROR_CATEGORIES)
 //   { dismissed: true }  remove the tag   { dismissed: false }  restore it
 //   { confidenceScore }  1 when the educator confirms an uncertain tag

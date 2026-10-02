@@ -29,9 +29,11 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import sharp from "sharp";
 import { GoogleGenAI } from "@google/genai";
 import { ERROR_CATEGORIES, Sample } from "../models/sample.js";
 import { buildPrompt } from "./errorClassificationPrompt.js";
+import { uprightPage } from "./pageOrientation.js";
 import { preprocessImageForAnalysis } from "./imagePreprocessor.js";
 
 // Confidence threshold that drives the "uncertain - AI needs your judgement"
@@ -332,9 +334,49 @@ async function callModelWithRetry(ai, parts, config, pageCount) {
   throw lastError;
 }
 
+async function detectPageOrientation(ai, preview, config) {
+  // A single labelled board prevents vision from independently orienting each
+  // candidate image. The labels stay upright while the handwriting rotates.
+  const tiles = [];
+  const width = 640;
+  const height = 720;
+  for (const [index, rotation] of [0, 90, 180, 270].entries()) {
+    const candidate = await sharp(preview).rotate(rotation)
+      .resize({ width: width - 32, height: height - 72, fit: 'contain', background: 'white' })
+      .png().toBuffer();
+    const label = Buffer.from(`<svg width="640" height="48"><rect width="640" height="48" fill="white"/><text x="16" y="32" font-family="sans-serif" font-size="24">Candidate ${rotation}</text></svg>`);
+    const left = (index % 2) * width;
+    const top = Math.floor(index / 2) * height;
+    tiles.push({ input: label, left, top });
+    tiles.push({ input: candidate, left: left + 16, top: top + 56 });
+  }
+  const board = await sharp({ create: { width: width * 2, height: height * 2, channels: 3, background: 'white' } }).composite(tiles).png().toBuffer();
+  const parts = [
+    { text: 'This board contains four labelled versions of the SAME handwriting page. The Candidate labels are upright. Compare the orientation of the handwriting to these labels, and choose the candidate with handwriting upright (tops of letters above their baselines), NOT sideways or upside down. Return its candidate number as rotation (0, 90, 180 or 270), and confidence from 0 to 1. Do not rotate the whole board or transcribe the page. For blank or ambiguous handwriting choose 0 with low confidence.' },
+    { inlineData: { mimeType: 'image/png', data: board.toString('base64') } },
+  ];
+  const response = await withTimeout(ai.models.generateContent({
+    model: config.modelName,
+    contents: [{ role: 'user', parts }],
+    config: {
+      responseMimeType: 'application/json',
+      responseSchema: {
+        type: 'object',
+        properties: {
+          rotation: { type: 'string', enum: ['0', '90', '180', '270'] },
+          confidence: { type: 'number', minimum: 0, maximum: 1 },
+        },
+        required: ['rotation', 'confidence'],
+      },
+    },
+  }), config.timeoutMs);
+  const orientation = JSON.parse(response.text);
+  return { ...orientation, rotation: Number(orientation.rotation) };
+}
+
 async function runRealAnalysis(sample, config) {
   if (!config.apiKey) {
-    throw new Error("GEMINI_API_KEY is not configured");
+    throw new Error('GEMINI_API_KEY is not configured');
   }
 
   const pages = sample.pages || [];
@@ -342,7 +384,9 @@ async function runRealAnalysis(sample, config) {
   // Every page goes into the same request, in upload order, so the model
   // can read an error that spans a page break and so its reported `page`
   // index lines up with this order.
+  const ai = new GoogleGenAI({ apiKey: config.apiKey });
   const imageParts = [];
+  const uprightPaths = [];
   for (const page of pages) {
     let imageBytes;
     try {
@@ -350,16 +394,28 @@ async function runRealAnalysis(sample, config) {
     } catch {
       throw new Error(`Could not read the uploaded image at "${page.imagePath}"`);
     }
-    const processedImage = await preprocessImageForAnalysis(imageBytes);
+    // Persist a derived colour page; the source upload stays untouched. Analysis,
+    // displayed scans and crops all use this exact orientation and page extent.
+    const upright = await uprightPage(imageBytes, (preview) =>
+      detectPageOrientation(ai, preview, config)
+    );
+    const uprightPath = `${page.imagePath}.upright.png`;
+    await fs.writeFile(uprightPath, upright);
+    uprightPaths.push(uprightPath);
+    const processedImage = await preprocessImageForAnalysis(upright, { trim: false });
     imageParts.push({
-      inlineData: { mimeType: "image/png", data: processedImage.toString("base64") },
+      inlineData: { mimeType: 'image/png', data: processedImage.toString('base64') },
     });
   }
 
-  const ai = new GoogleGenAI({ apiKey: config.apiKey });
   const parts = [{ text: buildPrompt(sample) }, ...imageParts];
 
-  return callModelWithRetry(ai, parts, config, pages.length);
+  const result = await callModelWithRetry(ai, parts, config, pages.length);
+  // Change displayed pages only after their matching coordinates are validated.
+  pages.forEach((page, index) => {
+    page.imagePath = uprightPaths[index];
+  });
+  return result;
 }
 
 // ---------------------------------------------------------------------------
@@ -441,7 +497,7 @@ export async function runAnalysis(sampleId) {
 // Not public API. Exposed only so the unit tests can drive the retry,
 // timeout and prompt-construction logic with a stub client, instead of
 // against a live API call. Do not import these from application code.
-export const __testing = { callModelWithRetry, buildPrompt, mimeTypeFor };
+export const __testing = { callModelWithRetry, buildPrompt, mimeTypeFor, detectPageOrientation };
 
 const ErrorClassificationEngine = { analyse: analyseSample, group };
 export default ErrorClassificationEngine;

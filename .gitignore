@@ -9,3 +9,6 @@ samples/
 evaluation/debug-private/
 *.log
 deployment.zip
+
+# Downloaded public handwriting dataset (use scripts/download_gnhk.py).
+Data/GNHK/

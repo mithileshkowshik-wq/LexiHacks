@@ -69,6 +69,8 @@ const errorSchema = new mongoose.Schema(
     // dismissed errors instead of deleting them, so the decision is visible
     // and reversible.
     dismissed: { type: Boolean, default: false },
+    // Teacher decision, independent of the AI confidence score.
+    reviewed: { type: Boolean, default: false },
   },
   { _id: false } // sub-documents don't need their own database ids
 );

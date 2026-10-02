@@ -9,6 +9,8 @@ import SampleRow from '../components/SampleRow.jsx';
 import Logo from '../components/Logo.jsx';
 import CategoryChip from '../components/CategoryChip.jsx';
 import ErrorCard from '../components/ErrorCard.jsx';
+import TrendChart from '../components/TrendChart.jsx';
+import { TREND_CATEGORIES } from '../lib/trends.js';
 import { CATEGORY_ORDER } from '../lib/categories.js';
 
 // Display-only fixtures — nothing here touches the API.
@@ -67,6 +69,11 @@ const DEMO_ERRORS = [
   },
 ];
 
+const DEMO_HANDWRITING =
+  'data:image/svg+xml,' +
+  encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600"><rect width="1000" height="600" fill="white"/><text x="100" y="86" font-family="cursive" font-size="28">becos</text></svg>'
+  );
 const noop = () => {};
 
 const SWATCHES = [
@@ -85,9 +92,8 @@ export default function StyleguidePage() {
         <span className="eyebrow">Design system</span>
         <h1 className="students__title">Styleguide</h1>
         <p className="guide__intro">
-          Live render of the approved LexiPath patterns. The rules and the
-          reasoning are written down in <code>client/DESIGN.md</code> — read
-          it before inventing a new pattern.
+          Live render of the approved LexiPath patterns. The rules and the reasoning are written
+          down in <code>client/DESIGN.md</code> — read it before inventing a new pattern.
         </p>
       </header>
 
@@ -97,9 +103,8 @@ export default function StyleguidePage() {
           <Logo size={44} variant="light" />
         </div>
         <p className="guide__note">
-          “brand” for light surfaces, “light” for the navy sidebar. The sage
-          bowl survives in both — it is where the bowl-corner radius comes
-          from.
+          “brand” for light surfaces, “light” for the navy sidebar. The sage bowl survives in both —
+          it is where the bowl-corner radius comes from.
         </p>
       </Section>
 
@@ -107,10 +112,7 @@ export default function StyleguidePage() {
         <div className="guide__row">
           {SWATCHES.map((swatch) => (
             <div key={swatch.varName} className="guide__swatch">
-              <div
-                className="guide__chip"
-                style={{ background: `var(${swatch.varName})` }}
-              />
+              <div className="guide__chip" style={{ background: `var(${swatch.varName})` }} />
               <div className="guide__swatch-meta">
                 <span>{swatch.name}</span>
                 <code>{swatch.varName}</code>
@@ -120,8 +122,8 @@ export default function StyleguidePage() {
           ))}
         </div>
         <p className="guide__note">
-          Always use the CSS variables from index.css, never raw hex. Navy is
-          the primary action colour; sage never carries white text.
+          Always use the CSS variables from index.css, never raw hex. Navy is the primary action
+          colour; sage never carries white text.
         </p>
       </Section>
 
@@ -130,9 +132,8 @@ export default function StyleguidePage() {
         <h2 className="students__title">Page title in Lexend 500</h2>
         <span className="grade">Primary 4</span>
         <p className="guide__note">
-          Every screen opens eyebrow → title → meta chip → actions. On a
-          student’s own screens the header sits on the ruled band (see the
-          profile page).
+          Every screen opens eyebrow → title → meta chip → actions. On a student’s own screens the
+          header sits on the ruled band (see the profile page).
         </p>
       </Section>
 
@@ -153,8 +154,7 @@ export default function StyleguidePage() {
           </Button>
         </div>
         <p className="guide__note">
-          Locked actions are dashed, never hidden — the educator should see
-          what unlocks and when.
+          Locked actions are dashed, never hidden — the educator should see what unlocks and when.
         </p>
       </Section>
 
@@ -166,8 +166,8 @@ export default function StyleguidePage() {
           <StatusPill analysisStatus="FAILED" />
         </div>
         <p className="guide__note">
-          A teacher’s annotation, not a badge: status ink never fills a
-          shape. Rounded pill badges are explicitly banned (DESIGN.md §2).
+          A teacher’s annotation, not a badge: status ink never fills a shape. Rounded pill badges
+          are explicitly banned (DESIGN.md §2).
         </p>
       </Section>
 
@@ -175,25 +175,17 @@ export default function StyleguidePage() {
         <div className="guide__row">
           <label className="field">
             <span className="field__label">Name</span>
-            <input
-              className="field__input"
-              type="text"
-              placeholder="e.g. Wei Jie Lim"
-            />
+            <input className="field__input" type="text" placeholder="e.g. Wei Jie Lim" />
           </label>
           <label className="field">
             <span className="field__label">Current grade</span>
-            <input
-              className="field__input"
-              type="text"
-              placeholder="e.g. Primary 4"
-            />
+            <input className="field__input" type="text" placeholder="e.g. Primary 4" />
           </label>
         </div>
         <p className="guide__note">
-          Label is the status-note type style in sage; the input matches the
-          search box (surface, card border, 5px radius, 44px min-height,
-          sage border on focus). Used by the add-student form.
+          Label is the status-note type style in sage; the input matches the search box (surface,
+          card border, 5px radius, 44px min-height, sage border on focus). Used by the add-student
+          form.
         </p>
       </Section>
 
@@ -204,8 +196,8 @@ export default function StyleguidePage() {
           ))}
         </div>
         <p className="guide__note">
-          Ready rows link to the report; analysing rows are dashed and inert.
-          The thumbnail is a miniature ruled page with the bowl corner.
+          Ready rows link to the report; analysing rows are dashed and inert. The thumbnail is a
+          miniature ruled page with the bowl corner.
         </p>
       </Section>
 
@@ -216,11 +208,10 @@ export default function StyleguidePage() {
           ))}
         </div>
         <p className="guide__note">
-          One chip spec everywhere a category is named — cards, filters, group
-          headers, scan tags. Squared at 4px, never a capsule. The six
-          categories are told apart by <strong>shape and word</strong>, never
-          colour: six category colours would break the palette, and a mark on
-          its own fails anyone who can’t distinguish them.
+          One chip spec everywhere a category is named — cards, filters, group headers, scan tags.
+          Squared at 4px, never a capsule. The six categories are told apart by{' '}
+          <strong>shape and word</strong>, never colour: six category colours would break the
+          palette, and a mark on its own fails anyone who can’t distinguish them.
         </p>
       </Section>
 
@@ -228,12 +219,13 @@ export default function StyleguidePage() {
         <div className="guide__row guide__row--stack">
           <ErrorCard
             error={DEMO_ERRORS[0]}
+            imageUrl={DEMO_HANDWRITING}
             selected
             multiPage
             onSelect={noop}
             onReclassify={noop}
             onDismiss={noop}
-            onConfirm={noop}
+            onKeep={noop}
           />
           <ErrorCard
             error={DEMO_ERRORS[1]}
@@ -241,23 +233,49 @@ export default function StyleguidePage() {
             onSelect={noop}
             onReclassify={noop}
             onDismiss={noop}
-            onConfirm={noop}
+            onKeep={noop}
           />
           <ErrorCard error={DEMO_ERRORS[2]} onRestore={noop} />
         </div>
         <p className="guide__note">
-          Selected (navy edge + sage inset, mirroring the active nav item),
-          uncertain (dashed in the pending ink — the AI scored below the 0.6
-          threshold, so it asks for a decision), and removed. A removed tag is
-          kept and restorable, never deleted: the educator’s decision has to
-          stay visible and reversible.
+          Selected (navy edge + sage inset, mirroring the active nav item), uncertain (dashed in the
+          pending ink — the AI scored below the 0.6 threshold, so it asks for a decision), and
+          removed. A removed tag is kept and restorable, never deleted: the educator’s decision has
+          to stay visible and reversible.
         </p>
       </Section>
 
+      <Section label="Focused error trends">
+        <div className="trends-page--compact">
+          <TrendChart
+            samples={[4, 3, 1].map((count, index) => ({
+              sampleId: `demo-${index}`,
+              title: `Fictional sample ${index + 1}`,
+              uploadedAt: `2026-09-0${index + 1}`,
+              totalErrors: count,
+              counts: Object.fromEntries(
+                TREND_CATEGORIES.map((category) => [
+                  category,
+                  category === 'capitalisation' ? count : 0,
+                ])
+              ),
+            }))}
+            excludedIds={new Set()}
+            onOpenSample={noop}
+          />
+        </div>
+        <p className="guide__note">
+          Choose one category to keep the chart readable. Numbers are tagged errors per sample. This
+          reference uses fictional data.
+        </p>
+      </Section>
       <Section label="Scan outlines (3a)">
         <div className="guide__row">
           <div className="guide__scan">
-            <span className="scan-box" style={{ left: '6%', top: '18%', width: '30%', height: '26%' }}>
+            <span
+              className="scan-box"
+              style={{ left: '6%', top: '18%', width: '30%', height: '26%' }}
+            >
               <span className="scan-box__tag">1 · Phon</span>
             </span>
             <span
@@ -275,9 +293,8 @@ export default function StyleguidePage() {
           </div>
         </div>
         <p className="guide__note">
-          Boxes are positioned as percentages of the scan, so they scale with
-          zoom and can never drift off the words. Dashed = flagged, solid navy
-          = selected, pending ink = uncertain.
+          Boxes are positioned as percentages of the scan, so they scale with zoom and can never
+          drift off the words. Dashed = flagged, solid navy = selected, pending ink = uncertain.
         </p>
       </Section>
     </div>
