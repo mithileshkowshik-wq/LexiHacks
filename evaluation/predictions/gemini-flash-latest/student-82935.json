@@ -1,0 +1,39 @@
+{
+  "sampleId": "student-82935",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-82935.pdf",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 13908,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "bed room",
+      "intended": "bedroom",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "The compound word 'bedroom' was written as two separate words.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.428,
+        "y": 0.258,
+        "z": 0.118,
+        "w": 0.025
+      }
+    },
+    {
+      "written": "Sofa",
+      "intended": "sofa",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "The common noun 'sofa' has an incorrect capital letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.398,
+        "y": 0.603,
+        "z": 0.042,
+        "w": 0.023
+      }
+    }
+  ]
+}

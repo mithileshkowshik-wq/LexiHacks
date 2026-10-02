@@ -1,0 +1,11 @@
+{
+  "sampleId": "student-284857",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-284857.pdf",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "failed",
+  "latencyMs": 13876,
+  "failureReason": "model-request-failed",
+  "failureDetail": "errors[0].locationOnScan must have x, y, z, w numbers between 0 and 1",
+  "errors": []
+}

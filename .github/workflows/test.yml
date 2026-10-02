@@ -1,0 +1,88 @@
+name: LexiPath tests
+
+on:
+  push:
+    branches:
+      - main
+      - Harsha-Merged
+  pull_request:
+
+jobs:
+  server:
+    name: Server tests and lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+
+      - name: Install server dependencies
+        working-directory: server
+        run: npm ci
+
+      - name: Run server tests
+        working-directory: server
+        run: npm test
+
+      - name: Run server lint
+        working-directory: server
+        run: npm run lint
+
+  client:
+    name: Client tests, build, and Playwright
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+
+      - name: Install client dependencies
+        working-directory: client
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        working-directory: client
+        run: npx playwright install --with-deps chromium
+
+      - name: Run client tests
+        working-directory: client
+        run: npm test
+
+      - name: Run client lint
+        working-directory: client
+        run: npm run lint
+
+      - name: Build client
+        working-directory: client
+        run: npm run build
+
+      - name: Run Playwright E2E
+        working-directory: client
+        run: npm run test:e2e
+
+  traceability:
+    name: Revised test-plan traceability
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify revised test coverage IDs
+        run: node scripts/verify-lexipath-test-coverage.mjs

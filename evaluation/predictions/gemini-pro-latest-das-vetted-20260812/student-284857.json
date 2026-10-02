@@ -1,0 +1,53 @@
+{
+  "sampleId": "student-284857",
+  "model": "gemini-pro-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 25865,
+  "transcript": "John took a nap at his bed.\nBirds can fly because they have wings.\nWe planned to visit her on friday.\nThe girl sat on the beanch.\nPeter ran fast, because he want for a\nrunning races",
+  "illegibleNote": "Faint scribbles are visible after 'races' on the last line.",
+  "errors": [
+    {
+      "id": "student-284857-prediction-001",
+      "written": "at",
+      "intended": "in",
+      "category": "unsure",
+      "confidenceScore": 0.8,
+      "note": "Incorrect preposition choice for this context."
+    },
+    {
+      "id": "student-284857-prediction-002",
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "confidenceScore": 0.99,
+      "note": "Days of the week must be capitalised."
+    },
+    {
+      "id": "student-284857-prediction-003",
+      "written": "beanch",
+      "intended": "bench",
+      "category": "orthographic",
+      "confidenceScore": 0.99,
+      "note": "Incorrect spelling, unnecessary 'a' included."
+    },
+    {
+      "id": "student-284857-prediction-004",
+      "written": "want",
+      "intended": "went",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Context suggests 'went' was intended rather than 'want'."
+    },
+    {
+      "id": "student-284857-prediction-005",
+      "written": "races",
+      "intended": "race",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Plural noun used incorrectly after the singular article 'a'."
+    }
+  ]
+}

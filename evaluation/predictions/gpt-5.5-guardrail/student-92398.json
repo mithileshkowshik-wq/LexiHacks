@@ -1,0 +1,28 @@
+{
+  "sampleId": "student-92398",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "The fourth line has an unclear/crossed span after 'set'; the fifth line has unclear marks between 'could' and 'from'. These were not guessed as words except in low-confidence candidate errors.",
+  "errors": [
+    {
+      "id": "student-92398-e01",
+      "written": "set",
+      "intended": "sat",
+      "category": "orthographic",
+      "confidenceScore": 0.66,
+      "note": "In the sentence 'The girl set ... on the bed', the verb likely should be 'sat'. The mark is readable as 'set' but retained as a candidate because the line includes nearby corrections/unclear marks."
+    },
+    {
+      "id": "student-92398-e02",
+      "written": "could [unclear] from cats",
+      "intended": "could away from cats",
+      "category": "unsure",
+      "confidenceScore": 0.34,
+      "note": "The final sentence appears to have unclear marks between 'could' and 'from cats'; it may be attempting the phrase 'away from cats', but guardrails require an unsure/low-confidence label rather than guessing."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "selections": [
+    {
+      "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "rationale": "Directly targets spelling-and-dictation and letter-sound-correspondence for SLP Band B Year 1 Term 1 Week 5, explicitly addressing phonetic spelling errors and syllable division patterns required for remediating errors like pi-cnic vs pic-nic."
+    },
+    {
+      "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+      "rationale": "Provides differentiated worksheet practice in spelling-and-dictation and letter-sound-correspondence to address phonetic spelling errors and syllable structure."
+    },
+    {
+      "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+      "rationale": "Offers targeted differentiated reading and spelling practice focusing on spelling, dictation, and letter-sound relationships for syllable division remediation."
+    }
+  ]
+}

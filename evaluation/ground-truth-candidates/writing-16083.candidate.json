@@ -1,0 +1,115 @@
+{
+  "sampleId": "writing-16083",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16083.pdf",
+  "taskType": "ESSAY",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "AI-generated candidate labels from gemini-flash-latest using isolated raw-image inference and the full transcription guardrail profile. Human vetting is required before copying this file to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "writing-16083-e001",
+      "written": "studing",
+      "intended": "studying",
+      "category": "orthographic",
+      "rationale": "Misspelled word with missing 'y'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e002",
+      "written": "Assesment",
+      "intended": "Assessment",
+      "category": "orthographic",
+      "rationale": "Misspelled word missing double 'ss' in the middle. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e003",
+      "written": "gentel",
+      "intended": "gentle",
+      "category": "orthographic",
+      "rationale": "Misspelled word ending. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e004",
+      "written": "Asserment",
+      "intended": "Assessment",
+      "category": "orthographic",
+      "rationale": "Misspelled word with 'r' instead of 'ss'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16083-e005",
+      "written": "tommorrow",
+      "intended": "tomorrow",
+      "category": "orthographic",
+      "rationale": "Misspelled word with extra 'm'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e006",
+      "written": "spining",
+      "intended": "spinning",
+      "category": "orthographic",
+      "rationale": "Misspelled word missing double 'n'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e007",
+      "written": "i",
+      "intended": "I",
+      "category": "capitalisation",
+      "rationale": "Lowercase 'i' used for first-person singular pronoun. AI confidence: 0.99."
+    },
+    {
+      "id": "writing-16083-e008",
+      "written": "introsive",
+      "intended": "intrusive",
+      "category": "orthographic",
+      "rationale": "Misspelled with 'o' instead of 'u'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e009",
+      "written": "serisous",
+      "intended": "serious",
+      "category": "orthographic",
+      "rationale": "Misspelled word with extra 's'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e010",
+      "written": "hestant",
+      "intended": "hesitant",
+      "category": "orthographic",
+      "rationale": "Misspelled word missing 'i'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e011",
+      "written": "disipline",
+      "intended": "discipline",
+      "category": "orthographic",
+      "rationale": "Misspelled word missing 'c'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e012",
+      "written": "wheater",
+      "intended": "whether",
+      "category": "orthographic",
+      "rationale": "Misspelled conjunction 'whether'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16083-e013",
+      "written": "disapointed",
+      "intended": "disappointed",
+      "category": "orthographic",
+      "rationale": "Misspelled word missing second 'p'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e014",
+      "written": "servere",
+      "intended": "severe",
+      "category": "orthographic",
+      "rationale": "Misspelled word with extra 'r'. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16083-e015",
+      "written": "Your",
+      "intended": "You're",
+      "category": "orthographic",
+      "rationale": "Homophone error: 'Your' used instead of 'You're'. AI confidence: 0.98."
+    }
+  ]
+}

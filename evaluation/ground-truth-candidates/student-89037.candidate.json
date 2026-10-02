@@ -1,0 +1,9 @@
+{
+  "sampleId": "student-89037",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-89037.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "AI-generated candidate labels from hermes-gpt-5.6-visual-review using isolated raw-image inference and the full transcription guardrail profile. Human vetting is required before copying this file to ground-truth-vetted/.",
+  "errors": []
+}

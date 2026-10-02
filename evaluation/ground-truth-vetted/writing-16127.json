@@ -1,0 +1,143 @@
+{
+  "sampleId": "writing-16127",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+  "taskType": "ESSAY",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted from the first-round candidate table plus the reviewer-added AI-missed error section. Ambiguous grammar/lexical issues are kept as unsure because the fixed product taxonomy has no general grammar or lexical category.",
+  "errors": [
+    {
+      "id": "writing-16127-gt001",
+      "written": "bay",
+      "intended": "day",
+      "category": "orthographic",
+      "rationale": "Human reviewer corrected the AI transcription from Day to bay and identified it as a spelling error."
+    },
+    {
+      "id": "writing-16127-gt002",
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "rationale": "The passage begins with a lowercase word at sentence opening."
+    },
+    {
+      "id": "writing-16127-gt003",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "rationale": "Human reviewer accepted the missing doubled consonant error."
+    },
+    {
+      "id": "writing-16127-gt004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the past-tense correction."
+    },
+    {
+      "id": "writing-16127-gt005",
+      "written": "abchen",
+      "intended": "anxious",
+      "category": "unsure",
+      "rationale": "Human reviewer accepted the first-round uncertain label; the handwriting remains difficult to transcribe confidently."
+    },
+    {
+      "id": "writing-16127-gt006",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the missing plural ending."
+    },
+    {
+      "id": "writing-16127-gt007",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the past-tense correction."
+    },
+    {
+      "id": "writing-16127-gt008",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the first past-tense speech correction."
+    },
+    {
+      "id": "writing-16127-gt009",
+      "written": "run",
+      "intended": "ran",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the irregular past-tense correction."
+    },
+    {
+      "id": "writing-16127-gt010",
+      "written": "wash",
+      "intended": "washed",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the past-tense correction."
+    },
+    {
+      "id": "writing-16127-gt011",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "rationale": "Human reviewer accepted the transposed-letter spelling error."
+    },
+    {
+      "id": "writing-16127-gt012",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "unsure",
+      "rationale": "Human reviewer accepted the missing function-word error; kept unsure because it is phrase-level grammar outside the fixed categories."
+    },
+    {
+      "id": "writing-16127-gt013",
+      "written": "and say I my mom",
+      "intended": "and say to my mom",
+      "category": "unsure",
+      "rationale": "Reviewer identified a missing preposition/function word; exact phrasing remains a grammar issue outside the fixed categories."
+    },
+    {
+      "id": "writing-16127-gt014",
+      "written": "on my pant",
+      "intended": "in my pants",
+      "category": "unsure",
+      "rationale": "Reviewer identified an unflagged preposition/lexical correction in addition to the plural correction."
+    },
+    {
+      "id": "writing-16127-gt015",
+      "written": "She",
+      "intended": "she",
+      "category": "capitalisation",
+      "rationale": "Reviewer identified capitalisation in the middle of an unbroken sentence."
+    },
+    {
+      "id": "writing-16127-gt016",
+      "written": "I hid I run",
+      "intended": "I hid and I run",
+      "category": "unsure",
+      "rationale": "Reviewer identified an omitted conjunction marked by the teacher; kept unsure because missing-word grammar is outside the fixed categories."
+    },
+    {
+      "id": "writing-16127-gt017",
+      "written": "she say",
+      "intended": "she said",
+      "category": "morphological",
+      "rationale": "Reviewer identified a second distinct occurrence requiring past-tense morphology."
+    },
+    {
+      "id": "writing-16127-gt018",
+      "written": "pant she say",
+      "intended": "pants. She said",
+      "category": "punctuation",
+      "rationale": "Reviewer identified a run-on sentence boundary; this row captures the punctuation correction while morphology is represented separately."
+    },
+    {
+      "id": "writing-16127-gt019",
+      "written": "pee! so",
+      "intended": "pee! So",
+      "category": "capitalisation",
+      "rationale": "Reviewer identified lowercase sentence opening after an exclamation mark."
+    }
+  ]
+}

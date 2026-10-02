@@ -1,0 +1,12 @@
+{
+  "primaryLogo": "lexipath-horizontal.svg",
+  "stackedLogo": "lexipath-stacked.svg",
+  "mark": "lexipath-mark.svg",
+  "monochromeMark": "lexipath-mark-monochrome.svg",
+  "lightAppIcon": "lexipath-app-icon.svg",
+  "darkAppIcon": "lexipath-app-icon-dark.svg",
+  "favicon": "favicon.svg",
+  "reactComponent": "LexiPathLogo.tsx",
+  "tokens": "brand-tokens.json",
+  "css": "lexipath-brand.css"
+}

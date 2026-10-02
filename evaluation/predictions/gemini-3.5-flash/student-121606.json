@@ -1,0 +1,123 @@
+{
+  "sampleId": "student-121606",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-121606.jpg",
+  "model": "gemini-3.5-flash",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 32464,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "he",
+      "intended": "He",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "The first word of the sentence should be capitalised.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.31,
+        "y": 0.21,
+        "z": 0.04,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "run",
+      "intended": "ran",
+      "category": "phonological",
+      "confidenceScore": 0.85,
+      "note": "Vowel substitution of 'u' for 'a' in 'ran'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.36,
+        "y": 0.21,
+        "z": 0.06,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "Missing third-person singular present tense suffix '-s'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.36,
+        "y": 0.36,
+        "z": 0.07,
+        "w": 0.05
+      }
+    },
+    {
+      "written": "Fox hunt",
+      "intended": "Fox hunt.",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "Missing punctuation at the end of the sentence.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.3,
+        "y": 0.36,
+        "z": 0.14,
+        "w": 0.05
+      }
+    },
+    {
+      "written": "sang",
+      "intended": "sad",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "The student wrote 'sang' instead of 'sad', likely due to letter confusion between 'd' and 'g'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.38,
+        "y": 0.54,
+        "z": 0.08,
+        "w": 0.05
+      }
+    },
+    {
+      "written": "Pam swimming?",
+      "intended": "Is Pam swimming?",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Omission of the auxiliary verb 'is' in the question.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.3,
+        "y": 0.64,
+        "z": 0.21,
+        "w": 0.07
+      }
+    },
+    {
+      "written": "rom",
+      "intended": "Tom",
+      "category": "capitalisation",
+      "confidenceScore": 0.85,
+      "note": "The proper noun 'Tom' starts with a lowercase 'r' instead of a capital 'T'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.31,
+        "y": 0.72,
+        "z": 0.05,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "Jump",
+      "intended": "jumps",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "Missing third-person singular present tense suffix '-s', and incorrect capitalisation of 'j'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.38,
+        "y": 0.72,
+        "z": 0.07,
+        "w": 0.06
+      }
+    }
+  ]
+}

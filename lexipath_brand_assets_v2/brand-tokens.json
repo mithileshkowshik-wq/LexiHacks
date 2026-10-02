@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "name": "LexiPath",
+    "selectedConcept": "Concept 02",
+    "markDescription": {
+      "L": "Sharp navy L with a tall vertical stem and square inner corner.",
+      "bowl": "Open sage bowl positioned at upper-right; it does not have a left stem.",
+      "bar": "Detached horizontal navy bar below the L/bowl junction."
+    },
+    "colors": {
+      "ink": "#1A2433",
+      "sage": "#7B8F7A",
+      "mist": "#D6D4CC",
+      "offWhite": "#F7F5EF"
+    },
+    "typography": {
+      "family": "Lexend",
+      "fallback": [
+        "Inter",
+        "Arial",
+        "sans-serif"
+      ],
+      "wordmarkWeight": 500,
+      "letterSpacing": "0.02em"
+    },
+    "minimumSizes": {
+      "mark": "24px",
+      "horizontalLogo": "120px"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sampleId": "student-390968",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-390968.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "AI-generated candidate labels from hermes-gpt-5.6-visual-review using isolated raw-image inference and the full transcription guardrail profile. Human vetting is required before copying this file to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "student-390968-e001",
+      "written": "I sang,",
+      "intended": "I sang.",
+      "category": "punctuation",
+      "rationale": "The standalone sentence appears to end with a comma rather than a full stop. AI confidence: 0.80."
+    }
+  ]
+}

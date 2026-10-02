@@ -1,0 +1,45 @@
+{
+  "sampleId": "student-284857",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 7291,
+  "transcript": "NAME: Ryanne\nDATE: 23/10/17\nEDIT AND DIAGRAM SENTENCES\nRewrite and diagram these sentences\n\n1. John took a nap. (where)\nJohn took a nap at his bed.\n\n2. Birds can fly. (why)\nBirds can fly because they have wings.\n\n3. We planned to visit her (when).\nWe planned to visit her on friday.\n\n4. The girl sat (where).\nThe girl sat on the beanch.\n\n5. Peter ran (how and why)\nPeter ran fast, because he want for a\nrunning races .",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-284857-prediction-001",
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Days of the week should begin with a capital letter."
+    },
+    {
+      "id": "student-284857-prediction-002",
+      "written": "beanch",
+      "intended": "bench",
+      "category": "orthographic",
+      "confidenceScore": 0.92,
+      "note": "Misspelled word 'bench'."
+    },
+    {
+      "id": "student-284857-prediction-003",
+      "written": "want",
+      "intended": "wanted",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect tense agreement with the past tense verb 'ran'."
+    },
+    {
+      "id": "student-284857-prediction-004",
+      "written": "races",
+      "intended": "race",
+      "category": "morphological",
+      "confidenceScore": 0.88,
+      "note": "Plural noun used after singular article 'a'."
+    }
+  ]
+}

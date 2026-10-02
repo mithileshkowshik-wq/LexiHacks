@@ -1,0 +1,2045 @@
+{
+  "generatedAt": "2026-08-12T04:52:36.438Z",
+  "corpusRoot": "/home/yongz/KnowledgeVault/_deploy/azure-knowledge-vault",
+  "corpusDocuments": 578,
+  "pipelines": [
+    {
+      "name": "mixed-wiki-lexical-baseline",
+      "summary": {
+        "queries": 16,
+        "top1Hits": 0,
+        "top3Hits": 0,
+        "familiesAllVariantsAt3": 0,
+        "families": 4
+      },
+      "queries": [
+        {
+          "queryId": "sequencing-example-pair",
+          "familyId": "sequencing-events",
+          "rank": 151,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "sequencing-skill-description",
+          "familyId": "sequencing-events",
+          "rank": 117,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "sequencing-teacher-observation",
+          "familyId": "sequencing-events",
+          "rank": 202,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "sequencing-multi-example",
+          "familyId": "sequencing-events",
+          "rank": 81,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-example-pair",
+          "familyId": "vccv-syllabication",
+          "rank": 117,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "vccv-skill-description",
+          "familyId": "vccv-syllabication",
+          "rank": 430,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "vccv-teacher-observation",
+          "familyId": "vccv-syllabication",
+          "rank": 15,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "vccv-multi-example",
+          "familyId": "vccv-syllabication",
+          "rank": 72,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-example-pair",
+          "familyId": "synonym-intensity",
+          "rank": 121,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "synonym-skill-description",
+          "familyId": "synonym-intensity",
+          "rank": 171,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-teacher-observation",
+          "familyId": "synonym-intensity",
+          "rank": 10,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-multi-example",
+          "familyId": "synonym-intensity",
+          "rank": 75,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-example-pair",
+          "familyId": "long-o-spelling",
+          "rank": 25,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "long-o-skill-description",
+          "familyId": "long-o-spelling",
+          "rank": 69,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "non-resource-documents-outrank-family"
+        },
+        {
+          "queryId": "long-o-teacher-observation",
+          "familyId": "long-o-spelling",
+          "rank": 7,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-multi-example",
+          "familyId": "long-o-spelling",
+          "rank": 7,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        }
+      ],
+      "rankings": {
+        "sequencing-example-pair": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/error-types/sequence-order-error.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "sequencing-skill-description": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "sequencing-teacher-observation": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "sequencing-multi-example": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/error-types/sequence-order-error.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-example-pair": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/REVIEW.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/COVERAGE-GAPS.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "vccv-skill-description": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "vccv-teacher-observation": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 10,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 10,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 8,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "vccv-multi-example": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0239-y1t1w2-reading-and-spelling-ha",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0239-y1t1w2-reading-and-spelling-ha.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-example-pair": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/REVIEW.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "synonym-skill-description": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0446-introduction-words-with-multiple-meanings.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-teacher-observation": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 12,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 10,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0053-bound-predicates",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0053-bound-predicates.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-multi-example": [
+          {
+            "resourceId": "das-src-0097-band-b-main",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0097-band-b-main.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0117-year-1-term-1-week-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0117-year-1-term-1-week-1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-example-pair": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 14,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion.md",
+            "score": 13,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/skills/long-vowels.md",
+            "score": 10,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "long-o-skill-description": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          }
+        ],
+        "long-o-teacher-observation": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/ARCHITECTURE.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-multi-example": [
+          {
+            "resourceId": null,
+            "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": null,
+            "blobPath": "wiki/CREATED-FILES.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "teacher_knowledge"
+          },
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resource-only-lexical",
+      "summary": {
+        "queries": 16,
+        "top1Hits": 0,
+        "top3Hits": 0,
+        "familiesAllVariantsAt3": 0,
+        "families": 4
+      },
+      "queries": [
+        {
+          "queryId": "sequencing-example-pair",
+          "familyId": "sequencing-events",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-skill-description",
+          "familyId": "sequencing-events",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-teacher-observation",
+          "familyId": "sequencing-events",
+          "rank": 173,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-multi-example",
+          "familyId": "sequencing-events",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-example-pair",
+          "familyId": "vccv-syllabication",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-skill-description",
+          "familyId": "vccv-syllabication",
+          "rank": 323,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-teacher-observation",
+          "familyId": "vccv-syllabication",
+          "rank": 12,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-multi-example",
+          "familyId": "vccv-syllabication",
+          "rank": 65,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-example-pair",
+          "familyId": "synonym-intensity",
+          "rank": 113,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-skill-description",
+          "familyId": "synonym-intensity",
+          "rank": 165,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-teacher-observation",
+          "familyId": "synonym-intensity",
+          "rank": 8,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-multi-example",
+          "familyId": "synonym-intensity",
+          "rank": 75,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-example-pair",
+          "familyId": "long-o-spelling",
+          "rank": 18,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-skill-description",
+          "familyId": "long-o-spelling",
+          "rank": 41,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-teacher-observation",
+          "familyId": "long-o-spelling",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-multi-example",
+          "familyId": "long-o-spelling",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        }
+      ],
+      "rankings": {
+        "sequencing-example-pair": [
+          {
+            "resourceId": "das-src-0002-barebones-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0002-barebones-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0031-yellow-paper-barebone-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0031-yellow-paper-barebone-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0067-purple-paper-barebone-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0067-purple-paper-barebone-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-skill-description": [
+          {
+            "resourceId": "das-src-0042-what-whom-direct-receiver",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0042-what-whom-direct-receiver.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0001-introduction",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0001-introduction.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0002-barebones-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0002-barebones-sentences.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-teacher-observation": [
+          {
+            "resourceId": "das-src-0042-what-whom-direct-receiver",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0042-what-whom-direct-receiver.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0013-yellow-paper-predicate-expanders",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0013-yellow-paper-predicate-expanders.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-multi-example": [
+          {
+            "resourceId": "das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0140-matching-activity-short-vowel-a-o",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0140-matching-activity-short-vowel-a-o.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-example-pair": [
+          {
+            "resourceId": "das-src-0011-bound-predicates",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0011-bound-predicates.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0025-subject-predicate-agreement",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0025-subject-predicate-agreement.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-skill-description": [
+          {
+            "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-teacher-observation": [
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0149-differentiation-additional-worksheet-consonant-g-t1-wk-4-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0149-differentiation-additional-worksheet-consonant-g-t1-wk-4-ma.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-multi-example": [
+          {
+            "resourceId": "das-src-0239-y1t1w2-reading-and-spelling-ha",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0239-y1t1w2-reading-and-spelling-ha.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0240-y1t1w2-reading-and-spelling-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0240-y1t1w2-reading-and-spelling-la.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0241-y1t1w2-reading-and-spelling-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0241-y1t1w2-reading-and-spelling-ma.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-example-pair": [
+          {
+            "resourceId": "das-src-0001-introduction",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0001-introduction.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0006-action-predicate",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0006-action-predicate.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0012-a1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0012-a1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-skill-description": [
+          {
+            "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0446-introduction-words-with-multiple-meanings.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0038-how-expander",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0038-how-expander.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-teacher-observation": [
+          {
+            "resourceId": "das-src-0053-bound-predicates",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0053-bound-predicates.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0103-morphology-teaching-resource-pack-2-2022",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0103-morphology-teaching-resource-pack-2-2022.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0104-morphology-teaching-resource-pack-1-2022",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0104-morphology-teaching-resource-pack-1-2022.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-multi-example": [
+          {
+            "resourceId": "das-src-0097-band-b-main",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0097-band-b-main.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0117-year-1-term-1-week-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0117-year-1-term-1-week-1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-example-pair": [
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 8,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+            "score": 8,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-skill-description": [
+          {
+            "resourceId": "das-src-0075-narrative-lesson-plans",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0075-narrative-lesson-plans.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-teacher-observation": [
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-multi-example": [
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ]
+      }
+    },
+    {
+      "name": "context-aware-resource-retrieval",
+      "summary": {
+        "queries": 16,
+        "top1Hits": 0,
+        "top3Hits": 0,
+        "familiesAllVariantsAt3": 0,
+        "families": 4
+      },
+      "queries": [
+        {
+          "queryId": "sequencing-example-pair",
+          "familyId": "sequencing-events",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-skill-description",
+          "familyId": "sequencing-events",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-teacher-observation",
+          "familyId": "sequencing-events",
+          "rank": 173,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "sequencing-multi-example",
+          "familyId": "sequencing-events",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-example-pair",
+          "familyId": "vccv-syllabication",
+          "rank": 102,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-skill-description",
+          "familyId": "vccv-syllabication",
+          "rank": 323,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-teacher-observation",
+          "familyId": "vccv-syllabication",
+          "rank": 12,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "vccv-multi-example",
+          "familyId": "vccv-syllabication",
+          "rank": 65,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-example-pair",
+          "familyId": "synonym-intensity",
+          "rank": 113,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-skill-description",
+          "familyId": "synonym-intensity",
+          "rank": 165,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-teacher-observation",
+          "familyId": "synonym-intensity",
+          "rank": 8,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "synonym-multi-example",
+          "familyId": "synonym-intensity",
+          "rank": 75,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-example-pair",
+          "familyId": "long-o-spelling",
+          "rank": 18,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-skill-description",
+          "familyId": "long-o-spelling",
+          "rank": 41,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-teacher-observation",
+          "familyId": "long-o-spelling",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        },
+        {
+          "queryId": "long-o-multi-example",
+          "familyId": "long-o-spelling",
+          "rank": 5,
+          "top1Hit": false,
+          "top3Hit": false,
+          "failureReason": "wrong-resource-family-outranks-family"
+        }
+      ],
+      "rankings": {
+        "sequencing-example-pair": [
+          {
+            "resourceId": "das-src-0002-barebones-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0002-barebones-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0031-yellow-paper-barebone-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0031-yellow-paper-barebone-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0067-purple-paper-barebone-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0067-purple-paper-barebone-sentences.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-skill-description": [
+          {
+            "resourceId": "das-src-0042-what-whom-direct-receiver",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0042-what-whom-direct-receiver.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0001-introduction",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0001-introduction.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0002-barebones-sentences",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0002-barebones-sentences.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-teacher-observation": [
+          {
+            "resourceId": "das-src-0042-what-whom-direct-receiver",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0042-what-whom-direct-receiver.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0013-yellow-paper-predicate-expanders",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0013-yellow-paper-predicate-expanders.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "sequencing-multi-example": [
+          {
+            "resourceId": "das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0140-matching-activity-short-vowel-a-o",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0140-matching-activity-short-vowel-a-o.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-example-pair": [
+          {
+            "resourceId": "das-src-0011-bound-predicates",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0011-bound-predicates.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0025-subject-predicate-agreement",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0025-subject-predicate-agreement.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-skill-description": [
+          {
+            "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-teacher-observation": [
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0149-differentiation-additional-worksheet-consonant-g-t1-wk-4-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0149-differentiation-additional-worksheet-consonant-g-t1-wk-4-ma.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "vccv-multi-example": [
+          {
+            "resourceId": "das-src-0239-y1t1w2-reading-and-spelling-ha",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0239-y1t1w2-reading-and-spelling-ha.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0240-y1t1w2-reading-and-spelling-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0240-y1t1w2-reading-and-spelling-la.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0241-y1t1w2-reading-and-spelling-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0241-y1t1w2-reading-and-spelling-ma.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-example-pair": [
+          {
+            "resourceId": "das-src-0001-introduction",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0001-introduction.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0006-action-predicate",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0006-action-predicate.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0012-a1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0012-a1.md",
+            "score": 4,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-skill-description": [
+          {
+            "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0446-introduction-words-with-multiple-meanings.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0014-predicate-expander-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0014-predicate-expander-1.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0038-how-expander",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0038-how-expander.md",
+            "score": 6,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-teacher-observation": [
+          {
+            "resourceId": "das-src-0053-bound-predicates",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0053-bound-predicates.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0103-morphology-teaching-resource-pack-2-2022",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0103-morphology-teaching-resource-pack-2-2022.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0104-morphology-teaching-resource-pack-1-2022",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0104-morphology-teaching-resource-pack-1-2022.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "synonym-multi-example": [
+          {
+            "resourceId": "das-src-0097-band-b-main",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0097-band-b-main.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0117-year-1-term-1-week-1",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0117-year-1-term-1-week-1.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-example-pair": [
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 8,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+            "score": 8,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la.md",
+            "score": 7,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-skill-description": [
+          {
+            "resourceId": "das-src-0075-narrative-lesson-plans",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0075-narrative-lesson-plans.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+            "score": 3,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-teacher-observation": [
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-.md",
+            "score": 9,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ],
+        "long-o-multi-example": [
+          {
+            "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          },
+          {
+            "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+            "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-.md",
+            "score": 5,
+            "compatibility": 0,
+            "documentType": "resource"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "mixed-wiki-lexical-baseline",
+  "summary": {
+    "queries": 16,
+    "top1Hits": 0,
+    "top3Hits": 0,
+    "familiesAllVariantsAt3": 0,
+    "families": 4
+  },
+  "queries": [
+    {
+      "queryId": "sequencing-example-pair",
+      "familyId": "sequencing-events",
+      "rank": 151,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "sequencing-skill-description",
+      "familyId": "sequencing-events",
+      "rank": 117,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "sequencing-teacher-observation",
+      "familyId": "sequencing-events",
+      "rank": 202,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "sequencing-multi-example",
+      "familyId": "sequencing-events",
+      "rank": 81,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "vccv-example-pair",
+      "familyId": "vccv-syllabication",
+      "rank": 117,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "vccv-skill-description",
+      "familyId": "vccv-syllabication",
+      "rank": 430,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "vccv-teacher-observation",
+      "familyId": "vccv-syllabication",
+      "rank": 15,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "vccv-multi-example",
+      "familyId": "vccv-syllabication",
+      "rank": 72,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "synonym-example-pair",
+      "familyId": "synonym-intensity",
+      "rank": 121,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "synonym-skill-description",
+      "familyId": "synonym-intensity",
+      "rank": 171,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "synonym-teacher-observation",
+      "familyId": "synonym-intensity",
+      "rank": 10,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "synonym-multi-example",
+      "familyId": "synonym-intensity",
+      "rank": 75,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "long-o-example-pair",
+      "familyId": "long-o-spelling",
+      "rank": 25,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "long-o-skill-description",
+      "familyId": "long-o-spelling",
+      "rank": 69,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "non-resource-documents-outrank-family"
+    },
+    {
+      "queryId": "long-o-teacher-observation",
+      "familyId": "long-o-spelling",
+      "rank": 7,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "long-o-multi-example",
+      "familyId": "long-o-spelling",
+      "rank": 7,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    }
+  ],
+  "rankings": {
+    "sequencing-example-pair": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/error-types/sequence-order-error.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "sequencing-skill-description": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "sequencing-teacher-observation": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "sequencing-multi-example": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/error-types/sequence-order-error.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0425-sample-of-recount-essay-for-two-singaporean-hikers-rescued-a.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "vccv-example-pair": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/REVIEW.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/COVERAGE-GAPS.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "vccv-skill-description": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 9,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "vccv-teacher-observation": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 10,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 10,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 8,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "vccv-multi-example": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0239-y1t1w2-reading-and-spelling-ha",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0239-y1t1w2-reading-and-spelling-ha.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "synonym-example-pair": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/REVIEW.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 4,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "synonym-skill-description": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0446-introduction-words-with-multiple-meanings.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "synonym-teacher-observation": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 12,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 10,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0053-bound-predicates",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0053-bound-predicates.md",
+        "score": 9,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "synonym-multi-example": [
+      {
+        "resourceId": "das-src-0097-band-b-main",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0097-band-b-main.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "resource"
+      },
+      {
+        "resourceId": "das-src-0115-writing-drag-and-drop-activity-w1",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0115-writing-drag-and-drop-activity-w1.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "resource"
+      },
+      {
+        "resourceId": "das-src-0117-year-1-term-1-week-1",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0117-year-1-term-1-week-1.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "long-o-example-pair": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 14,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion.md",
+        "score": 13,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/skills/long-vowels.md",
+        "score": 10,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "long-o-skill-description": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 7,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      }
+    ],
+    "long-o-teacher-observation": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/ARCHITECTURE.md",
+        "score": 9,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 9,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+        "score": 9,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ],
+    "long-o-multi-example": [
+      {
+        "resourceId": null,
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "score": 6,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": null,
+        "blobPath": "wiki/CREATED-FILES.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "teacher_knowledge"
+      },
+      {
+        "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu.md",
+        "score": 5,
+        "compatibility": 0,
+        "documentType": "resource"
+      }
+    ]
+  }
+}

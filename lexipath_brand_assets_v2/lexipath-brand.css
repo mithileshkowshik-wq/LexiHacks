@@ -1,0 +1,23 @@
+:root {
+  --lexipath-ink: #1A2433;
+  --lexipath-sage: #7B8F7A;
+  --lexipath-mist: #D6D4CC;
+  --lexipath-off-white: #F7F5EF;
+  --lexipath-font: "Lexend", "Inter", Arial, sans-serif;
+}
+
+.lexipath-wordmark {
+  color: var(--lexipath-ink);
+  font-family: var(--lexipath-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.lexipath-surface {
+  background-color: var(--lexipath-off-white);
+  color: var(--lexipath-ink);
+}
+
+.lexipath-muted {
+  color: var(--lexipath-sage);
+}

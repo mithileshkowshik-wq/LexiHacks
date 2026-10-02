@@ -1,0 +1,39 @@
+{
+  "sampleId": "student-191379",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 1858,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "Dam",
+      "intended": "Date",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "A letter substitution error where 't' was written as 'm'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.65,
+        "y": 0.14,
+        "z": 0.09,
+        "w": 0.05
+      }
+    },
+    {
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "A missing third-person-singular verb ending.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.29,
+        "y": 0.72,
+        "z": 0.06,
+        "w": 0.04
+      }
+    }
+  ]
+}

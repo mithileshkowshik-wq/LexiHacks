@@ -1,0 +1,21 @@
+{
+  "sampleId": "student-92398",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 9121,
+  "transcript": "Zhan Yuan 9/5/16\nJohn took a nap in his room.\nBirds can fly because they have wings and ligth bones.\nWe planned to visit her in the morning.\nThe girl sat on the bed in the room.\nPeter ran as fast as he could from cats.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-92398-prediction-001",
+      "written": "ligth",
+      "intended": "light",
+      "category": "orthographic",
+      "confidenceScore": 0.98,
+      "note": "Transposition of letters 't' and 'h' in 'light'."
+    }
+  ]
+}

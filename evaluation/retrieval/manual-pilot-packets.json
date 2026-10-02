@@ -1,0 +1,2904 @@
+[
+  {
+    "caseId": "long-o-single",
+    "familyId": "long-o-spelling",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "C",
+      "level": "secondary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 7
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "orthographic",
+        "written": "bote",
+        "intended": "boat",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow"
+    ],
+    "acceptableCandidatePositions": [
+      2
+    ],
+    "candidateRetained": true,
+    "candidates": [
+      {
+        "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+        "title": "Introduction Words with Multiple Meanings",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "programme-guide",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Programme Guide for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+        "title": "Part 1 (Phonics) Review of Long o ō, o-e, oa, ow",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0448-w7-year-1-term-1",
+        "title": "W7 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+        "title": "Part 1 (Phonics) Review of Long u ū, u-e, oo, ue, ew",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0441-w5-year-1-term-1",
+        "title": "W5 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+        "title": "(sample)Copy of Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0444-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-eigh-ei-ey",
+        "title": "Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0445-w6-year-1-term-1",
+        "title": "W6 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0449-part-1-syllabication-v-v-vowel-vowel",
+        "title": "Part 1 (Syllabication) V V (Vowel Vowel)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 8,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0450-w8-year-1-term-1",
+        "title": "W8 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 8,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0451-w9-year-1-term-1",
+        "title": "W9 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 9,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0430-teacher-copy-the-unexpected-gift",
+        "title": "(Teacher Copy) The Unexpected Gift",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Teacher Reference for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0431-newspaper-article",
+        "title": "Newspaper Article",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0432-review-ie-vs-ei-the-unexpected-gift",
+        "title": "Review ie vs ei - The Unexpected Gift",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0433-sample-recount-writing",
+        "title": "Sample Recount Writing",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting narrative writing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0434-w3-year-1-term-1",
+        "title": "W3 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0435-graphic-organizer-writing-about-losing-something-important",
+        "title": "Graphic Organizer Writing About Losing Something Important",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0436-lesson-plan-w4-y1t1",
+        "title": "Lesson Plan W4 (Y1T1)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "lesson-plan",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Lesson Plan for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+        "title": "Part 1 Phonics (review of Long u ū, u-e, ue, ew, eu)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "grammar-cloze-and-editing",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "grammar-cloze-selection-error",
+          "unable-to-locate-editing-error",
+          "incorrect-error-correction",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, grammar cloze and editing, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0438-part-2-vocabulary-building-looking-for-something",
+        "title": "Part 2 Vocabulary Building Looking for Something",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0439-untitled-presentation",
+        "title": "Untitled presentation",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "slides",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Slides for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0442-w10-year-1-term-1",
+        "title": "W10 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 10,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0417-student-copy-recount-writing-w1-5",
+        "title": "(Student Copy) Recount Writing (W1-5)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting narrative writing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0418-teacher-copy-personal-narrative-recount-writing-week-1-5",
+        "title": "(Teacher Copy) Personal Narrative Recount Writing (Week 1-5)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction",
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Teacher Reference for SLP Band C, targeting narrative writing, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0419-week-1-year-1-term-1",
+        "title": "(Week 1) Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      }
+    ],
+    "teacherKnowledge": [
+      {
+        "title": "Learned Word Spelling Error",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/learned-word-spelling-error.md",
+        "content": "---\ntitle: \"Learned Word Spelling Error\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Misspells a taught learned or sight word while another skill is being assessed.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"learned-word-spelling-error\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Learned Word Spelling Error\n\n## Observable evidence\n\nMisspells a taught learned or sight word while another skill is being assessed.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Spelling and Dictation",
+        "blobPath": "wiki/projects/das-learning-resources/skills/spelling-and-dictation.md",
+        "content": "---\ntitle: \"Spelling and Dictation\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"spelling\"]\nsummary: \"Instructional skill node for spelling and dictation, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"spelling-and-dictation\"\nprerequisites: [\"phoneme-segmentation\", \"letter-sound-correspondence\"]\nverification_status: \"unverified\"\n---\n# Spelling and Dictation\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\n- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/phonetic-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/learned-word-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/dictation-word-omission]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      },
+      {
+        "title": "DAS Instructional Methodology Bedrock",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "content": "---\ntitle: \"DAS Instructional Methodology Bedrock\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"methodology\", \"literacy\", \"dyslexia\", \"instruction\"]\nsummary: \"Evidence-grounded teaching model that governs how errors, skills, prerequisites, differentiation, monitoring, and resources are interpreted.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/1. Year 1 Term 1 Week 1/Year 1  Term 1 Week 1.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\n  - \"_raw/Copy for Partners/SLP Band C Secondary - Year 1 Term 1 W1-W10/Y1T1 W1-5 LPs/Year 1 Term 1 Week 1/(Week 1) Year 1 Term 1.docx\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Morphology Packs/Morphology Teaching Resource - PACK 2-2022.pdf\"\nprovenance:\n  extracted: 0.62\n  inferred: 0.33\n  ambiguous: 0.05\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# DAS Instructional Methodology Bedrock\n\nThis page is the governing interpretation layer for the staged knowledge base. Error categories, skills, prerequisites, and resource assignments should be read through this model rather than inferred from filenames alone.\n\n## Evidence base\n\nThe corpus contains 451 files: 111 ELL-MLP resources and 340 SLP resources. Corpus-wide extraction found explicit lesson-structure signals in 169 files, monitoring signals in 44, differentiation signals in 48, and teacher-guidance signals in 43. These recurring structures support the bedrock below; they do not by themselves define official policy beyond what individual documents state.\n\n## Governing teaching model\n\n1. **Regulation and readiness precede instruction.** Standardised lesson plans open and close with CALM'ED practices.\n2. **Teaching is cumulative.** Lessons review prior concepts before introducing a new concept, and sound/card drills revisit accumulated patterns.\n3. **Errors are interpreted diagnostically.** Teachers identify whether breakdown concerns retrieval, sound-symbol knowledge, blending, segmentation, morphology, language comprehension, or response construction before selecting support. ^[inferred]\n4. **Prompting is graduated.** Typical sequences move from questioning and retrieval cues, to keywords or visuals, to modelling/giving the sound, followed by trace-and-sound or renewed blending.\n5. **Practice i"
+      },
+      {
+        "title": "Graduated Error-Correction and Retrieval Support",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/graduated-error-correction.md",
+        "content": "---\ntitle: \"Graduated Error-Correction and Retrieval Support\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-correction\", \"scaffolding\", \"phonics\", \"spelling\"]\nsummary: \"Prompt hierarchy for diagnosing retrieval, sound-symbol, blending, spelling, morphology, and sentence-production errors before supplying answers.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/2. Year 1 Term 1 Week 2/Year 1  Term 1 Week 2.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Graduated Error-Correction and Retrieval Support\n\nRecurring prompts distinguish an unsupported wrong answer from a stable skill gap:\n\n- Ask for the phonogram sound or position.\n- Prompt for a keyword; show the keyword/image if retrieval fails.\n- Give the sound only after retrieval prompts fail.\n- Trace and sound three times after the sound is retrieved or supplied.\n- Blend incrementally before reading the whole word.\n- Use fingerspelling for phonetic spelling errors.\n- Identify morphemes and syllable boundaries for more advanced words.\n- Prompt capitalization and punctuation separately from phonetic spelling.\n- Supply learned/sight-word spellings where the task is testing another target.\n\nThe recommendation engine should therefore distinguish the observed error from the amount and type of prompting required. ^[inferred]\n"
+      },
+      {
+        "title": "Dictation Word Omission",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/dictation-word-omission.md",
+        "content": "---\ntitle: \"Dictation Word Omission\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Omits one or more words from a dictated phrase or sentence.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"dictation-word-omission\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Dictation Word Omission\n\n## Observable evidence\n\nOmits one or more words from a dictated phrase or sentence.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Long-Vowel Patterns",
+        "blobPath": "wiki/projects/das-learning-resources/skills/long-vowels.md",
+        "content": "---\ntitle: \"Long-Vowel Patterns\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"phonics\", \"spelling\"]\nsummary: \"Instructional skill node for long-vowel patterns, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/short-vowels]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/syllable-types]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"long-vowels\"\nprerequisites: [\"short-vowels\", \"syllable-types\"]\nverification_status: \"unverified\"\n---\n# Long-Vowel Patterns\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/short-vowels]]\n- [[wiki/projects/das-learning-resources/skills/syllable-types]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      }
+    ]
+  },
+  {
+    "caseId": "long-o-multiple",
+    "familyId": "long-o-spelling",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "C",
+      "level": "secondary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 7
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "orthographic",
+        "written": "bote",
+        "intended": "boat",
+        "note": ""
+      },
+      {
+        "id": "e2",
+        "category": "orthographic",
+        "written": "groe",
+        "intended": "grow",
+        "note": ""
+      },
+      {
+        "id": "e3",
+        "category": "orthographic",
+        "written": "roap",
+        "intended": "rope",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow"
+    ],
+    "acceptableCandidatePositions": [
+      2
+    ],
+    "candidateRetained": true,
+    "candidates": [
+      {
+        "resourceId": "das-src-0446-introduction-words-with-multiple-meanings",
+        "title": "Introduction Words with Multiple Meanings",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "programme-guide",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Programme Guide for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+        "title": "Part 1 (Phonics) Review of Long o ō, o-e, oa, ow",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0448-w7-year-1-term-1",
+        "title": "W7 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 7,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+        "title": "Part 1 (Phonics) Review of Long u ū, u-e, oo, ue, ew",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0441-w5-year-1-term-1",
+        "title": "W5 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-",
+        "title": "(sample)Copy of Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0444-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-eigh-ei-ey",
+        "title": "Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0445-w6-year-1-term-1",
+        "title": "W6 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 6,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0449-part-1-syllabication-v-v-vowel-vowel",
+        "title": "Part 1 (Syllabication) V V (Vowel Vowel)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 8,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0450-w8-year-1-term-1",
+        "title": "W8 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 8,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0451-w9-year-1-term-1",
+        "title": "W9 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 9,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0430-teacher-copy-the-unexpected-gift",
+        "title": "(Teacher Copy) The Unexpected Gift",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Teacher Reference for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0431-newspaper-article",
+        "title": "Newspaper Article",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0432-review-ie-vs-ei-the-unexpected-gift",
+        "title": "Review ie vs ei - The Unexpected Gift",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0433-sample-recount-writing",
+        "title": "Sample Recount Writing",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting narrative writing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0434-w3-year-1-term-1",
+        "title": "W3 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 3,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0435-graphic-organizer-writing-about-losing-something-important",
+        "title": "Graphic Organizer Writing About Losing Something Important",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0436-lesson-plan-w4-y1t1",
+        "title": "Lesson Plan W4 (Y1T1)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "lesson-plan",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Lesson Plan for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu",
+        "title": "Part 1 Phonics (review of Long u ū, u-e, ue, ew, eu)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "grammar-cloze-and-editing",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "grammar-cloze-selection-error",
+          "unable-to-locate-editing-error",
+          "incorrect-error-correction",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, grammar cloze and editing, spelling and dictation."
+      },
+      {
+        "resourceId": "das-src-0438-part-2-vocabulary-building-looking-for-something",
+        "title": "Part 2 Vocabulary Building Looking for Something",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "document",
+        "targetSkills": [
+          "vocabulary-and-context",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band C, targeting vocabulary and context, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0439-untitled-presentation",
+        "title": "Untitled presentation",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 4,
+        "resourceType": "slides",
+        "targetSkills": [
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Slides for SLP Band C, targeting vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0442-w10-year-1-term-1",
+        "title": "W10 Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 10,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0417-student-copy-recount-writing-w1-5",
+        "title": "(Student Copy) Recount Writing (W1-5)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "writing-resource",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Writing Resource for SLP Band C, targeting narrative writing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0418-teacher-copy-personal-narrative-recount-writing-week-1-5",
+        "title": "(Teacher Copy) Personal Narrative Recount Writing (Week 1-5)",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "narrative-writing",
+          "sentence-construction",
+          "vocabulary-and-context"
+        ],
+        "addressesErrorTypes": [
+          "narrative-structure-error",
+          "weak-event-sequencing",
+          "show-not-tell-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error"
+        ],
+        "description": "Teacher Reference for SLP Band C, targeting narrative writing, sentence construction, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0419-week-1-year-1-term-1",
+        "title": "(Week 1) Year 1 Term 1",
+        "programme": "SLP",
+        "band": "C",
+        "level": "secondary",
+        "year": 1,
+        "term": 1,
+        "week": 1,
+        "resourceType": "document",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      }
+    ],
+    "teacherKnowledge": [
+      {
+        "title": "Learned Word Spelling Error",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/learned-word-spelling-error.md",
+        "content": "---\ntitle: \"Learned Word Spelling Error\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Misspells a taught learned or sight word while another skill is being assessed.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"learned-word-spelling-error\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Learned Word Spelling Error\n\n## Observable evidence\n\nMisspells a taught learned or sight word while another skill is being assessed.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Spelling and Dictation",
+        "blobPath": "wiki/projects/das-learning-resources/skills/spelling-and-dictation.md",
+        "content": "---\ntitle: \"Spelling and Dictation\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"spelling\"]\nsummary: \"Instructional skill node for spelling and dictation, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"spelling-and-dictation\"\nprerequisites: [\"phoneme-segmentation\", \"letter-sound-correspondence\"]\nverification_status: \"unverified\"\n---\n# Spelling and Dictation\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\n- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/phonetic-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/learned-word-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/dictation-word-omission]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      },
+      {
+        "title": "DAS Instructional Methodology Bedrock",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock.md",
+        "content": "---\ntitle: \"DAS Instructional Methodology Bedrock\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"methodology\", \"literacy\", \"dyslexia\", \"instruction\"]\nsummary: \"Evidence-grounded teaching model that governs how errors, skills, prerequisites, differentiation, monitoring, and resources are interpreted.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/1. Year 1 Term 1 Week 1/Year 1  Term 1 Week 1.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\n  - \"_raw/Copy for Partners/SLP Band C Secondary - Year 1 Term 1 W1-W10/Y1T1 W1-5 LPs/Year 1 Term 1 Week 1/(Week 1) Year 1 Term 1.docx\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Morphology Packs/Morphology Teaching Resource - PACK 2-2022.pdf\"\nprovenance:\n  extracted: 0.62\n  inferred: 0.33\n  ambiguous: 0.05\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# DAS Instructional Methodology Bedrock\n\nThis page is the governing interpretation layer for the staged knowledge base. Error categories, skills, prerequisites, and resource assignments should be read through this model rather than inferred from filenames alone.\n\n## Evidence base\n\nThe corpus contains 451 files: 111 ELL-MLP resources and 340 SLP resources. Corpus-wide extraction found explicit lesson-structure signals in 169 files, monitoring signals in 44, differentiation signals in 48, and teacher-guidance signals in 43. These recurring structures support the bedrock below; they do not by themselves define official policy beyond what individual documents state.\n\n## Governing teaching model\n\n1. **Regulation and readiness precede instruction.** Standardised lesson plans open and close with CALM'ED practices.\n2. **Teaching is cumulative.** Lessons review prior concepts before introducing a new concept, and sound/card drills revisit accumulated patterns.\n3. **Errors are interpreted diagnostically.** Teachers identify whether breakdown concerns retrieval, sound-symbol knowledge, blending, segmentation, morphology, language comprehension, or response construction before selecting support. ^[inferred]\n4. **Prompting is graduated.** Typical sequences move from questioning and retrieval cues, to keywords or visuals, to modelling/giving the sound, followed by trace-and-sound or renewed blending.\n5. **Practice i"
+      },
+      {
+        "title": "Graduated Error-Correction and Retrieval Support",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/graduated-error-correction.md",
+        "content": "---\ntitle: \"Graduated Error-Correction and Retrieval Support\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-correction\", \"scaffolding\", \"phonics\", \"spelling\"]\nsummary: \"Prompt hierarchy for diagnosing retrieval, sound-symbol, blending, spelling, morphology, and sentence-production errors before supplying answers.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/2. Year 1 Term 1 Week 2/Year 1  Term 1 Week 2.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Graduated Error-Correction and Retrieval Support\n\nRecurring prompts distinguish an unsupported wrong answer from a stable skill gap:\n\n- Ask for the phonogram sound or position.\n- Prompt for a keyword; show the keyword/image if retrieval fails.\n- Give the sound only after retrieval prompts fail.\n- Trace and sound three times after the sound is retrieved or supplied.\n- Blend incrementally before reading the whole word.\n- Use fingerspelling for phonetic spelling errors.\n- Identify morphemes and syllable boundaries for more advanced words.\n- Prompt capitalization and punctuation separately from phonetic spelling.\n- Supply learned/sight-word spellings where the task is testing another target.\n\nThe recommendation engine should therefore distinguish the observed error from the amount and type of prompting required. ^[inferred]\n"
+      },
+      {
+        "title": "Dictation Word Omission",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/dictation-word-omission.md",
+        "content": "---\ntitle: \"Dictation Word Omission\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Omits one or more words from a dictated phrase or sentence.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"dictation-word-omission\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Dictation Word Omission\n\n## Observable evidence\n\nOmits one or more words from a dictated phrase or sentence.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Long-Vowel Patterns",
+        "blobPath": "wiki/projects/das-learning-resources/skills/long-vowels.md",
+        "content": "---\ntitle: \"Long-Vowel Patterns\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"phonics\", \"spelling\"]\nsummary: \"Instructional skill node for long-vowel patterns, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/short-vowels]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/syllable-types]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"long-vowels\"\nprerequisites: [\"short-vowels\", \"syllable-types\"]\nverification_status: \"unverified\"\n---\n# Long-Vowel Patterns\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/short-vowels]]\n- [[wiki/projects/das-learning-resources/skills/syllable-types]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      }
+    ]
+  },
+  {
+    "caseId": "vccv-single",
+    "familyId": "vccv-syllabication",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "B",
+      "level": "primary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 5
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "phonological",
+        "written": "pi-cnic",
+        "intended": "pic-nic",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "das-src-0390-band-b-y1t1w5-reading-and-spelling"
+    ],
+    "acceptableCandidatePositions": [
+      4
+    ],
+    "candidateRetained": true,
+    "candidates": [
+      {
+        "resourceId": "das-src-0283-band-b-y1-t1-w5-lesson-plan-pri",
+        "title": "Band B Y1 T1 W5 Lesson Plan (Pri)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "lesson-plan",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation",
+          "phoneme-identification"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Lesson Plan for SLP Band B, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0284-band-b-y1t1w5-answers",
+        "title": "Band B Y1T1W5 Answers",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0285-band-b-y1t1w5-reading-comprehension",
+        "title": "Band B Y1T1W5 Reading Comprehension",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+        "title": "Band B Y1T1W5 Reading and Spelling",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0287-band-b-y1t1w5-sequencing-words-poster",
+        "title": "Band B Y1T1W5 Sequencing Words Poster",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "visual-or-organiser",
+        "targetSkills": [
+          "sequencing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sequence-order-error",
+          "sequencing-word-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Visual Or Organiser for SLP Band B, targeting sequencing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0288-band-b-y1t1w5-slides-pri",
+        "title": "Band B Y1T1W5 Slides (Pri)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "slides",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "reading-comprehension",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Slides for SLP Band B, targeting letter sound correspondence, reading comprehension, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0289-y1t1w5-answers-1",
+        "title": "Y1T1W5 Answers (1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0290-y1t1w5-answers",
+        "title": "Y1T1W5 Answers",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0291-y1t1w5-reading-comprehension-ha-1",
+        "title": "Y1T1W5 Reading Comprehension HA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0292-y1t1w5-reading-comprehension-ha",
+        "title": "Y1T1W5 Reading Comprehension HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0293-y1t1w5-reading-comprehension-la-1",
+        "title": "Y1T1W5 Reading Comprehension LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0294-y1t1w5-reading-comprehension-la",
+        "title": "Y1T1W5 Reading Comprehension LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0295-y1t1w5-reading-comprehension-ma-1",
+        "title": "Y1T1W5 Reading Comprehension MA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0296-y1t1w5-reading-comprehension-ma",
+        "title": "Y1T1W5 Reading Comprehension MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0297-y1t1w5-reading-and-spelling-ha-1",
+        "title": "Y1T1W5 Reading and Spelling HA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0298-y1t1w5-reading-and-spelling-ha",
+        "title": "Y1T1W5 Reading and Spelling HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0299-y1t1w5-reading-and-spelling-la-1",
+        "title": "Y1T1W5 Reading and Spelling LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+        "title": "Y1T1W5 Reading and Spelling LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0301-y1t1w5-reading-and-spelling-ma-1",
+        "title": "Y1T1W5 Reading and Spelling MA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+        "title": "Y1T1W5 Reading and Spelling MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0303-y1t1w5-review-and-new-concept-ha",
+        "title": "Y1T1W5 Review and New Concept HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0304-y1t1w5-review-and-new-concept-la-1",
+        "title": "Y1T1W5 Review and New Concept LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "concept-instruction",
+        "targetSkills": [
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Concept Instruction for SLP Band B, targeting letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0305-y1t1w5-review-and-new-concept-la",
+        "title": "Y1T1W5 Review and New Concept LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0306-y1t1w5-review-and-new-concept-ma",
+        "title": "Y1T1W5 Review and New Concept MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0307-y1t1w5-review-and-new-concept",
+        "title": "Y1T1W5 Review and New Concept",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "concept-instruction",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Concept Instruction for SLP Band B, targeting letter sound correspondence, sentence construction."
+      }
+    ],
+    "teacherKnowledge": [
+      {
+        "title": "Short-Vowel Reading and Spelling",
+        "blobPath": "wiki/projects/das-learning-resources/skills/short-vowels.md",
+        "content": "---\ntitle: \"Short-Vowel Reading and Spelling\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"phonics\", \"spelling\"]\nsummary: \"Instructional skill node for short-vowel reading and spelling, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/phoneme-blending]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"short-vowels\"\nprerequisites: [\"letter-sound-correspondence\", \"phoneme-blending\"]\nverification_status: \"unverified\"\n---\n# Short-Vowel Reading and Spelling\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\n- [[wiki/projects/das-learning-resources/skills/phoneme-blending]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/short-vowel-confusion]]\n- [[wiki/projects/das-learning-resources/error-types/incorrect-medial-vowel]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      },
+      {
+        "title": "Graduated Error-Correction and Retrieval Support",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/graduated-error-correction.md",
+        "content": "---\ntitle: \"Graduated Error-Correction and Retrieval Support\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-correction\", \"scaffolding\", \"phonics\", \"spelling\"]\nsummary: \"Prompt hierarchy for diagnosing retrieval, sound-symbol, blending, spelling, morphology, and sentence-production errors before supplying answers.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/2. Year 1 Term 1 Week 2/Year 1  Term 1 Week 2.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Graduated Error-Correction and Retrieval Support\n\nRecurring prompts distinguish an unsupported wrong answer from a stable skill gap:\n\n- Ask for the phonogram sound or position.\n- Prompt for a keyword; show the keyword/image if retrieval fails.\n- Give the sound only after retrieval prompts fail.\n- Trace and sound three times after the sound is retrieved or supplied.\n- Blend incrementally before reading the whole word.\n- Use fingerspelling for phonetic spelling errors.\n- Identify morphemes and syllable boundaries for more advanced words.\n- Prompt capitalization and punctuation separately from phonetic spelling.\n- Supply learned/sight-word spellings where the task is testing another target.\n\nThe recommendation engine should therefore distinguish the observed error from the amount and type of prompting required. ^[inferred]\n"
+      },
+      {
+        "title": "Short Vowel Confusion",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/short-vowel-confusion.md",
+        "content": "---\ntitle: \"Short Vowel Confusion\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Confuses one short-vowel sound with another in reading or spelling.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/short-vowels]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"short-vowel-confusion\"\ntarget_skill: \"short-vowels\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Short Vowel Confusion\n\n## Observable evidence\n\nConfuses one short-vowel sound with another in reading or spelling.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/short-vowels]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Cumulative Scope and Sequence",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+        "content": "---\ntitle: \"Cumulative Scope and Sequence\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"scope-sequence\", \"phonics\", \"morphology\", \"literacy\"]\nsummary: \"Review, accumulated sound drills, morphology, syllable work, reading, and writing show a cumulative sequence with prerequisites carried forward.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/1. Year 1 Term 1 Week 1/Year 1  Term 1 Week 1.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 8  (Pri)/Band B Y1 T1 W8 Lesson Plan (Pri)_.docx\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Morphology Packs/Morphology Teaching Resource PACK-1-2022.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.70\n  inferred: 0.26\n  ambiguous: 0.04\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Cumulative Scope and Sequence\n\nThe materials repeatedly review previous concepts and carry known sound patterns into later drills. The sampled Year 1 Term 1 sequence moves from foundational sound-symbol work toward short vowels, consonant confusions, syllable types, long vowels, morphology, vocabulary, comprehension, and increasingly extended writing.\n\nA resource can match an error topically and still be inappropriate when its prerequisite sound, syllable, morphology, language, or response demand is not secure. Resource cards therefore expose both target skills and prerequisites. Exact programme progression beyond the supplied term remains incomplete. ^[ambiguous]\n"
+      },
+      {
+        "title": "Phonetic Spelling Error",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/phonetic-spelling-error.md",
+        "content": "---\ntitle: \"Phonetic Spelling Error\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Spelling does not represent the segmented sounds accurately.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"phonetic-spelling-error\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Phonetic Spelling Error\n\n## Observable evidence\n\nSpelling does not represent the segmented sounds accurately.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Long-Vowel Patterns",
+        "blobPath": "wiki/projects/das-learning-resources/skills/long-vowels.md",
+        "content": "---\ntitle: \"Long-Vowel Patterns\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"phonics\", \"spelling\"]\nsummary: \"Instructional skill node for long-vowel patterns, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/short-vowels]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/syllable-types]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"long-vowels\"\nprerequisites: [\"short-vowels\", \"syllable-types\"]\nverification_status: \"unverified\"\n---\n# Long-Vowel Patterns\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/short-vowels]]\n- [[wiki/projects/das-learning-resources/skills/syllable-types]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      }
+    ]
+  },
+  {
+    "caseId": "vccv-multiple",
+    "familyId": "vccv-syllabication",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "B",
+      "level": "primary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 5
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "phonological",
+        "written": "ba-sket",
+        "intended": "bas-ket",
+        "note": ""
+      },
+      {
+        "id": "e2",
+        "category": "phonological",
+        "written": "na-pkin",
+        "intended": "nap-kin",
+        "note": ""
+      },
+      {
+        "id": "e3",
+        "category": "phonological",
+        "written": "su-nset",
+        "intended": "sun-set",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "das-src-0390-band-b-y1t1w5-reading-and-spelling"
+    ],
+    "acceptableCandidatePositions": [
+      4
+    ],
+    "candidateRetained": true,
+    "candidates": [
+      {
+        "resourceId": "das-src-0283-band-b-y1-t1-w5-lesson-plan-pri",
+        "title": "Band B Y1 T1 W5 Lesson Plan (Pri)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "lesson-plan",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "morpheme-identification",
+          "reading-comprehension",
+          "sentence-construction",
+          "vocabulary-and-context",
+          "spelling-and-dictation",
+          "phoneme-identification"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "morpheme-boundary-error",
+          "base-word-recognition-error",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion",
+          "vocabulary-meaning-error"
+        ],
+        "description": "Lesson Plan for SLP Band B, targeting letter sound correspondence, morpheme identification, reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0284-band-b-y1t1w5-answers",
+        "title": "Band B Y1T1W5 Answers",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0285-band-b-y1t1w5-reading-comprehension",
+        "title": "Band B Y1T1W5 Reading Comprehension",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+        "title": "Band B Y1T1W5 Reading and Spelling",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0287-band-b-y1t1w5-sequencing-words-poster",
+        "title": "Band B Y1T1W5 Sequencing Words Poster",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "visual-or-organiser",
+        "targetSkills": [
+          "sequencing",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sequence-order-error",
+          "sequencing-word-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Visual Or Organiser for SLP Band B, targeting sequencing, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0288-band-b-y1t1w5-slides-pri",
+        "title": "Band B Y1T1W5 Slides (Pri)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "slides",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "reading-comprehension",
+          "vocabulary-and-context",
+          "spelling-and-dictation"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "vocabulary-meaning-error",
+          "synonym-antonym-confusion",
+          "context-clue-error",
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission"
+        ],
+        "description": "Slides for SLP Band B, targeting letter sound correspondence, reading comprehension, vocabulary and context."
+      },
+      {
+        "resourceId": "das-src-0289-y1t1w5-answers-1",
+        "title": "Y1T1W5 Answers (1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0290-y1t1w5-answers",
+        "title": "Y1T1W5 Answers",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "teacher-reference",
+        "targetSkills": [
+          "reading-comprehension"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error"
+        ],
+        "description": "Teacher Reference for SLP Band B, targeting reading comprehension."
+      },
+      {
+        "resourceId": "das-src-0291-y1t1w5-reading-comprehension-ha-1",
+        "title": "Y1T1W5 Reading Comprehension HA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0292-y1t1w5-reading-comprehension-ha",
+        "title": "Y1T1W5 Reading Comprehension HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0293-y1t1w5-reading-comprehension-la-1",
+        "title": "Y1T1W5 Reading Comprehension LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0294-y1t1w5-reading-comprehension-la",
+        "title": "Y1T1W5 Reading Comprehension LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0295-y1t1w5-reading-comprehension-ma-1",
+        "title": "Y1T1W5 Reading Comprehension MA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "reading-comprehension",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Reading Comprehension for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0296-y1t1w5-reading-comprehension-ma",
+        "title": "Y1T1W5 Reading Comprehension MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "reading-comprehension",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "literal-comprehension-error",
+          "main-idea-error",
+          "supporting-detail-error",
+          "inference-error",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting reading comprehension, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0297-y1t1w5-reading-and-spelling-ha-1",
+        "title": "Y1T1W5 Reading and Spelling HA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0298-y1t1w5-reading-and-spelling-ha",
+        "title": "Y1T1W5 Reading and Spelling HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0299-y1t1w5-reading-and-spelling-la-1",
+        "title": "Y1T1W5 Reading and Spelling LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+        "title": "Y1T1W5 Reading and Spelling LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0301-y1t1w5-reading-and-spelling-ma-1",
+        "title": "Y1T1W5 Reading and Spelling MA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "document",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Document for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+        "title": "Y1T1W5 Reading and Spelling MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "spelling-and-dictation",
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "phonetic-spelling-error",
+          "learned-word-spelling-error",
+          "dictation-word-omission",
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting spelling and dictation, letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0303-y1t1w5-review-and-new-concept-ha",
+        "title": "Y1T1W5 Review and New Concept HA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0304-y1t1w5-review-and-new-concept-la-1",
+        "title": "Y1T1W5 Review and New Concept LA(1)",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "concept-instruction",
+        "targetSkills": [
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Concept Instruction for SLP Band B, targeting letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0305-y1t1w5-review-and-new-concept-la",
+        "title": "Y1T1W5 Review and New Concept LA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence."
+      },
+      {
+        "resourceId": "das-src-0306-y1t1w5-review-and-new-concept-ma",
+        "title": "Y1T1W5 Review and New Concept MA",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "differentiated-worksheet",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Differentiated Worksheet for SLP Band B, targeting letter sound correspondence, sentence construction."
+      },
+      {
+        "resourceId": "das-src-0307-y1t1w5-review-and-new-concept",
+        "title": "Y1T1W5 Review and New Concept",
+        "programme": "SLP",
+        "band": "B",
+        "level": "primary",
+        "year": 1,
+        "term": 1,
+        "week": 5,
+        "resourceType": "concept-instruction",
+        "targetSkills": [
+          "letter-sound-correspondence",
+          "sentence-construction"
+        ],
+        "addressesErrorTypes": [
+          "sound-symbol-retrieval",
+          "letter-sound-substitution",
+          "fragment-or-incomplete-sentence",
+          "sentence-order-error",
+          "sentence-type-confusion"
+        ],
+        "description": "Concept Instruction for SLP Band B, targeting letter sound correspondence, sentence construction."
+      }
+    ],
+    "teacherKnowledge": [
+      {
+        "title": "Short Vowel Confusion",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/short-vowel-confusion.md",
+        "content": "---\ntitle: \"Short Vowel Confusion\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Confuses one short-vowel sound with another in reading or spelling.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/short-vowels]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"short-vowel-confusion\"\ntarget_skill: \"short-vowels\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Short Vowel Confusion\n\n## Observable evidence\n\nConfuses one short-vowel sound with another in reading or spelling.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/short-vowels]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Short-Vowel Reading and Spelling",
+        "blobPath": "wiki/projects/das-learning-resources/skills/short-vowels.md",
+        "content": "---\ntitle: \"Short-Vowel Reading and Spelling\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"phonics\", \"spelling\"]\nsummary: \"Instructional skill node for short-vowel reading and spelling, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/phoneme-blending]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"short-vowels\"\nprerequisites: [\"letter-sound-correspondence\", \"phoneme-blending\"]\nverification_status: \"unverified\"\n---\n# Short-Vowel Reading and Spelling\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\n- [[wiki/projects/das-learning-resources/skills/phoneme-blending]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/short-vowel-confusion]]\n- [[wiki/projects/das-learning-resources/error-types/incorrect-medial-vowel]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      },
+      {
+        "title": "Graduated Error-Correction and Retrieval Support",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/graduated-error-correction.md",
+        "content": "---\ntitle: \"Graduated Error-Correction and Retrieval Support\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-correction\", \"scaffolding\", \"phonics\", \"spelling\"]\nsummary: \"Prompt hierarchy for diagnosing retrieval, sound-symbol, blending, spelling, morphology, and sentence-production errors before supplying answers.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/2. Year 1 Term 1 Week 2/Year 1  Term 1 Week 2.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.82\n  inferred: 0.16\n  ambiguous: 0.02\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Graduated Error-Correction and Retrieval Support\n\nRecurring prompts distinguish an unsupported wrong answer from a stable skill gap:\n\n- Ask for the phonogram sound or position.\n- Prompt for a keyword; show the keyword/image if retrieval fails.\n- Give the sound only after retrieval prompts fail.\n- Trace and sound three times after the sound is retrieved or supplied.\n- Blend incrementally before reading the whole word.\n- Use fingerspelling for phonetic spelling errors.\n- Identify morphemes and syllable boundaries for more advanced words.\n- Prompt capitalization and punctuation separately from phonetic spelling.\n- Supply learned/sight-word spellings where the task is testing another target.\n\nThe recommendation engine should therefore distinguish the observed error from the amount and type of prompting required. ^[inferred]\n"
+      },
+      {
+        "title": "Phonetic Spelling Error",
+        "blobPath": "wiki/projects/das-learning-resources/error-types/phonetic-spelling-error.md",
+        "content": "---\ntitle: \"Phonetic Spelling Error\"\ncategory: error-type\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"error-type\", \"instructional\"]\nsummary: \"Spelling does not represent the segmented sounds accurately.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\"\n    type: related_to\n  - target: \"[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]\"\n    type: uses\nprovenance:\n  extracted: 0.42\n  inferred: 0.53\n  ambiguous: 0.05\nbase_confidence: 0.61\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nerror_code: \"phonetic-spelling-error\"\ntarget_skill: \"spelling-and-dictation\"\ndiagnostic_status: \"instructional-only\"\nverification_status: \"unverified\"\n---\n# Phonetic Spelling Error\n\n## Observable evidence\n\nSpelling does not represent the segmented sounds accurately.\n\n## Interpretation\n\nThis is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]\n\n## Likely target skill\n\n- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]\n\n## Recommendation rule\n\nSelect a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.\n"
+      },
+      {
+        "title": "Spelling and Dictation",
+        "blobPath": "wiki/projects/das-learning-resources/skills/spelling-and-dictation.md",
+        "content": "---\ntitle: \"Spelling and Dictation\"\ncategory: skill\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"skill\", \"literacy\", \"spelling\"]\nsummary: \"Instructional skill node for spelling and dictation, linking observable errors, prerequisites, and source-grounded resources.\"\nsources:\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\n  - target: \"[[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\"\n    type: uses\n  - target: \"[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\"\n    type: uses\nprovenance:\n  extracted: 0.60\n  inferred: 0.35\n  ambiguous: 0.05\nbase_confidence: 0.69\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\nskill_id: \"spelling-and-dictation\"\nprerequisites: [\"phoneme-segmentation\", \"letter-sound-correspondence\"]\nverification_status: \"unverified\"\n---\n# Spelling and Dictation\n\n## Instructional interpretation\n\nThis skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.\n\n## Prerequisites\n\n- [[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]\n- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]\n\n## Observable error types\n\n- [[wiki/projects/das-learning-resources/error-types/phonetic-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/learned-word-spelling-error]]\n- [[wiki/projects/das-learning-resources/error-types/dictation-word-omission]]\n\n## Selection guidance\n\nPrefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.\n"
+      },
+      {
+        "title": "Cumulative Scope and Sequence",
+        "blobPath": "wiki/projects/das-learning-resources/concepts/cumulative-scope-and-sequence.md",
+        "content": "---\ntitle: \"Cumulative Scope and Sequence\"\ncategory: concept\ndocumentType: \"teacher_knowledge\"\ntags: [\"das\", \"scope-sequence\", \"phonics\", \"morphology\", \"literacy\"]\nsummary: \"Review, accumulated sound drills, morphology, syllable work, reading, and writing show a cumulative sequence with prerequisites carried forward.\"\nsources:\n  - \"_raw/Copy for Partners/SLP Band A - Year 1 Term 1/1. Year 1 Term 1 Week 1/Year 1  Term 1 Week 1.docx\"\n  - \"_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 8  (Pri)/Band B Y1 T1 W8 Lesson Plan (Pri)_.docx\"\n  - \"_raw/Copy for Partners/ELL-MLP Teaching Resources/Morphology Packs/Morphology Teaching Resource PACK-1-2022.pdf\"\nrelationships:\n  - target: \"[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]\"\n    type: derived_from\nprovenance:\n  extracted: 0.70\n  inferred: 0.26\n  ambiguous: 0.04\nbase_confidence: 0.76\nlifecycle: draft\nlifecycle_changed: \"2026-07-24T05:46:51+00:00\"\ntier: supporting\ncreated: \"2026-07-24T05:46:51+00:00\"\nupdated: \"2026-07-24T05:46:51+00:00\"\n---\n# Cumulative Scope and Sequence\n\nThe materials repeatedly review previous concepts and carry known sound patterns into later drills. The sampled Year 1 Term 1 sequence moves from foundational sound-symbol work toward short vowels, consonant confusions, syllable types, long vowels, morphology, vocabulary, comprehension, and increasingly extended writing.\n\nA resource can match an error topically and still be inappropriate when its prerequisite sound, syllable, morphology, language, or response demand is not secure. Resource cards therefore expose both target skills and prerequisites. Exact programme progression beyond the supplied term remains incomplete. ^[ambiguous]\n"
+      }
+    ]
+  }
+]

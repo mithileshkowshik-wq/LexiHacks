@@ -1,0 +1,37 @@
+{
+  "sampleId": "student-191379",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "preprocessed-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 7242,
+  "transcript": "Dani 23/4/17\nHe run\nThe fox hunt\nI sang\nPam swims in water\nTom Hops",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Incorrect subject-verb agreement (third-person singular -s missing)."
+    },
+    {
+      "id": "student-191379-prediction-002",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect subject-verb agreement (third-person singular -s missing)."
+    },
+    {
+      "id": "student-191379-prediction-003",
+      "written": "Hops",
+      "intended": "hops",
+      "category": "capitalisation",
+      "confidenceScore": 0.85,
+      "note": "Unnecessary capital letter inside the sentence."
+    }
+  ]
+}

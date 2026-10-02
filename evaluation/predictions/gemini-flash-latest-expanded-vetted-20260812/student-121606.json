@@ -1,0 +1,45 @@
+{
+  "sampleId": "student-121606",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 13511,
+  "transcript": "Dani 9.10.2016\nhe ran.\nFox hunt\nI Sam sang.\nPam swimming?\ntom Jump",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-121606-prediction-001",
+      "written": "he",
+      "intended": "He",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence should start with a capital letter."
+    },
+    {
+      "id": "student-121606-prediction-002",
+      "written": "Fox hunt",
+      "intended": "Fox hunt.",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "Sentence is missing terminal punctuation."
+    },
+    {
+      "id": "student-121606-prediction-003",
+      "written": "tom",
+      "intended": "Tom",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "The name 'Tom' should start with a capital letter."
+    },
+    {
+      "id": "student-121606-prediction-004",
+      "written": "Jump",
+      "intended": "jump.",
+      "category": "capitalisation",
+      "confidenceScore": 0.85,
+      "note": "Word should not be capitalised in this context, and sentence requires terminal punctuation."
+    }
+  ]
+}

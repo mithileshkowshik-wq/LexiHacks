@@ -1,0 +1,17 @@
+{
+  "sampleId": "student-94156",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-94156.pdf",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted expansion labels. The punctuation candidate was rejected because the scan ends with a period.",
+  "errors": [
+    {
+      "id": "student-94156-e001",
+      "written": "because bird has wing.",
+      "intended": "because birds have wings.",
+      "category": "morphological",
+      "rationale": "Plural subject and noun require plural marking and agreement. AI confidence: 0.94."
+    }
+  ]
+}

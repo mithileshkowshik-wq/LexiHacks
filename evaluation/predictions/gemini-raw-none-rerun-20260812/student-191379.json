@@ -1,0 +1,37 @@
+{
+  "sampleId": "student-191379",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 6718,
+  "transcript": "Dan 03/4/17\nHe run\nThe fox hunt\nI sang\nPam swims in water\nTom Hops",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing third-person singular present tense suffix '-s'"
+    },
+    {
+      "id": "student-191379-prediction-002",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing third-person singular present tense suffix '-s'"
+    },
+    {
+      "id": "student-191379-prediction-003",
+      "written": "Hops",
+      "intended": "hops",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Unnecessary capitalisation of the verb 'hops'"
+    }
+  ]
+}

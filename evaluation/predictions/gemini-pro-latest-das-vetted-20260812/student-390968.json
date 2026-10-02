@@ -1,0 +1,21 @@
+{
+  "sampleId": "student-390968",
+  "model": "gemini-pro-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 10841,
+  "transcript": "He ran.\nFox hunts.\nI sang,\nPam swims.\nTom hops.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-390968-prediction-001",
+      "written": ",",
+      "intended": ".",
+      "category": "punctuation",
+      "confidenceScore": 0.98,
+      "note": "The sentence ends with a comma instead of a period."
+    }
+  ]
+}

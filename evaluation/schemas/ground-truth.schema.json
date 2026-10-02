@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LexiPath human-vetted ground truth",
+  "type": "object",
+  "required": ["sampleId", "sourceFile", "taskType", "grade", "reviewStatus", "errors"],
+  "additionalProperties": false,
+  "properties": {
+    "sampleId": { "type": "string", "minLength": 1 },
+    "sourceFile": { "type": "string", "minLength": 1 },
+    "taskType": { "type": "string", "enum": ["ESSAY", "SHORT_ANSWER", "LONG_ANSWER", "UNKNOWN"] },
+    "grade": { "type": "string", "minLength": 1 },
+    "reviewStatus": { "type": "string", "enum": ["candidate", "vetted"] },
+    "reviewerNotes": { "type": "string" },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "written", "category"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "written": { "type": "string" },
+          "intended": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "phonological",
+              "orthographic",
+              "morphological",
+              "capitalisation",
+              "punctuation",
+              "unsure"
+            ]
+          },
+          "locationOnScan": {
+            "type": "object",
+            "required": ["page", "x", "y", "z", "w"],
+            "additionalProperties": false,
+            "properties": {
+              "page": { "type": "integer", "minimum": 0 },
+              "x": { "type": "number", "minimum": 0, "maximum": 1 },
+              "y": { "type": "number", "minimum": 0, "maximum": 1 },
+              "z": { "type": "number", "minimum": 0, "maximum": 1 },
+              "w": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          },
+          "rationale": { "type": "string" }
+        }
+      }
+    }
+  }
+}

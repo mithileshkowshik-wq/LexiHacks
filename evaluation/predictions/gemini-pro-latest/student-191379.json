@@ -1,0 +1,10 @@
+{
+  "sampleId": "student-191379",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+  "model": "gemini-pro-latest",
+  "pipeline": "direct-vision",
+  "status": "failed",
+  "latencyMs": 6587,
+  "failureReason": "model-request-failed",
+  "errors": []
+}

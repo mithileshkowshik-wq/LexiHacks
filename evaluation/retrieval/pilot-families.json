@@ -1,0 +1,49 @@
+[
+  {
+    "familyId": "sequencing-events",
+    "label": "Ordering events and using sequence language",
+    "acceptableResourceIds": [
+      "das-src-0217-before-and-after-visual-aids-twinkl",
+      "das-src-0287-band-b-y1t1w5-sequencing-words-poster",
+      "das-src-0364-before-and-after-visual-aids-twinkl",
+      "das-src-0382-band-b-y1t1w3-writing-sec",
+      "das-src-0383-band-b-y1t1w3-writing",
+      "das-src-0426-sequence-of-event-organiser"
+    ],
+    "rationale": "Student-facing resources that practise chronological event order, sequencing language, or organising a short narrative."
+  },
+  {
+    "familyId": "vccv-syllabication",
+    "label": "Dividing two-syllable words between consonants",
+    "acceptableResourceIds": [
+      "das-src-0273-band-b-y1t1w4-vccv-poster",
+      "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "das-src-0297-y1t1w5-reading-and-spelling-ha-1",
+      "das-src-0298-y1t1w5-reading-and-spelling-ha",
+      "das-src-0299-y1t1w5-reading-and-spelling-la-1",
+      "das-src-0300-y1t1w5-reading-and-spelling-la",
+      "das-src-0301-y1t1w5-reading-and-spelling-ma-1",
+      "das-src-0302-y1t1w5-reading-and-spelling-ma",
+      "das-src-0390-band-b-y1t1w5-reading-and-spelling"
+    ],
+    "rationale": "Equivalent primary, secondary, and differentiated Week 5 practice plus the directly relevant VCCV visual aid."
+  },
+  {
+    "familyId": "synonym-intensity",
+    "label": "Choosing synonyms by meaning and strength",
+    "acceptableResourceIds": [
+      "das-src-0421-synonyms",
+      "das-src-0427-synonyms-and-word-cline",
+      "das-src-0428-word-cline-presentation"
+    ],
+    "rationale": "The student document, targeted word-strength activity, and supporting presentation all teach synonym choice and intensity."
+  },
+  {
+    "familyId": "long-o-spelling",
+    "label": "Choosing spellings for the long o sound",
+    "acceptableResourceIds": [
+      "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow"
+    ],
+    "rationale": "This is the only currently verified resource devoted specifically to alternative long-o spellings; evaluation still uses family membership rather than page identity."
+  }
+]

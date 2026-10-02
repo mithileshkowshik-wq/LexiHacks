@@ -1,0 +1,11 @@
+{
+  "sampleId": "writing-16115",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16115.pdf",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "failed",
+  "latencyMs": 34542,
+  "failureReason": "model-request-failed",
+  "failureDetail": "errors[0].locationOnScan must have x, y, z, w numbers between 0 and 1",
+  "errors": []
+}

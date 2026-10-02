@@ -1,0 +1,11 @@
+{
+  "sampleId": "student-191379",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "latencyMs": 6986,
+  "transcript": "Dam 03/4/17\nHe ran\nThe fox hunt\nI sang\nPam swims in water\nTom Hops",
+  "illegibleNote": "",
+  "errors": []
+}

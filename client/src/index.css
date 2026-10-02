@@ -1,0 +1,137 @@
+/* ------------------------------------------------------------------
+   LexiPath — design tokens, reset, base type.
+   Component and page styles live in App.css.
+   ------------------------------------------------------------------ */
+
+:root {
+  /* Brand palette — lexipath_brand_assets_v2/brand-tokens.json */
+  --ink: #1a2433; /* navy — primary action & text */
+  --ink-soft: #2c384a; /* primary hover */
+  --ink-deep: #131b27; /* sidebar gradient end */
+  --sage: #7b8f7a; /* accent — logo bowl, highlights */
+  --sage-strong: #566b55; /* sage that meets text contrast on white */
+  --mist: #d6d4cc;
+  /* Paper/surface/border are the former "reading comfort" values — the
+     warm tint was promoted to the one and only theme (owner call, Jul 2026). */
+  --paper: #efe9dc; /* warm parchment app background */
+  --surface: #fbf8f1;
+  --border: #e0d8c8;
+  --border-strong: #cfc6b2;
+  --muted: #5c665e;
+
+  /* Accent (sage) — nav highlight, washes */
+  --accent: var(--sage);
+  --accent-ink: var(--sage-strong);
+  --accent-wash: #e9ede6;
+
+  /* Navy shell (sidebar) — light-on-dark counterparts of the tokens above */
+  --shell-text: #f2f0e9;
+  --shell-muted: #98a1ae;
+  --shell-line: rgba(247, 245, 239, 0.12);
+  --shell-hover: rgba(247, 245, 239, 0.07);
+  --shell-active-bg: rgba(123, 143, 122, 0.24);
+  --shell-active-text: #cdd8cc;
+
+  /* Ruled exercise-book motif — ONLY in: page-header band, empty state,
+     sample/file thumbnails, upload drop zone (see client/DESIGN.md §7
+     before adding another spot) */
+  --band-bg: #f6f0e3;
+  --rule-line: rgba(26, 36, 51, 0.1);
+  --margin-line: rgba(123, 143, 122, 0.5);
+
+  /* Status tones — "Analysed" reads in brand sage */
+  --done: #4f6b4e;
+  --done-wash: #e7ece3;
+  --pending: #8a6314;
+  --pending-wash: #f2ead7;
+  --failed: #a23a26;
+  --failed-wash: #f1e1db;
+
+  /* Typography — Lexend (brand face; tuned for reading proficiency) */
+  --body: 'Lexend', 'Inter', system-ui, Arial, sans-serif;
+  --display: 'Lexend', 'Inter', system-ui, Arial, sans-serif;
+  --line: 1.9; /* tall, airy line height — part of the comfort theme */
+  --tracking: 0.02em;
+
+  /* Cards must visibly separate from the paper: firm border + real shadow.
+     (Hairline-only borders were rejected — see client/DESIGN.md §2.) */
+  --card-border: #d9d2c0;
+  --shadow-sm: 0 1px 2px rgba(26, 36, 51, 0.05);
+  --shadow-card: 0 1px 3px rgba(26, 36, 51, 0.07),
+    0 12px 26px -12px rgba(26, 36, 51, 0.22);
+  --shadow-card-hover: 0 2px 4px rgba(26, 36, 51, 0.07),
+    0 18px 34px -14px rgba(26, 36, 51, 0.3);
+
+  /* Geometry — gently squared (sheets of paper, not app bubbles).
+     The one big curve allowed is the "bowl corner" on identity blocks. */
+  --radius: 6px; /* cards, rows */
+  --radius-sm: 5px; /* buttons, inputs */
+  --radius-chip: 4px; /* small chips, count badges */
+  --radius-band: 8px; /* header band, empty state */
+
+  --sidebar-w: 248px;
+  --content-max: 1200px;
+
+  color-scheme: light;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: var(--line);
+  letter-spacing: var(--tracking);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--sage-strong);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

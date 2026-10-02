@@ -1,0 +1,10 @@
+{
+  "sampleId": "writing-16083",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16083.pdf",
+  "model": "gemini-pro-latest",
+  "pipeline": "direct-vision",
+  "status": "failed",
+  "latencyMs": 6892,
+  "failureReason": "model-request-failed",
+  "errors": []
+}

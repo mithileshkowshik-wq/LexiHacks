@@ -1,0 +1,132 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-e001",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": null,
+      "note": "Word appears mid-sentence after 'one' but is capitalised."
+    },
+    {
+      "id": "writing-16127-e002",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": null,
+      "note": "Missing doubled consonant in 'running'."
+    },
+    {
+      "id": "writing-16127-e003",
+      "written": "be cause",
+      "intended": "because",
+      "category": "orthographic",
+      "confidenceScore": null,
+      "note": "Compound word is split into two words."
+    },
+    {
+      "id": "writing-16127-e004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e005",
+      "written": "abchen",
+      "intended": "anxious",
+      "category": "unsure",
+      "confidenceScore": null,
+      "note": "The word is teacher-underlined and likely intended as 'anxious', but handwriting is uncertain."
+    },
+    {
+      "id": "writing-16127-e006",
+      "written": "pee",
+      "intended": "peed",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past-tense event likely needs '-ed'."
+    },
+    {
+      "id": "writing-16127-e007",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Plural noun form is expected."
+    },
+    {
+      "id": "writing-16127-e008",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e009",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past-tense speech reporting should use 'said'."
+    },
+    {
+      "id": "writing-16127-e010",
+      "written": "Hid",
+      "intended": "hid",
+      "category": "capitalisation",
+      "confidenceScore": null,
+      "note": "Word appears mid-sentence but is capitalised."
+    },
+    {
+      "id": "writing-16127-e011",
+      "written": "run",
+      "intended": "ran",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past tense of 'run' should be 'ran'."
+    },
+    {
+      "id": "writing-16127-e012",
+      "written": "wash",
+      "intended": "washed",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e013",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": null,
+      "note": "Letters appear transposed in 'myself'."
+    },
+    {
+      "id": "writing-16127-e014",
+      "written": "befor",
+      "intended": "before",
+      "category": "orthographic",
+      "confidenceScore": null,
+      "note": "Final 'e' appears omitted from 'before'."
+    },
+    {
+      "id": "writing-16127-e015",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "unsure",
+      "confidenceScore": null,
+      "note": "Likely missing function word 'to', but this is a grammar/phrase issue rather than a single spelling error."
+    }
+  ]
+}

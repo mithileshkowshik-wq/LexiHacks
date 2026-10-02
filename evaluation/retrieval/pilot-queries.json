@@ -1,0 +1,256 @@
+[
+  {
+    "queryId": "sequencing-example-pair",
+    "familyId": "sequencing-events",
+    "form": "example-pair",
+    "displayQuery": "Student writes: 'We ate our picnic. First we arrived at the park. Then we packed the food.' The events are not in a sensible order.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "We ate our picnic. First we arrived at the park. Then we packed the food.",
+          "intended": "First we packed the food. Then we arrived at the park. We ate our picnic.",
+          "note": "The events are not in a sensible order."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "sequencing-skill-description",
+    "familyId": "sequencing-events",
+    "form": "skill-description",
+    "displayQuery": "The learner needs help putting events into a logical order and showing what happened first, next, and last.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The learner needs help putting events into a logical order and showing what happened first, next, and last."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "sequencing-teacher-observation",
+    "familyId": "sequencing-events",
+    "form": "teacher-observation",
+    "displayQuery": "When retelling an experience, the student jumps backwards and forwards in time, so the reader cannot follow what happened.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "When retelling an experience, the student jumps backwards and forwards in time, so the reader cannot follow what happened."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "sequencing-multi-example",
+    "familyId": "sequencing-events",
+    "form": "multi-example",
+    "displayQuery": "Across several stories the student places waking up after arriving at school, serving food before cooking it, and going home before finishing the activity.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "Across several stories the student places waking up after arriving at school, serving food before cooking it, and going home before finishing the activity."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "vccv-example-pair",
+    "familyId": "vccv-syllabication",
+    "form": "example-pair",
+    "displayQuery": "Student tries to split 'picnic' as 'pi-cnic' instead of 'pic-nic'.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "pi-cnic",
+          "intended": "pic-nic",
+          "note": "The student splits a two-syllable word in the wrong place."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "vccv-skill-description",
+    "familyId": "vccv-syllabication",
+    "form": "skill-description",
+    "displayQuery": "The learner has difficulty dividing two-syllable words when two consonants occur between the vowel sounds.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The learner has difficulty dividing two-syllable words when two consonants occur between the vowel sounds."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "vccv-teacher-observation",
+    "familyId": "vccv-syllabication",
+    "form": "teacher-observation",
+    "displayQuery": "During reading and spelling, the student cannot work out where to break unfamiliar words such as 'magnet' into two spoken parts.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "During reading and spelling, the student cannot work out where to break unfamiliar words such as magnet into two spoken parts."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "vccv-multi-example",
+    "familyId": "vccv-syllabication",
+    "form": "multi-example",
+    "displayQuery": "Student divides 'basket' as 'ba-sket', 'napkin' as 'na-pkin', and 'sunset' as 'su-nset'.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "ba-sket; na-pkin; su-nset",
+          "intended": "bas-ket; nap-kin; sun-set",
+          "note": "The student repeatedly puts the syllable break before both middle consonants."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "synonym-example-pair",
+    "familyId": "synonym-intensity",
+    "form": "example-pair",
+    "displayQuery": "For a character who is extremely angry, the student replaces 'furious' with the much weaker word 'annoyed'.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "annoyed",
+          "intended": "furious",
+          "note": "The replacement has a similar meaning but the wrong strength for the context."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "synonym-skill-description",
+    "familyId": "synonym-intensity",
+    "form": "skill-description",
+    "displayQuery": "The learner needs practice choosing between words with similar meanings according to how strong or mild each word is.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The learner needs practice choosing between words with similar meanings according to how strong or mild each word is."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "synonym-teacher-observation",
+    "familyId": "synonym-intensity",
+    "form": "teacher-observation",
+    "displayQuery": "The student can suggest another word with roughly the same meaning, but often chooses one that is too weak or too forceful for the sentence.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The student can suggest another word with roughly the same meaning, but often chooses one that is too weak or too forceful for the sentence."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "synonym-multi-example",
+    "familyId": "synonym-intensity",
+    "form": "multi-example",
+    "displayQuery": "Student uses 'warm' for 'scorching', 'looked' for 'stared', and 'unhappy' for 'devastated', losing the intended strength each time.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "warm; looked; unhappy",
+          "intended": "scorching; stared; devastated",
+          "note": "Each choice is related in meaning but does not preserve the intended strength."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "long-o-example-pair",
+    "familyId": "long-o-spelling",
+    "form": "example-pair",
+    "displayQuery": "Student writes 'bote' instead of 'boat'.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "bote",
+          "intended": "boat",
+          "note": "The student chose a different spelling for the same long vowel sound."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "long-o-skill-description",
+    "familyId": "long-o-spelling",
+    "form": "skill-description",
+    "displayQuery": "The learner has difficulty choosing whether the long o sound should be written with a final e, two vowels together, or a vowel pair ending in w.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The learner has difficulty choosing how to write the long o sound in different words."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "long-o-teacher-observation",
+    "familyId": "long-o-spelling",
+    "form": "teacher-observation",
+    "displayQuery": "The student can hear the long o sound but uses its possible spellings inconsistently from one word to the next.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "note": "The student can hear the long o sound but uses its possible spellings inconsistently from one word to the next."
+        }
+      ]
+    }
+  },
+  {
+    "queryId": "long-o-multi-example",
+    "familyId": "long-o-spelling",
+    "form": "multi-example",
+    "displayQuery": "Student writes 'bote' for 'boat', 'groe' for 'grow', and 'roap' for 'rope'.",
+    "input": {
+      "errors": [
+        {
+          "id": "e1",
+          "category": "unsure",
+          "written": "bote; groe; roap",
+          "intended": "boat; grow; rope",
+          "note": "The student mixes up several spellings for the long o sound."
+        }
+      ]
+    }
+  }
+]

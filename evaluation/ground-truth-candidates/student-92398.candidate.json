@@ -1,0 +1,18 @@
+{
+  "sampleId": "student-92398",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "First-round GPT-5.5 visual candidate labels. Human vetting required before copying to ground-truth-vetted/. Most sentence content appears correct; only a conservative punctuation candidate is listed.",
+  "errors": [
+    {
+      "id": "student-92398-e001",
+      "written": "cats",
+      "intended": "cats.",
+      "category": "punctuation",
+      "locationOnScan": { "page": 0, "x": 0.83, "y": 0.39, "z": 0.07, "w": 0.03 },
+      "rationale": "Final sentence appears to end without a full stop. Human reviewer should confirm whether punctuation was expected for this task."
+    }
+  ]
+}

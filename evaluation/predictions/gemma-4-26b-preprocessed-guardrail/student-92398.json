@@ -1,0 +1,20 @@
+{
+  "sampleId": "student-92398",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "latencyMs": 10651,
+  "transcript": "John took a nap in his room.\nBirds can fly because they have wings and light bones.\nWe planned to visit her in the morning.\nThe girl sat in on the bed in the room.\nPeter ran as fast as he could. a from cats",
+  "illegibleNote": "The word 'in' in line 1 is crossed out. The word 'in' in line 4 is followed by a crossed out word. The word 'he' in line 5 is written as 'he' but looks slightly like 'ha'. The phrase 'a from cats' in line 5 is disconnected from the previous sentence.",
+  "errors": [
+    {
+      "id": "student-92398-prediction-001",
+      "written": "a from cats",
+      "intended": "",
+      "category": "unsure",
+      "confidenceScore": 0.4,
+      "note": "Fragmented text at the end of the page that does not form a coherent sentence."
+    }
+  ]
+}

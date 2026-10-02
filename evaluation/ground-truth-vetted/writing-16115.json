@@ -1,0 +1,178 @@
+{
+  "sampleId": "writing-16115",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16115.pdf",
+  "taskType": "ESSAY",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted expansion labels. All 24 candidate rows were accepted and no missed errors were added.",
+  "errors": [
+    {
+      "id": "writing-16115-e001",
+      "written": "tipical",
+      "intended": "typical",
+      "category": "orthographic",
+      "rationale": "Misspelled 'typical' with an 'i'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e002",
+      "written": "tuesday",
+      "intended": "Tuesday",
+      "category": "capitalisation",
+      "rationale": "Day of the week should be capitalized. AI confidence: 0.98."
+    },
+    {
+      "id": "writing-16115-e003",
+      "written": "lauging",
+      "intended": "laughing",
+      "category": "orthographic",
+      "rationale": "Missing 'h' in 'laughing'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e004",
+      "written": "anther",
+      "intended": "another",
+      "category": "orthographic",
+      "rationale": "Misspelled 'another'. AI confidence: 0.90."
+    },
+    {
+      "id": "writing-16115-e005",
+      "written": "kindergarden",
+      "intended": "kindergarten",
+      "category": "phonological",
+      "rationale": "Used 'd' instead of 't' in 'kindergarten'. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e006",
+      "written": "firday",
+      "intended": "Friday",
+      "category": "orthographic",
+      "rationale": "Transposed letters in 'Friday' and missing capitalisation. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e007",
+      "written": "anothre",
+      "intended": "another",
+      "category": "orthographic",
+      "rationale": "Transposed letters in 'another'. AI confidence: 0.90."
+    },
+    {
+      "id": "writing-16115-e008",
+      "written": "movment",
+      "intended": "movement",
+      "category": "orthographic",
+      "rationale": "Missing 'e' in 'movement'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e009",
+      "written": "assinged",
+      "intended": "assigned",
+      "category": "orthographic",
+      "rationale": "Transposed letters in 'assigned'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e010",
+      "written": "buch",
+      "intended": "bunch",
+      "category": "orthographic",
+      "rationale": "Missing 'n' in 'bunch'. AI confidence: 0.90."
+    },
+    {
+      "id": "writing-16115-e011",
+      "written": "tabdle",
+      "intended": "table",
+      "category": "orthographic",
+      "rationale": "Extraneous 'd' in 'table'. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e012",
+      "written": "poped",
+      "intended": "popped",
+      "category": "orthographic",
+      "rationale": "Missing double consonant in 'popped'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e013",
+      "written": "wold",
+      "intended": "would",
+      "category": "orthographic",
+      "rationale": "Misspelled 'would'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e014",
+      "written": "possible",
+      "intended": "possibly",
+      "category": "morphological",
+      "rationale": "Used adjective 'possible' instead of adverb 'possibly'. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e015",
+      "written": "happen",
+      "intended": "happened",
+      "category": "morphological",
+      "rationale": "Missing past tense suffix -ed. AI confidence: 0.90."
+    },
+    {
+      "id": "writing-16115-e016",
+      "written": "abbsalutly",
+      "intended": "absolutely",
+      "category": "orthographic",
+      "rationale": "Misspelled 'absolutely'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e017",
+      "written": "oh",
+      "intended": "Oh",
+      "category": "capitalisation",
+      "rationale": "First word of direct speech should be capitalized. AI confidence: 0.90."
+    },
+    {
+      "id": "writing-16115-e018",
+      "written": "angryly",
+      "intended": "angrily",
+      "category": "orthographic",
+      "rationale": "Misspelled 'angrily'. AI confidence: 0.95."
+    },
+    {
+      "id": "writing-16115-e019",
+      "written": "walk",
+      "intended": "walked",
+      "category": "morphological",
+      "rationale": "Missing past tense marker -ed. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e020",
+      "written": "partented",
+      "intended": "partnered",
+      "category": "orthographic",
+      "rationale": "Misspelled 'partnered'. AI confidence: 0.88."
+    },
+    {
+      "id": "writing-16115-e021",
+      "written": "forgiven",
+      "intended": "forgave",
+      "category": "morphological",
+      "rationale": "Used past participle 'forgiven' instead of past simple 'forgave'. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e022",
+      "written": "expireants",
+      "intended": "experience",
+      "category": "orthographic",
+      "rationale": "Misspelled 'experience'. AI confidence: 0.88."
+    },
+    {
+      "id": "writing-16115-e023",
+      "written": "damage",
+      "intended": "damaged",
+      "category": "morphological",
+      "rationale": "Passive form requires past participle 'damaged'. AI confidence: 0.92."
+    },
+    {
+      "id": "writing-16115-e024",
+      "written": "clam",
+      "intended": "calm",
+      "category": "orthographic",
+      "rationale": "Transposed letters in 'calm'. AI confidence: 0.95."
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "sampleId": "writing-16083",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16083.pdf",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 9317,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "learnt",
+      "intended": "learned",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "This is a morphological error involving a past-tense ending.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.551,
+        "y": 0.203,
+        "z": 0.052,
+        "w": 0.021
+      }
+    },
+    {
+      "written": "deuring",
+      "intended": "during",
+      "category": "phonological",
+      "confidenceScore": 0.9,
+      "note": "This is a phonological error involving a vowel substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.584,
+        "y": 0.242,
+        "z": 0.056,
+        "w": 0.026
+      }
+    },
+    {
+      "written": "studing",
+      "intended": "studying",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error with a dropped letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.446,
+        "y": 0.279,
+        "z": 0.047,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "Weighted",
+      "intended": "weekly",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "This is a phonological substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.574,
+        "y": 0.276,
+        "z": 0.052,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "Assesment",
+      "intended": "assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error with a missing double letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.651,
+        "y": 0.278,
+        "z": 0.067,
+        "w": 0.025
+      }
+    },
+    {
+      "written": "gentel",
+      "intended": "gentle",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error involving transposed letters.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.849,
+        "y": 0.278,
+        "z": 0.047,
+        "w": 0.026
+      }
+    },
+    {
+      "written": "Weighted",
+      "intended": "weekly",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "This is a phonological substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.207,
+        "y": 0.316,
+        "z": 0.057,
+        "w": 0.026
+      }
+    },
+    {
+      "written": "Asserment",
+      "intended": "assessment",
+      "category": "phonological",
+      "confidenceScore": 0.8,
+      "note": "This is a phonological error with a consonant substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.312,
+        "y": 0.319,
+        "z": 0.065,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "tommorrow",
+      "intended": "tomorrow",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic double-letter mistake.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.465,
+        "y": 0.32,
+        "z": 0.076,
+        "w": 0.016
+      }
+    },
+    {
+      "written": "back",
+      "intended": "back,",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "This is a punctuation error involving a missing comma.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.612,
+        "y": 0.319,
+        "z": 0.038,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "mize",
+      "intended": "mine",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "This is an orthographic letter substitution error.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.825,
+        "y": 0.355,
+        "z": 0.035,
+        "w": 0.018
+      }
+    },
+    {
+      "written": "assesment",
+      "intended": "assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error with a missing double letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.871,
+        "y": 0.388,
+        "z": 0.061,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "steeoping",
+      "intended": "sleeping",
+      "category": "phonological",
+      "confidenceScore": 0.8,
+      "note": "This is a phonological error with phonetic substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.627,
+        "y": 0.612,
+        "z": 0.066,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "knows",
+      "intended": "know",
+      "category": "morphological",
+      "confidenceScore": 0.7,
+      "note": "This is a morphological error with a wrongly added third-person-singular suffix.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.301,
+        "y": 0.651,
+        "z": 0.034,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "was",
+      "intended": "was",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "This is an extra word/punctuation error.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.697,
+        "y": 0.686,
+        "z": 0.021,
+        "w": 0.015
+      }
+    },
+    {
+      "written": "spining",
+      "intended": "spinning",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic double-letter mistake.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.169,
+        "y": 0.835,
+        "z": 0.046,
+        "w": 0.025
+      }
+    },
+    {
+      "written": "i",
+      "intended": "to",
+      "category": "orthographic",
+      "confidenceScore": 0.7,
+      "note": "This is an orthographic letter substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.49,
+        "y": 0.833,
+        "z": 0.011,
+        "w": 0.017
+      }
+    },
+    {
+      "written": "sectertly",
+      "intended": "secretly",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error with an extra inserted syllable/letters.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.771,
+        "y": 0.876,
+        "z": 0.061,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "without",
+      "intended": "without",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "This is a capitalisation error where a new sentence starts without a capital letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.161,
+        "y": 0.898,
+        "z": 0.054,
+        "w": 0.018
+      }
+    },
+    {
+      "written": "iheating",
+      "intended": "it",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "This is a phonological error with phonetic spelling.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.352,
+        "y": 0.913,
+        "z": 0.051,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "serisous",
+      "intended": "serious",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic letter transposition error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.655,
+        "y": 0.17,
+        "z": 0.052,
+        "w": 0.017
+      }
+    },
+    {
+      "written": "hesitate",
+      "intended": "hesitated",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "This is a morphological error with a missing past-tense ending.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.147,
+        "y": 0.203,
+        "z": 0.051,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "histant",
+      "intended": "hesitant",
+      "category": "phonological",
+      "confidenceScore": 0.8,
+      "note": "This is a phonological vowel substitution error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.461,
+        "y": 0.204,
+        "z": 0.051,
+        "w": 0.019
+      }
+    },
+    {
+      "written": "as",
+      "intended": "say",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "This is a phonological substitution error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.692,
+        "y": 0.246,
+        "z": 0.026,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "wheater",
+      "intended": "whether",
+      "category": "phonological",
+      "confidenceScore": 0.9,
+      "note": "This is a phonological homophone/phonetic error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.776,
+        "y": 0.463,
+        "z": 0.063,
+        "w": 0.019
+      }
+    },
+    {
+      "written": "disapointed",
+      "intended": "disappointed",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic error with a missing double letter.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.772,
+        "y": 0.536,
+        "z": 0.067,
+        "w": 0.021
+      }
+    },
+    {
+      "written": "mod",
+      "intended": "mad",
+      "category": "phonological",
+      "confidenceScore": 0.9,
+      "note": "This is a phonological vowel substitution error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.835,
+        "y": 0.575,
+        "z": 0.038,
+        "w": 0.017
+      }
+    },
+    {
+      "written": "servere",
+      "intended": "severe",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "This is an orthographic letter insertion error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.775,
+        "y": 0.672,
+        "z": 0.055,
+        "w": 0.016
+      }
+    },
+    {
+      "written": "reloy",
+      "intended": "reply",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "This is an orthographic letter transposition error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.69,
+        "y": 0.76,
+        "z": 0.033,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "whort",
+      "intended": "what",
+      "category": "phonological",
+      "confidenceScore": 0.9,
+      "note": "This is a phonological vowel substitution error.",
+      "locationOnScan": {
+        "page": 1,
+        "x": 0.669,
+        "y": 0.91,
+        "z": 0.046,
+        "w": 0.024
+      }
+    }
+  ]
+}

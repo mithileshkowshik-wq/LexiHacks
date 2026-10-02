@@ -1,0 +1,20 @@
+{
+  "sampleId": "student-92398",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-92398-e001",
+      "written": "cats",
+      "intended": "cats.",
+      "category": "punctuation",
+      "confidenceScore": null,
+      "note": "Final sentence appears to end without a full stop. Human reviewer should confirm whether punctuation was expected for this task."
+    }
+  ]
+}

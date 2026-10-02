@@ -1,0 +1,34 @@
+{
+  "sampleId": "student-191379",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "First-round GPT-5.5 visual candidate labels. Human vetting required before copying to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "student-191379-e001",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.16, "y": 0.07, "z": 0.12, "w": 0.03 },
+      "rationale": "Third-person singular present-tense verb likely requires '-s'."
+    },
+    {
+      "id": "student-191379-e002",
+      "written": "The fox hunt",
+      "intended": "The fox hunts",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.16, "y": 0.15, "z": 0.24, "w": 0.04 },
+      "rationale": "Third-person singular subject likely requires present-tense '-s'."
+    },
+    {
+      "id": "student-191379-e003",
+      "written": "Hoops",
+      "intended": "hops",
+      "category": "orthographic",
+      "locationOnScan": { "page": 0, "x": 0.22, "y": 0.34, "z": 0.12, "w": 0.04 },
+      "rationale": "Likely intended verb is 'hops'; written form has an extra 'o' and capital H mid-line."
+    }
+  ]
+}

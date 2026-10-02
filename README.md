@@ -1,1 +1,60 @@
-# LexiHacks
+# LexiPath
+
+LexiPath helps educators review literacy errors in handwritten work. Upload a scan, let the AI suggest errors, review the suggestions, and explore trends and recommendations.
+
+## Start here
+
+- [Using the app and your .env file](docs/GETTING_STARTED.md)
+- [Where to find code and documents](docs/README.md)
+- [Full setup instructions](SETUP_GUIDE.md)
+- [Tests and checks](docs/TESTING.md)
+- [Google Cloud deployment](GOOGLE_CLOUD.md)
+
+On the configured laptop, open **Desktop -> LexiPath** and double-click `Start-LexiPath.cmd`. The app opens at **http://localhost:5173**. The local demo login is `Sandy@DAS` / `Pass@123`.
+
+## Folder map
+
+```text
+project/
+  client/                    Website
+    src/pages/               Screens
+    src/components/          Shared interface pieces
+    src/lib/api.js           Calls to the backend
+    .env.local               Local website settings
+  server/                    Backend
+    server.js                Loads settings and starts the server
+    routes/                  API addresses
+    controllers/             Request handling
+    models/                  Database structures
+    services/                AI, recommendations, image processing, email
+    .env                     Private local settings
+  docs/                      Guides and reference documents
+  scripts/                   Checks and deployment helpers
+  deploy/                    Google Cloud runtime settings
+  lexipath_brand_assets_v2/   Logos and brand assets
+  test-plan/                 Machine-readable test cases
+  evaluation/                AI evaluation material
+  performance/               Performance checks
+  Dockerfile                 Cloud container build
+```
+
+## Environment settings
+
+The backend automatically loads `server/.env` each time it starts. Use `Configure-LexiPath.cmd` to edit it, then `Restart-LexiPath.cmd` to reload it. Use `Check-LexiPath.cmd` to check settings without displaying private values.
+
+Required settings: `MONGODB_URI` and `JWT_SECRET`. Live handwriting analysis also needs `GEMINI_API_KEY`. Use `USE_MOCK_AI=true` for demo analysis. Live recommendations need Gemini plus Azure storage settings; use `RECOMMENDATION_USE_MOCKS=true` for demo recommendations.
+
+Do not commit `.env` files or uploaded scans. On Google Cloud, private settings come from Secret Manager instead of a local file.
+
+## Working on the code
+
+The client and server are separate npm packages. For a fresh installation, use Node.js 24.11+ or 22.18+ and install dependencies in each package. This laptop already includes a suitable runtime in `../work/runtime`.
+
+For development from PowerShell in the project folder:
+
+```powershell
+$runtime = (Resolve-Path '..\work\runtime\node-v24.21.0-win-x64').Path
+$env:PATH = "$runtime;$env:PATH"
+```
+
+Then run `npm.cmd run dev` from `server` and from `client` in separate terminals. Stop the shortcut-managed app first to free the ports. MongoDB must remain running. Read [the repository guide](docs/README.md) before making changes; UI guidance lives in `client/DESIGN.md`, and agent instructions live in `AGENTS.md`.

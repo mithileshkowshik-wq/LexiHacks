@@ -1,0 +1,12 @@
+{
+  "selections": [
+    {
+      "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+      "rationale": "The student wrote 'bote' instead of 'boat', representing an orthographic spelling error where the split digraph 'o-e' pattern was substituted for the correct vowel digraph 'oa' representing the long o sound (/ō/). This resource specifically reviews long o spelling patterns including 'o-e', 'oa', and 'ow', directly addressing the underlying phonics and orthographic error."
+    },
+    {
+      "resourceId": "das-src-0448-w7-year-1-term-1",
+      "rationale": "This comprehensive weekly resource for SLP Band C (Year 1 Term 1 Week 7) covers letter-sound correspondence and spelling/dictation for the current instructional week, providing broader context and reinforcement for phonics and spelling errors aligned with the student's level."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "sampleId": "writing-16127",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 7811,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "xavette",
+      "intended": "Xavette",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Missing initial capital letter for a proper name.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.182,
+        "y": 0.281,
+        "z": 0.071,
+        "w": 0.021
+      }
+    },
+    {
+      "written": "18 m26",
+      "intended": "18 Mar",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "Spelling mistake in the abbreviation for the month.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.506,
+        "y": 0.288,
+        "z": 0.059,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Missing initial capital letter at the start of a sentence.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.108,
+        "y": 0.395,
+        "z": 0.045,
+        "w": 0.024
+      }
+    },
+    {
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Unnecessary capital letter within a sentence.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.16,
+        "y": 0.393,
+        "z": 0.038,
+        "w": 0.031
+      }
+    },
+    {
+      "written": "runin",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Double-letter mistake with a missing final consonant.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.244,
+        "y": 0.396,
+        "z": 0.065,
+        "w": 0.031
+      }
+    },
+    {
+      "written": "becaue",
+      "intended": "because",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Missing letter in an irregular word spelling.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.45,
+        "y": 0.395,
+        "z": 0.071,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "ahchen",
+      "intended": "accident",
+      "category": "phonological",
+      "confidenceScore": 0.85,
+      "note": "Phonetic spelling reflecting how the word sounds.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.203,
+        "y": 0.422,
+        "z": 0.058,
+        "w": 0.028
+      }
+    },
+    {
+      "written": "thait",
+      "intended": "that",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Extra vowel inserted into the word.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.273,
+        "y": 0.424,
+        "z": 0.044,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "I pee",
+      "intended": "I pee",
+      "category": "punctuation",
+      "confidenceScore": 0.7,
+      "note": "Run-on sentence structure needing punctuation or conjunction adjustment.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.322,
+        "y": 0.422,
+        "z": 0.062,
+        "w": 0.027
+      }
+    },
+    {
+      "written": "phoe p",
+      "intended": "phone",
+      "category": "phonological",
+      "confidenceScore": 0.8,
+      "note": "Phonetic spelling with incorrect consonant substitution.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.261,
+        "y": 0.468,
+        "z": 0.056,
+        "w": 0.029
+      }
+    },
+    {
+      "written": "and",
+      "intended": "saying",
+      "category": "morphological",
+      "confidenceScore": 0.75,
+      "note": "Incorrect word choice or grammatical form in place of the participle.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.339,
+        "y": 0.469,
+        "z": 0.035,
+        "w": 0.026
+      }
+    },
+    {
+      "written": "premary",
+      "intended": "pee",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "Phonetic substitution resulting in an unintended word.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.424,
+        "y": 0.467,
+        "z": 0.063,
+        "w": 0.028
+      }
+    },
+    {
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural marker at the end of the noun.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.511,
+        "y": 0.467,
+        "z": 0.047,
+        "w": 0.028
+      }
+    },
+    {
+      "written": "so",
+      "intended": "So",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Missing initial capital letter at the start of a new clause.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.575,
+        "y": 0.464,
+        "z": 0.029,
+        "w": 0.033
+      }
+    },
+    {
+      "written": "did",
+      "intended": "and",
+      "category": "phonological",
+      "confidenceScore": 0.75,
+      "note": "Phonetic substitution or incorrect word choice.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.224,
+        "y": 0.499,
+        "z": 0.036,
+        "w": 0.024
+      }
+    },
+    {
+      "written": "and",
+      "intended": "to",
+      "category": "morphological",
+      "confidenceScore": 0.75,
+      "note": "Incorrect preposition used.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.435,
+        "y": 0.499,
+        "z": 0.032,
+        "w": 0.021
+      }
+    },
+    {
+      "written": "myslof",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Vowel substitution error in the second syllable.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.531,
+        "y": 0.501,
+        "z": 0.051,
+        "w": 0.024
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "sampleId": "student-94156",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 10745,
+  "transcript": "NAME: Ryanne. SCH LEVEL / BAND: DATE: 12/5/16\nEDIT AND DIAGRAM SENTENCES\nRewrite and diagram these sentences\n1. John took a nap at home. (where)\nJohn took a nap at home.\n2. Birds can fly because. (why)\nBirds can fly because bird has wing.\n3. We planned to visit her (when).\nWe planned to visit her at 4:00.\n4. The girl sat (where).\nThe girl sat at home.\n5. Peter ran (how and why)\nPeter ran because he got lleg",
+  "illegibleNote": "The final word(s) in item 5 following 'because he got' are partially unclear (possibly '1 leg' or 'lleg').",
+  "errors": [
+    {
+      "id": "student-94156-prediction-001",
+      "written": "bird",
+      "intended": "birds",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural noun suffix '-s' to match the subject 'Birds'."
+    },
+    {
+      "id": "student-94156-prediction-002",
+      "written": "has",
+      "intended": "have",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect subject-verb agreement form for plural subject."
+    },
+    {
+      "id": "student-94156-prediction-003",
+      "written": "wing",
+      "intended": "wings",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural noun suffix '-s'."
+    }
+  ]
+}

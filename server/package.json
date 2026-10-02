@@ -1,0 +1,45 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-test-module-mocks --test-timeout=30000 --test",
+    "test:live": "RUN_LIVE_RECOMMENDATION_TESTS=true RECOMMENDATION_USE_MOCKS=false node --experimental-test-module-mocks --env-file=.env --test test/live-recommendation.test.js",
+    "fuzz": "node --experimental-test-module-mocks --test-timeout=30000 --test test/fuzz/*.fuzz.test.js",
+    "fuzz:long": "node --experimental-test-module-mocks --test-timeout=21600000 --test test/fuzz/*.fuzz.test.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed:students": "node seedStudents.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^2.13.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "file-type": "^19.6.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.8.0",
+    "multer": "^2.2.0",
+    "nodemon": "^3.1.14",
+    "pdf-to-img": "^6.2.0",
+    "sharp": "^0.35.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "fast-check": "^4.9.0",
+    "globals": "^17.7.0",
+    "mongodb-memory-server": "^11.2.0",
+    "prettier": "^3.9.6"
+  }
+}

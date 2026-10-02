@@ -1,0 +1,77 @@
+{
+  "sampleId": "writing-16127",
+  "model": "@cf/meta/llama-3.2-11b-vision-instruct",
+  "provider": "cloudflare",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 19338,
+  "transcript": "The sun is shining brightly in the sky. The birds are singing their sweet songs. The flowers are blooming every where. The grass is green and soft. The trees are tall and strong. The wind is blowing gently. The clouds are white and fluffy. The sun is setting slowly in the west.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "The sun is shining brightly in the sky.",
+      "intended": "The sun is shining brightly in the sky.",
+      "category": "capitalisation",
+      "confidenceScore": 0,
+      "note": "First word should be capitalized."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "The birds are singing their sweet songs.",
+      "intended": "The birds are singing their sweet song.",
+      "category": "orthographic",
+      "confidenceScore": 0,
+      "note": "Plural 'songs' should be singular 'song'."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "The flowers are blooming every where.",
+      "intended": "The flowers are blooming everywhere.",
+      "category": "orthographic",
+      "confidenceScore": 0,
+      "note": "Adverb 'every where' should be 'everywhere'."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "The grass is green and soft.",
+      "intended": "The grass is green and soft.",
+      "category": "punctuation",
+      "confidenceScore": 0,
+      "note": "Period is missing at the end of the sentence."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "The trees are tall and strong.",
+      "intended": "The trees are tall and strong.",
+      "category": "punctuation",
+      "confidenceScore": 0,
+      "note": "Period is missing at the end of the sentence."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "The wind is blowing gently.",
+      "intended": "The wind is blowing gently.",
+      "category": "punctuation",
+      "confidenceScore": 0,
+      "note": "Period is missing at the end of the sentence."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "The clouds are white and fluffy.",
+      "intended": "The clouds are white and fluffy.",
+      "category": "punctuation",
+      "confidenceScore": 0,
+      "note": "Period is missing at the end of the sentence."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "The sun is setting slowly in the west.",
+      "intended": "The sun is setting slowly in the west.",
+      "category": "punctuation",
+      "confidenceScore": 0,
+      "note": "Period is missing at the end of the sentence."
+    }
+  ]
+}

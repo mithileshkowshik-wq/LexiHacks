@@ -1,0 +1,131 @@
+{
+  "sampleId": "writing-16127",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+  "taskType": "Narrative Writing",
+  "grade": "unknown",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "Independent second-round visual evaluation by GPT-5.5 with guardrails. Used only the scan image; ignored printed prompt and visible teacher-style marks/underlines. Approximate transcript: \"one Day I was runing back home becaue I need to go pee! so / I was So achen that I pee in my pant back home, So I call my / mom on my phone nd say I pee on my pant She say hurry come back / home! so I hid and I run back home and washe myslft up before going slip.\" Several words are low-confidence because the scan is angled and handwriting overlaps ruled lines.",
+  "illegibleNote": "Low confidence on the words transcribed as 'achen', 'nd', 'myslft', and the ending phrase 'going slip'; these were not normalized in written fields.",
+  "errors": [
+    {
+      "id": "writing-16127-e01",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "rationale": "The word appears mid-phrase in 'one Day' and is capitalized where a lowercase common noun is expected.",
+      "confidence": 0.72
+    },
+    {
+      "id": "writing-16127-e02",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "rationale": "Likely missing doubled consonant in 'running'.",
+      "confidence": 0.76
+    },
+    {
+      "id": "writing-16127-e03",
+      "written": "becaue",
+      "intended": "because",
+      "category": "orthographic",
+      "rationale": "The word appears to omit the 's' in 'because'.",
+      "confidence": 0.8
+    },
+    {
+      "id": "writing-16127-e04",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "rationale": "In the past-tense narrative context, the verb appears to need past-tense morphology; category confidence is lower because this is a grammar/tense judgment.",
+      "confidence": 0.58
+    },
+    {
+      "id": "writing-16127-e05",
+      "written": "So",
+      "intended": "so",
+      "category": "capitalisation",
+      "rationale": "The word appears after a clause boundary/comma-like pause rather than sentence start; marked as candidate only because punctuation is unclear.",
+      "confidence": 0.55
+    },
+    {
+      "id": "writing-16127-e06",
+      "written": "achen",
+      "intended": "aching",
+      "category": "unsure",
+      "rationale": "The handwriting is unclear; 'achen' may be an attempted spelling of 'aching', but guardrails require low confidence rather than normalizing silently.",
+      "confidence": 0.42
+    },
+    {
+      "id": "writing-16127-e07",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "rationale": "Likely missing plural/lexical final -s in 'pants'.",
+      "confidence": 0.77
+    },
+    {
+      "id": "writing-16127-e08",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "rationale": "Past-tense narrative context suggests the verb should carry past-tense -ed; lower confidence because it is a grammar/tense correction.",
+      "confidence": 0.57
+    },
+    {
+      "id": "writing-16127-e09",
+      "written": "nd",
+      "intended": "and",
+      "category": "orthographic",
+      "rationale": "The word between 'phone' and 'say' appears to omit the initial 'a' of 'and'.",
+      "confidence": 0.61
+    },
+    {
+      "id": "writing-16127-e10",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "rationale": "Past-tense narrative context suggests 'said'; lower confidence because this is a grammar/tense correction.",
+      "confidence": 0.58
+    },
+    {
+      "id": "writing-16127-e11",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "rationale": "Second apparent instance of missing final -s in 'pants'.",
+      "confidence": 0.72
+    },
+    {
+      "id": "writing-16127-e12",
+      "written": "She say",
+      "intended": "She said",
+      "category": "morphological",
+      "rationale": "Subject-verb phrase appears to need past-tense 'said'; marked lower-confidence because grammar/tense categories are constrained.",
+      "confidence": 0.56
+    },
+    {
+      "id": "writing-16127-e13",
+      "written": "washe",
+      "intended": "washed",
+      "category": "morphological",
+      "rationale": "Likely missing past-tense ending consonant in 'washed'.",
+      "confidence": 0.62
+    },
+    {
+      "id": "writing-16127-e14",
+      "written": "myslft",
+      "intended": "myself",
+      "category": "orthographic",
+      "rationale": "The word appears to be an attempted spelling of 'myself', but the final letters are unclear; low confidence retained under guardrails.",
+      "confidence": 0.48
+    },
+    {
+      "id": "writing-16127-e15",
+      "written": "slip",
+      "intended": "sleep",
+      "category": "phonological",
+      "rationale": "Ending phrase appears to use 'slip' for 'sleep'; low confidence because the word is partly blurred near the ruled line.",
+      "confidence": 0.51
+    }
+  ]
+}

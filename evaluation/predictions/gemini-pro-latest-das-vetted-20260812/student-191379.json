@@ -1,0 +1,77 @@
+{
+  "sampleId": "student-191379",
+  "model": "gemini-pro-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 22430,
+  "transcript": "Dani 03/4/17\nHe run\nThe fox hunt\nI sang\nPam swims in water\nTom Hops",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing third-person singular '-s' for subject-verb agreement."
+    },
+    {
+      "id": "student-191379-prediction-002",
+      "written": "He run",
+      "intended": "He runs.",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "Missing terminal full stop."
+    },
+    {
+      "id": "student-191379-prediction-003",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Missing third-person singular '-s' assuming this is intended as a sentence rather than a noun phrase."
+    },
+    {
+      "id": "student-191379-prediction-004",
+      "written": "The fox hunt",
+      "intended": "The fox hunts.",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "Missing terminal full stop."
+    },
+    {
+      "id": "student-191379-prediction-005",
+      "written": "I sang",
+      "intended": "I sang.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "Missing terminal full stop."
+    },
+    {
+      "id": "student-191379-prediction-006",
+      "written": "Pam swims in water",
+      "intended": "Pam swims in water.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "Missing terminal full stop."
+    },
+    {
+      "id": "student-191379-prediction-007",
+      "written": "Hops",
+      "intended": "hops",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Unnecessary capitalization of the verb in the middle of the sentence."
+    },
+    {
+      "id": "student-191379-prediction-008",
+      "written": "Tom Hops",
+      "intended": "Tom hops.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "Missing terminal full stop."
+    }
+  ]
+}

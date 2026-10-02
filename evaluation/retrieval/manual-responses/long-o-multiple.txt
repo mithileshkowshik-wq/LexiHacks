@@ -1,0 +1,12 @@
+{
+  "selections": [
+    {
+      "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+      "rationale": "Directly targets the phonics and orthographic patterns for Long O (ō, o-e, oa, ow), which directly addresses all three observed spelling errors: 'bote' for 'boat' (oa/o-e confusion), 'groe' for 'grow' (ow/o-e confusion), and 'roap' for 'rope' (o-e/oa confusion). It matches the student's programme context (SLP Band C, Secondary Y1 T1 W7) and key skills (spelling and dictation, letter-sound correspondence)."
+    },
+    {
+      "resourceId": "das-src-0448-w7-year-1-term-1",
+      "rationale": "Matches the student's exact programme context for Week 7 (SLP Band C, Year 1 Term 1) and includes coverage of target skills like letter-sound correspondence and spelling & dictation that encompass the weekly phonics focus on Long O vowel patterns."
+    }
+  ]
+}

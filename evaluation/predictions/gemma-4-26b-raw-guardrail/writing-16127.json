@@ -1,0 +1,76 @@
+{
+  "sampleId": "writing-16127",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": 102096,
+  "transcript": "Name: Xavelle\nDate: 18.11.28\nNARRATIVE TITLE\nWrite about an occasion when you admitted that you were in the wrong and learnt from a mistake.\nOne day I was in my back home because I had to go peel up\nI was so alone that I saw in my pant back honey so I call my\nmom on my phone and I sprayed my pant & she says come back\nhome, but I was too late I ran back home and wash my mouth up before going sleep",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "peel up",
+      "intended": "peel up",
+      "category": "unsure",
+      "confidenceScore": 0.3,
+      "note": "unclear intended meaning"
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "pant back honey",
+      "intended": "parent back home",
+      "category": "orthographic",
+      "confidenceScore": 0.6,
+      "note": "phonetic misspelling"
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "call my mom",
+      "intended": "called my mom",
+      "category": "morphological",
+      "confidenceScore": 0.7,
+      "note": "tense inconsistency"
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "sprayed",
+      "intended": "spoke",
+      "category": "orthographic",
+      "confidenceScore": 0.4,
+      "note": "unclear word choice/spelling"
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "pant",
+      "intended": "parent",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "phonetic misspelling"
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "&",
+      "intended": "and",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "use of symbol instead of word"
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "wash my mouth up",
+      "intended": "wash my mouth out",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "idiomatic error"
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "missing preposition"
+    }
+  ]
+}

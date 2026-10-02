@@ -1,0 +1,67 @@
+{
+  "sampleId": "student-94156",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-94156.pdf",
+  "model": "gemini-flash-lite-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 5813,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "bird",
+      "intended": "they",
+      "category": "phonological",
+      "confidenceScore": 0.7,
+      "note": "A pronoun substitution was used instead of the intended subject.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.679,
+        "y": 0.395,
+        "z": 0.054,
+        "w": 0.043
+      }
+    },
+    {
+      "written": "wing",
+      "intended": "wings",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural marker on the noun.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.865,
+        "y": 0.394,
+        "z": 0.093,
+        "w": 0.046
+      }
+    },
+    {
+      "written": ".",
+      "intended": "",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "Extra punctuation mark placed after the sentence.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.971,
+        "y": 0.409,
+        "z": 0.012,
+        "w": 0.033
+      }
+    },
+    {
+      "written": "lleg",
+      "intended": "fast",
+      "category": "phonological",
+      "confidenceScore": 0.6,
+      "note": "Unclear phonetic spelling for an adverb answering 'how'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.741,
+        "y": 0.716,
+        "z": 0.126,
+        "w": 0.065
+      }
+    }
+  ]
+}

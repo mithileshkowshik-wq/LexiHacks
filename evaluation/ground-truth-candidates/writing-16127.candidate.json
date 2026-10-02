@@ -1,0 +1,130 @@
+{
+  "sampleId": "writing-16127",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+  "taskType": "ESSAY",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "First-round GPT-5.5 visual candidate labels. Human vetting required before copying to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "writing-16127-e001",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "locationOnScan": { "page": 0, "x": 0.19, "y": 0.42, "z": 0.04, "w": 0.03 },
+      "rationale": "Word appears mid-sentence after 'one' but is capitalised."
+    },
+    {
+      "id": "writing-16127-e002",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "locationOnScan": { "page": 0, "x": 0.36, "y": 0.42, "z": 0.07, "w": 0.03 },
+      "rationale": "Missing doubled consonant in 'running'."
+    },
+    {
+      "id": "writing-16127-e003",
+      "written": "be cause",
+      "intended": "because",
+      "category": "orthographic",
+      "locationOnScan": { "page": 0, "x": 0.54, "y": 0.42, "z": 0.08, "w": 0.03 },
+      "rationale": "Compound word is split into two words."
+    },
+    {
+      "id": "writing-16127-e004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.66, "y": 0.42, "z": 0.05, "w": 0.03 },
+      "rationale": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e005",
+      "written": "abchen",
+      "intended": "anxious",
+      "category": "unsure",
+      "locationOnScan": { "page": 0, "x": 0.22, "y": 0.47, "z": 0.08, "w": 0.03 },
+      "rationale": "The word is teacher-underlined and likely intended as 'anxious', but handwriting is uncertain."
+    },
+    {
+      "id": "writing-16127-e006",
+      "written": "pee",
+      "intended": "peed",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.39, "y": 0.47, "z": 0.04, "w": 0.03 },
+      "rationale": "Past-tense event likely needs '-ed'."
+    },
+    {
+      "id": "writing-16127-e007",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.52, "y": 0.47, "z": 0.05, "w": 0.03 },
+      "rationale": "Plural noun form is expected."
+    },
+    {
+      "id": "writing-16127-e008",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.73, "y": 0.47, "z": 0.05, "w": 0.03 },
+      "rationale": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e009",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.46, "y": 0.52, "z": 0.04, "w": 0.03 },
+      "rationale": "Past-tense speech reporting should use 'said'."
+    },
+    {
+      "id": "writing-16127-e010",
+      "written": "Hid",
+      "intended": "hid",
+      "category": "capitalisation",
+      "locationOnScan": { "page": 0, "x": 0.18, "y": 0.57, "z": 0.04, "w": 0.03 },
+      "rationale": "Word appears mid-sentence but is capitalised."
+    },
+    {
+      "id": "writing-16127-e011",
+      "written": "run",
+      "intended": "ran",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.31, "y": 0.57, "z": 0.04, "w": 0.03 },
+      "rationale": "Past tense of 'run' should be 'ran'."
+    },
+    {
+      "id": "writing-16127-e012",
+      "written": "wash",
+      "intended": "washed",
+      "category": "morphological",
+      "locationOnScan": { "page": 0, "x": 0.53, "y": 0.57, "z": 0.05, "w": 0.03 },
+      "rationale": "Past-tense narrative context likely requires '-ed'."
+    },
+    {
+      "id": "writing-16127-e013",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "locationOnScan": { "page": 0, "x": 0.62, "y": 0.57, "z": 0.06, "w": 0.03 },
+      "rationale": "Letters appear transposed in 'myself'."
+    },
+    {
+      "id": "writing-16127-e014",
+      "written": "befor",
+      "intended": "before",
+      "category": "orthographic",
+      "locationOnScan": { "page": 0, "x": 0.77, "y": 0.57, "z": 0.05, "w": 0.03 },
+      "rationale": "Final 'e' appears omitted from 'before'."
+    },
+    {
+      "id": "writing-16127-e015",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "unsure",
+      "locationOnScan": { "page": 0, "x": 0.84, "y": 0.57, "z": 0.10, "w": 0.03 },
+      "rationale": "Likely missing function word 'to', but this is a grammar/phrase issue rather than a single spelling error."
+    }
+  ]
+}

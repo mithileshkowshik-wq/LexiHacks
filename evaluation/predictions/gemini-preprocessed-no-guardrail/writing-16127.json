@@ -1,0 +1,133 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "preprocessed-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 20698,
+  "transcript": "one Day I was runing back home because I need to go pee! so\nI was so ahchen that I pee on my pant back home, so I call my\nmom on my phone and say I pee on my pant She say hurry come back\nhome! so I did I run back home and wash myslef up before going sleep.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Capital letter required at the start of a sentence."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Mid-sentence word should be lowercase."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing doubled consonant 'n' in 'running'."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "ahchen",
+      "intended": "urgent",
+      "category": "phonological",
+      "confidenceScore": 0.8,
+      "note": "Phonological misspelling of 'urgent'."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "pee",
+      "intended": "peed",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Noun should be plural ('pants')."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-009",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-010",
+      "written": "She",
+      "intended": ". She",
+      "category": "punctuation",
+      "confidenceScore": 0.85,
+      "note": "Missing full stop before new sentence."
+    },
+    {
+      "id": "writing-16127-prediction-011",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-012",
+      "written": "run",
+      "intended": "ran",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-013",
+      "written": "wash",
+      "intended": "washed",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-014",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Transposition of 'e' and 'l'."
+    },
+    {
+      "id": "writing-16127-prediction-015",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Missing infinitive preposition 'to'."
+    }
+  ]
+}

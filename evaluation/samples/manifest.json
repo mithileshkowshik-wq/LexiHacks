@@ -1,0 +1,26 @@
+[
+  {
+    "sampleId": "writing-16127",
+    "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+    "taskType": "ESSAY",
+    "handwriting": "messy",
+    "textLength": "long",
+    "sampleFormat": "narrative"
+  },
+  {
+    "sampleId": "student-191379",
+    "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+    "taskType": "SHORT_ANSWER",
+    "handwriting": "neat",
+    "textLength": "short",
+    "sampleFormat": "edit-and-diagram"
+  },
+  {
+    "sampleId": "student-92398",
+    "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+    "taskType": "SHORT_ANSWER",
+    "handwriting": "neat",
+    "textLength": "short",
+    "sampleFormat": "edit-and-diagram"
+  }
+]

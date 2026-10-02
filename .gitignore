@@ -1,0 +1,11 @@
+node_modules/
+.env
+dist/
+.claude/
+.hermes/
+server/uploads/
+server/samples/
+samples/
+evaluation/debug-private/
+*.log
+deployment.zip

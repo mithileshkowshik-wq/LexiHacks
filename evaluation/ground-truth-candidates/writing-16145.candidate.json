@@ -1,0 +1,17 @@
+{
+  "sampleId": "writing-16145",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16145.pdf",
+  "taskType": "ESSAY",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "AI-generated candidate labels from hermes-gpt-5.6-visual-review using isolated raw-image inference and the full transcription guardrail profile. Human vetting is required before copying this file to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "writing-16145-e001",
+      "written": "Becase",
+      "intended": "Because",
+      "category": "orthographic",
+      "rationale": "Likely omission of 'u' in 'Because'; surrounding handwriting is unclear. AI confidence: 0.82."
+    }
+  ]
+}

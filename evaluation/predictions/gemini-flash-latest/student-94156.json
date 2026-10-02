@@ -1,0 +1,81 @@
+{
+  "sampleId": "student-94156",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-94156.pdf",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 19441,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": ",",
+      "intended": ".",
+      "category": "punctuation",
+      "confidenceScore": 0.9,
+      "note": "A comma was used instead of a full stop at the end of the sentence.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.66,
+        "y": 0.28,
+        "z": 0.02,
+        "w": 0.03
+      }
+    },
+    {
+      "written": "bird",
+      "intended": "birds",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing plural '-s' suffix to match the plural subject.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.67,
+        "y": 0.39,
+        "z": 0.08,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "has",
+      "intended": "have",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb form used for agreement with a plural subject.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.76,
+        "y": 0.39,
+        "z": 0.07,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "wing",
+      "intended": "wings",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing plural '-s' suffix on the noun.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.85,
+        "y": 0.39,
+        "z": 0.09,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "got",
+      "intended": "had",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Incorrect past-tense verb form used instead of 'had'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.66,
+        "y": 0.72,
+        "z": 0.07,
+        "w": 0.04
+      }
+    }
+  ]
+}

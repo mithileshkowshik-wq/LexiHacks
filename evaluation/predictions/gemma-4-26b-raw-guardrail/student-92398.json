@@ -1,0 +1,52 @@
+{
+  "sampleId": "student-92398",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": 20057,
+  "transcript": "Zhan Yaan 9/4/16\n\nJohn took a nap in the his room.\nBirds can fly because they have wings and light bones.\nWe planned to visit her in the morning.\nThe girl sat in the on the bed in the room.\nPeter ran as fast as he could a from cats",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-92398-prediction-001",
+      "written": "the",
+      "intended": "his",
+      "category": "morphological",
+      "confidenceScore": 0.7,
+      "note": "repetition/incorrect word choice in context"
+    },
+    {
+      "id": "student-92398-prediction-002",
+      "written": "the",
+      "intended": "the",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "The word 'the' is written over a previous word, likely a correction attempt"
+    },
+    {
+      "id": "student-92398-prediction-003",
+      "written": "the",
+      "intended": "the",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "The word 'the' is written over a previous word, likely a correction attempt"
+    },
+    {
+      "id": "student-92398-prediction-004",
+      "written": "the",
+      "intended": "the",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "The word 'the' is written over a previous word, likely a correction attempt"
+    },
+    {
+      "id": "student-92398-prediction-005",
+      "written": "a from",
+      "intended": "from",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "extra word inserted"
+    }
+  ]
+}

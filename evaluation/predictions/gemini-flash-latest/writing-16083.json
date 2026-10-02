@@ -1,0 +1,67 @@
+{
+  "sampleId": "writing-16083",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16083.pdf",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 8050,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "gentel",
+      "intended": "gentle",
+      "category": "phonological",
+      "confidenceScore": 0.9,
+      "note": "The word is spelled phonetically with '-el' instead of '-le'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.83,
+        "y": 0.28,
+        "z": 0.06,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "tommorrow",
+      "intended": "tomorrow",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "An extra letter 'm' is included in 'tomorrow'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.48,
+        "y": 0.32,
+        "z": 0.09,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "spining",
+      "intended": "spinning",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing the double consonant 'n' in 'spinning'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.14,
+        "y": 0.84,
+        "z": 0.06,
+        "w": 0.02
+      }
+    },
+    {
+      "written": "sectertly",
+      "intended": "secretly",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Letters are transposed and duplicated in 'secretly'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.77,
+        "y": 0.87,
+        "z": 0.08,
+        "w": 0.02
+      }
+    }
+  ]
+}

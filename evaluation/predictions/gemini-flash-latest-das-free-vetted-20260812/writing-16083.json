@@ -1,0 +1,141 @@
+{
+  "sampleId": "writing-16083",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 17409,
+  "transcript": "Name: Regina Date: 17/05/26\nCBA WRITING\n• Narrative • Expository • Persuasive\n\nAn occasion where I was in the wrong and learnt from a mistake. It all started on\na dark and gloomy day... Instead of sun shining at you during the 'golden hour', now it's just\na gloomy rainy day. \"I hope you guys had studing for your Weighted Assesment two. Just a gentel\nreminder that your maths Weighted Asserment is tommorrow. Please go back and make your last few\nrevisions before your paper tommorrow,\" said Mrs Chan, class 2TG3 maths teacher, which also is my class.\nI was terribly bad at maths till Mrs Chan privately tutored me for the past year. This weighted assesment\nI have to score good. The school bell rang, \"Okay, class dismissed,\" Mrs Chan dismissed the class. \"Why\nmust maths paper be the first one to be tested,\" said Meena, my best friend also the smartest in class. \"What\nare you scared about aren't you the smartest? Did you forget?\" said Lena, my other best friend, sports person. Then\nthey both be setting up a debate and ask me be the judge. All I do is just shook my head and laugh at them.\nThat night, I revised for all chapters tested till eleven-thirty. \"Talia! Why aren't you in bed yet?!\"\nmy mum, the tiger roared. All I could do was say, \"Okay, okay. I'm sleeping!\" I shouted. The next day, it\nwas still raining heavily, as if it knows my misery. The moment I stepped foot into maths class, my mind went\nblank! I couldn't remember any formula that I revised or learned!! I knew, I was boiling water. \"Everybody,\nget to your seats! The paper's starting.\" Mrs Chan said while holding the papers. I got to my seat, Mrs\nChan started giving out the papers, the moment I looked at the cover page of the paper, my mind just blanked even\nworst. \"You may begin the paper?\" Mrs Chan said. I flipped the paper, the first question, algebra. My\nmind was spining! My hand were shaking, instead i let my introsive thoughts win...\nI looked to my left, where Meena was sitting. I looked at her paper sectretly and copied\nto my paper, thinking twice about cheating or Mrs Chan noticing! \"Okay, times up! Pens down!\" Mrs Chan said.\n\n\"No communication should be done till all papers are collected!\" Mrs Chan warned the class. My hand trembled as\nI handed my paper. \"Okay everybody you are dismissed, I only want to see Talia!\" Mrs Chan told the class. I\nfroze, what's happening did she saw me cheating?! \"I'm so done for,\" I said to myself as I walked to Mrs Chan. \"Talia,\nI want you to tell me honestly, did you cheat during the exam?\" Mrs Chan asked in a serisous tone. I looked\ndown, hesitate to speak. Mrs Chan saw that I was hestant to speak, \"Talia? I need you to tell me the truth if\nnot it will be more serious with the discipline master.\" I reluctantly nodded and say, \"I'm sorry, Mrs Chan.\nI know, I shouldn't cheat but my mind went blank, I couldn't think! I know this isn't an excuse\nbut Meena has nothing to do with me cheating, please if anything happens just blame it on me. I'm sorry\" after\nsaying this tears formed in my eyes, which made my eye blur. \"Talia, I expected better from\nyou. At least you admitted yourself if not you be in more trouble. Next time before going into an exam room, calm\nyourself down so your mind won't go blank again. This is too serious, I'm sorry but I have to let the displine\nmaster and your parents know.\" Mrs Chan said gently. I nodded, accepting my fate wheater I like it\nor not.\nMy parents were called in, Mrs Chan explained everything to my parents. They looked disapointed at\nme but I just kept looking down. Mrs Chan say trying to make my parents not be so mad at me, \"Talia has\npotential, it's just that she needs to be more calm. Maybe you guys think about giving her help she needs.\"\nWhen the discipline master came, he said, \"Since she admitted herself the punishment won't be servere,\njust that she be suspended for a day and her grade is zero.\" my parents nodded. The ride back\nhome, my parents didn't scold me but instead... \"Talia? Why did you do this!\" mum asked. I didn't\nreply to her, I just kept looking out the window, feeling miserable just like the weather. Back at home,\nI just went into my room and stayed there till my mum came in, trying to make me feel better. \"You're\nnot mad?\" I asked. \"I know you didn't mean to do it but promise me this won't happen again.\" mum said.\nI nodded then mum said that Meena and Lena are here. So mum brought them to my room.\nBoth Meena and Lena were so worried when they heard what happened. That's why\nthey came to check up on me. I told them everything, they just hugged me tight. From then on I\nlearned to always calm down before doing anything and it helps.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16083-prediction-001",
+      "written": "studing",
+      "intended": "studying",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of studying."
+    },
+    {
+      "id": "writing-16083-prediction-002",
+      "written": "Assesment",
+      "intended": "Assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of assessment (missing 's')."
+    },
+    {
+      "id": "writing-16083-prediction-003",
+      "written": "gentel",
+      "intended": "gentle",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of gentle."
+    },
+    {
+      "id": "writing-16083-prediction-004",
+      "written": "Asserment",
+      "intended": "Assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of assessment with 'r' instead of 's'."
+    },
+    {
+      "id": "writing-16083-prediction-005",
+      "written": "tommorrow",
+      "intended": "tomorrow",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of tomorrow with double 'm'."
+    },
+    {
+      "id": "writing-16083-prediction-006",
+      "written": "assesment",
+      "intended": "assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of assessment."
+    },
+    {
+      "id": "writing-16083-prediction-007",
+      "written": "spining",
+      "intended": "spinning",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of spinning (missing single consonant doubling)."
+    },
+    {
+      "id": "writing-16083-prediction-008",
+      "written": "i",
+      "intended": "I",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Personal pronoun 'I' should be capitalized."
+    },
+    {
+      "id": "writing-16083-prediction-009",
+      "written": "introsive",
+      "intended": "intrusive",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of intrusive."
+    },
+    {
+      "id": "writing-16083-prediction-010",
+      "written": "sectretly",
+      "intended": "secretly",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of secretly with extra 't'."
+    },
+    {
+      "id": "writing-16083-prediction-011",
+      "written": "serisous",
+      "intended": "serious",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of serious with extra 's'."
+    },
+    {
+      "id": "writing-16083-prediction-012",
+      "written": "hestant",
+      "intended": "hesitant",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of hesitant."
+    },
+    {
+      "id": "writing-16083-prediction-013",
+      "written": "displine",
+      "intended": "discipline",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of discipline."
+    },
+    {
+      "id": "writing-16083-prediction-014",
+      "written": "wheater",
+      "intended": "whether",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of whether."
+    },
+    {
+      "id": "writing-16083-prediction-015",
+      "written": "disapointed",
+      "intended": "disappointed",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of disappointed (missing 'p')."
+    },
+    {
+      "id": "writing-16083-prediction-016",
+      "written": "servere",
+      "intended": "severe",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelling of severe."
+    }
+  ]
+}

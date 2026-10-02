@@ -1,0 +1,93 @@
+{
+  "sampleId": "student-121606",
+  "model": "gemini-pro-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 39377,
+  "transcript": "Dani 9,10,2016\nhe run.\nFox hunt\nI am sang.\nPam Swimming?\ntom Jump",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-121606-prediction-001",
+      "written": "9,10,2016",
+      "intended": "9/10/2016",
+      "category": "punctuation",
+      "confidenceScore": 0.85,
+      "note": "Commas used instead of standard date separators."
+    },
+    {
+      "id": "student-121606-prediction-002",
+      "written": "he",
+      "intended": "He",
+      "category": "capitalisation",
+      "confidenceScore": 0.99,
+      "note": "Sentence begins with a lowercase letter."
+    },
+    {
+      "id": "student-121606-prediction-003",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Missing third-person singular '-s' for subject-verb agreement."
+    },
+    {
+      "id": "student-121606-prediction-004",
+      "written": "Fox hunt",
+      "intended": "Fox hunt.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "Missing terminal punctuation."
+    },
+    {
+      "id": "student-121606-prediction-005",
+      "written": "sang",
+      "intended": "singing",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb participle form after the auxiliary verb 'am'."
+    },
+    {
+      "id": "student-121606-prediction-006",
+      "written": "Swimming",
+      "intended": "swimming",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Improper capitalization of a mid-sentence word."
+    },
+    {
+      "id": "student-121606-prediction-007",
+      "written": "tom",
+      "intended": "Tom",
+      "category": "capitalisation",
+      "confidenceScore": 0.99,
+      "note": "Proper noun and sentence starter lacks capitalization."
+    },
+    {
+      "id": "student-121606-prediction-008",
+      "written": "Jump",
+      "intended": "jumps",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing third-person singular '-s' for subject-verb agreement."
+    },
+    {
+      "id": "student-121606-prediction-009",
+      "written": "Jump",
+      "intended": "jump",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Improper capitalization of a mid-sentence word."
+    },
+    {
+      "id": "student-121606-prediction-010",
+      "written": "tom Jump",
+      "intended": "tom Jump.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "Missing terminal punctuation."
+    }
+  ]
+}

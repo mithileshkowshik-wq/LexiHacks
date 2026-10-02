@@ -1,0 +1,53 @@
+{
+  "sampleId": "student-284857",
+  "model": "qwen/qwen2.5-vl-72b-instruct",
+  "provider": "openrouter",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 16733,
+  "transcript": "John took a nap at his bed.\nBirds can fly because they have wings.\nWe planned to visit her on friday.\nThe girl sat on the beanch.\nPeter ran fast because he want for a running races si.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-284857-prediction-001",
+      "written": "at his bed",
+      "intended": "in his bed",
+      "category": "unsure",
+      "confidenceScore": 0.9,
+      "note": "The preposition 'at' is typically used with specific locations, while 'in' would be more appropriate for being inside something like a bed."
+    },
+    {
+      "id": "student-284857-prediction-002",
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "confidenceScore": 1,
+      "note": "Days of the week should be capitalized."
+    },
+    {
+      "id": "student-284857-prediction-003",
+      "written": "beanch",
+      "intended": "bench",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Spelling error; 'beanch' should be 'bench'."
+    },
+    {
+      "id": "student-284857-prediction-004",
+      "written": "he want",
+      "intended": "he wants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Subject-verb agreement error; 'he' requires the third-person singular form 'wants'."
+    },
+    {
+      "id": "student-284857-prediction-005",
+      "written": "si",
+      "intended": "",
+      "category": "unsure",
+      "confidenceScore": 0.8,
+      "note": "The purpose or meaning of 'si' is unclear in this context."
+    }
+  ]
+}

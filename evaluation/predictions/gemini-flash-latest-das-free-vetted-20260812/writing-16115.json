@@ -1,0 +1,221 @@
+{
+  "sampleId": "writing-16115",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 24514,
+  "transcript": "It was a tipical Tuesday morning. When I entered the class\nsome students were laughing and having their own tiny conversation, while others were going around\nto the class to greet one another. overlapping conversation\nsomething that I had grown used to every day\nfilled the room. Then I spotted my best friend, Mary. I went\nto her and greeted her with a pleasant smile. We were best friends\nfrom kindergarden, we would always hang out in my house\nevery friday after school. We would also share very\nsecrets with one another as well. Just then the teacher\nwalked in. Instantly everyone went back to their seat.\nThe movment was quick but natural; something that happened\neveryday with not much thought in it. So Mary and\nI settled in our seats, ready to start the lesson.\n\nThen my teacher, Ms Tan assinged us some work\nto do. Moment after I started doing my assignment,\nI heard something that caught my attention.\nI heard a buch of student from the tabdle beside me\n\ntalking about something very personal about me. It was also\none of the secrets that I only told Mary and not a single soul\nin the class. 'How do they know? How much do they know?\nWhat more would they know? And most importantly how would\nhave told them?!' All these such thought filled my mind.\nJust then a thought that I would never think or poped\nin my brain. 'What if Mary told them?' I thought. I was\nspeechless. For the whole lesson I was think how would Mary\npossible betray me like that. After a while the recess\nbell rang. Upon hearing that the students rushed to hand in\nthe paper and bolted down to the school canteen wanting\nto beat the long queue line out the stalls. As I made my way\nslowly down to the canteen still in disbelief of what\nhappen in class earlear.\n\nWhen I reached the canteen I spotted Mary.\n\nwithout hesitation I stomped towards her as I was raging\nwith anger. \"Why would you do such a thing! I trusted you\nto keep my secrets and you go around telling people\nabout it!\" I shouted. She was looking so lost in my word and\nlooked she had absolutely no idea what I was talking which made\nme even frustrated. \"Oh stop pretending like you do not know\nwhat I am talking about.\" I raised my voice once more.\nBefore she could say a word I angrily walk away.\n\nFor the whole day I avoided her, not wanting to\nsee her. When she kept coming up to me to explain herself,\nI kept going away from her. Later the teacher\npartented us together so I had not choice but to talk to her.\nThen she asked if she would explain herself one more time.\nI said \"fine\" in a stern voice while crossing my arms. Mary\nsaid that she would never tell anyone my secret as\nshe knew how much it meant to me, and that another\n\nmight just hear us talking. At that second a\nwave of embarrassment washed over me. I apologized sincerely to\nher for accusing her unfairly and for refusing to let her\nexplain the problem. Although she was hurt by my\naction, she eventually forgiven me\n\nThe expireants taught me that trust can easily\nbe damage with assumptions and impulsive actions.\nFrom that day onwards I learned that I should not assume\nsomething that I do not know fully about and I also learned\nto stay calm and commutacat properly before jumping\nto conclusion.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16115-prediction-001",
+      "written": "tipical",
+      "intended": "typical",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelled 'typical' using 'i'."
+    },
+    {
+      "id": "writing-16115-prediction-002",
+      "written": "kindergarden",
+      "intended": "kindergarten",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelled 'kindergarten' with a 'd'."
+    },
+    {
+      "id": "writing-16115-prediction-003",
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Days of the week must be capitalized."
+    },
+    {
+      "id": "writing-16115-prediction-004",
+      "written": "Instantly",
+      "intended": "Instantly",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Written as 'Insantly' missing 't'."
+    },
+    {
+      "id": "writing-16115-prediction-005",
+      "written": "seat",
+      "intended": "seats",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Plural subject pronoun 'their' requires plural noun 'seats'."
+    },
+    {
+      "id": "writing-16115-prediction-006",
+      "written": "movment",
+      "intended": "movement",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing letter 'e' in 'movement'."
+    },
+    {
+      "id": "writing-16115-prediction-007",
+      "written": "assinged",
+      "intended": "assigned",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Transposed 'ng' in 'assigned'."
+    },
+    {
+      "id": "writing-16115-prediction-008",
+      "written": "buch",
+      "intended": "bunch",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Missing 'n' in 'bunch'."
+    },
+    {
+      "id": "writing-16115-prediction-009",
+      "written": "student",
+      "intended": "students",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Plural noun required after 'a bunch of'."
+    },
+    {
+      "id": "writing-16115-prediction-010",
+      "written": "tabdle",
+      "intended": "table",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Extra letter 'd' inserted into 'table'."
+    },
+    {
+      "id": "writing-16115-prediction-011",
+      "written": "how would",
+      "intended": "who would",
+      "category": "phonological",
+      "confidenceScore": 0.85,
+      "note": "Substituted question word 'how' for 'who'."
+    },
+    {
+      "id": "writing-16115-prediction-012",
+      "written": "such thought",
+      "intended": "such thoughts",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Plural noun required after 'these such'."
+    },
+    {
+      "id": "writing-16115-prediction-013",
+      "written": "poped",
+      "intended": "popped",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing double consonant in 'popped'."
+    },
+    {
+      "id": "writing-16115-prediction-014",
+      "written": "think",
+      "intended": "thinking",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past continuous tense requires participle 'thinking'."
+    },
+    {
+      "id": "writing-16115-prediction-015",
+      "written": "possible",
+      "intended": "possibly",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Adverb 'possibly' required to modify verb 'betray'."
+    },
+    {
+      "id": "writing-16115-prediction-016",
+      "written": "happen",
+      "intended": "happened",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16115-prediction-017",
+      "written": "earlear",
+      "intended": "earlier",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Misspelled 'earlier'."
+    },
+    {
+      "id": "writing-16115-prediction-018",
+      "written": "without",
+      "intended": "Without",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "First word of sentence must be capitalized."
+    },
+    {
+      "id": "writing-16115-prediction-019",
+      "written": "walk",
+      "intended": "walked",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense 'walked' required to match narrative tense."
+    },
+    {
+      "id": "writing-16115-prediction-020",
+      "written": "partented",
+      "intended": "partnered",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Misspelled 'partnered'."
+    },
+    {
+      "id": "writing-16115-prediction-021",
+      "written": "not",
+      "intended": "no",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Substituted adverb 'not' for determiner 'no'."
+    },
+    {
+      "id": "writing-16115-prediction-022",
+      "written": "forgiven",
+      "intended": "forgave",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past simple 'forgave' required instead of past participle."
+    },
+    {
+      "id": "writing-16115-prediction-023",
+      "written": "expireants",
+      "intended": "experience",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Misspelled 'experience'."
+    },
+    {
+      "id": "writing-16115-prediction-024",
+      "written": "be damage",
+      "intended": "be damaged",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Passive verb form requires past participle 'damaged'."
+    },
+    {
+      "id": "writing-16115-prediction-025",
+      "written": "commutacat",
+      "intended": "communicate",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Misspelled 'communicate'."
+    },
+    {
+      "id": "writing-16115-prediction-026",
+      "written": "conclusion",
+      "intended": "conclusions",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Plural noun required in standard expression 'jumping to conclusions'."
+    }
+  ]
+}

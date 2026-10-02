@@ -1,0 +1,36 @@
+{
+  "sampleId": "student-191379",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-e01",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "confidenceScore": 0.88,
+      "note": "Third-person singular subject appears to require the -s verb ending."
+    },
+    {
+      "id": "student-191379-e02",
+      "written": "The fox hunt",
+      "intended": "The fox hunts",
+      "category": "morphological",
+      "confidenceScore": 0.86,
+      "note": "Singular subject 'fox' appears to require the -s verb ending."
+    },
+    {
+      "id": "student-191379-e03",
+      "written": "Hops",
+      "intended": "hops",
+      "category": "capitalisation",
+      "confidenceScore": 0.68,
+      "note": "The verb in 'Tom Hops' appears capitalized after the proper noun. Marked with slightly reduced confidence because the letter shape could be an oversized lowercase h."
+    }
+  ]
+}

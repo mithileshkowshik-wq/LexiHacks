@@ -1,0 +1,20 @@
+{
+  "sampleId": "student-191379",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": 5356,
+  "transcript": "Dan 03/4/17\nHe run\nThe fox hunt\nI sang\nPam swims in water\nTom hops",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Subject-verb agreement error"
+    }
+  ]
+}

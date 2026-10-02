@@ -1,0 +1,67 @@
+{
+  "sampleId": "student-92398",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+  "model": "gemini-3.5-flash",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 15273,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "zhan",
+      "intended": "Zhan",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "The name 'Zhan' is written with a lowercase initial letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.14,
+        "y": 0.01,
+        "z": 0.07,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "ligth",
+      "intended": "light",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "The letters 't' and 'h' are reversed, resulting in a spelling error.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.79,
+        "y": 0.18,
+        "z": 0.06,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "in on",
+      "intended": "on",
+      "category": "unsure",
+      "confidenceScore": 0.8,
+      "note": "The word 'in' is left uncrossed before 'on', creating a grammatical error.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.3,
+        "y": 0.28,
+        "z": 0.16,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "cats",
+      "intended": "cats.",
+      "category": "punctuation",
+      "confidenceScore": 0.95,
+      "note": "The sentence is missing a period at the end.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.73,
+        "y": 0.34,
+        "z": 0.07,
+        "w": 0.04
+      }
+    }
+  ]
+}

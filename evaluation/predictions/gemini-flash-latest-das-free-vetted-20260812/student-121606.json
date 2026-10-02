@@ -1,0 +1,61 @@
+{
+  "sampleId": "student-121606",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 12882,
+  "transcript": "Dani 9.10.2016\n\nhe run.\n\nFox hunt\n\nI am sang.\n\nPam swimming?\ntom jump",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-121606-prediction-001",
+      "written": "he",
+      "intended": "He",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence should start with a capital letter."
+    },
+    {
+      "id": "student-121606-prediction-002",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Subject-verb agreement error for third-person singular ('He runs')."
+    },
+    {
+      "id": "student-121606-prediction-003",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Missing third-person singular verb ending."
+    },
+    {
+      "id": "student-121606-prediction-004",
+      "written": "sang",
+      "intended": "singing",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb form following auxiliary 'am' ('I am singing')."
+    },
+    {
+      "id": "student-121606-prediction-005",
+      "written": "tom",
+      "intended": "Tom",
+      "category": "capitalisation",
+      "confidenceScore": 0.98,
+      "note": "Proper noun and sentence initial word must be capitalized."
+    },
+    {
+      "id": "student-121606-prediction-006",
+      "written": "jump",
+      "intended": "jumps",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing third-person singular verb ending ('Tom jumps')."
+    }
+  ]
+}

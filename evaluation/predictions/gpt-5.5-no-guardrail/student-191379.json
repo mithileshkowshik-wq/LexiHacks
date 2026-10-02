@@ -1,0 +1,36 @@
+{
+  "sampleId": "student-191379",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-e001",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Third-person singular present-tense verb likely requires '-s'."
+    },
+    {
+      "id": "student-191379-e002",
+      "written": "The fox hunt",
+      "intended": "The fox hunts",
+      "category": "morphological",
+      "confidenceScore": null,
+      "note": "Third-person singular subject likely requires present-tense '-s'."
+    },
+    {
+      "id": "student-191379-e003",
+      "written": "Hoops",
+      "intended": "hops",
+      "category": "orthographic",
+      "confidenceScore": null,
+      "note": "Likely intended verb is 'hops'; written form has an extra 'o' and capital H mid-line."
+    }
+  ]
+}

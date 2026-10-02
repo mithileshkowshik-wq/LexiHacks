@@ -1,0 +1,34 @@
+{
+  "sampleId": "student-191379",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+  "taskType": "Edit&Diagram 1",
+  "grade": "unknown",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "Independent second-round visual evaluation by GPT-5.5 with guardrails. Used only the scan image; ignored name/date. Approximate transcript: \"He run / The fox hunt / I sang / Pam swims in water / Tom Hops\". No uncertain words, though 'Hops' could be a capital H or an unusually tall lowercase h.",
+  "errors": [
+    {
+      "id": "student-191379-e01",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "rationale": "Third-person singular subject appears to require the -s verb ending.",
+      "confidence": 0.88
+    },
+    {
+      "id": "student-191379-e02",
+      "written": "The fox hunt",
+      "intended": "The fox hunts",
+      "category": "morphological",
+      "rationale": "Singular subject 'fox' appears to require the -s verb ending.",
+      "confidence": 0.86
+    },
+    {
+      "id": "student-191379-e03",
+      "written": "Hops",
+      "intended": "hops",
+      "category": "capitalisation",
+      "rationale": "The verb in 'Tom Hops' appears capitalized after the proper noun. Marked with slightly reduced confidence because the letter shape could be an oversized lowercase h.",
+      "confidence": 0.68
+    }
+  ]
+}

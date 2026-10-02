@@ -1,0 +1,125 @@
+{
+  "sampleId": "writing-16083",
+  "model": "qwen/qwen2.5-vl-72b-instruct",
+  "provider": "openrouter",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 41499,
+  "transcript": "An occasion where I was in the wrong and learnt from a mistake. It all started on a dark and gloomy day... Instead of sun shining at you during the 'golden hour', it now it's just a gloomy rainy day. \"I hope you guys had studying for your Weighted Assessment two. Just a gentle reminder that your maths Weighted Assessment is tomorrow. Please go back and make your last few revisions before your paper tomorrow,\" said Mrs Chan, class 2TG3 maths teacher, which also is my class. I was terribly bad at maths till Mrs Chan privately tutored me for the past year. This weighted assessment I have to score good. The school bell rang, \"Okay, class dismissed,\" Mrs Chan dismissed the class. \"Why must maths paper be the first one to be tested,\" said Meena, my best friend also the smartest in class. \"What are you scared about aren't you the smartest? Did you forget?\" said Lena, my other best friend sports person. Then they both be setting up a debate and ask me be the judge. All I do is just shook my head and laugh at them. That night, I revised for all chapters tested till eleven-thirty. \"Talia! Why aren't you in bed yet?!\" my mum, the tiger roared. All I could do was say, \"Okay, okay. I'm sleeping!\" I shouted. The next day, it was still raining heavily, as if it knows my misery. The moment I stepped foot into maths class, my mind went blank! I couldn't remember any formula that I revised or learned!! I knew, I was boiling water. \"Everybody, get to your seats! The paper's starting.\" Mrs Chan said while holding the papers. I got to my seat, Mrs Chan started giving out the papers, the moment I looked at the cover page of the paper, my mind just blanked even worst. \"You may begin the paper?\" Mrs Chan said. I flipped the paper, the first question, algebra. My mind was spining! My hand were shaking, instead I let my intrusive thoughts win....\n\nI looked to my left, where Meena was sitting. I looked at her paper secretly and copied to my paper, thinking twice about cheating or Mrs Chan noticing! \"Okay, times up! Pens down!\" Mrs Chan said.\n\n\"No communication should be done till all papers are collected!\" Mrs Chan warned the class. My hand trembled as I handed my paper. \"Okay everybody you are dismissed, I only want to see Talia!\" Mrs Chan told the class. I froze, what's happening did she saw me cheating?! \"I'm so done for,\" I said to myself as I walked to Mrs Chan. \"Talia, I want you to tell me honestly, what did you cheat during the exam?\" Mrs Chan asked in a serious tone. I looked down, hesitate to speak. Mrs Chan saw that I was hesitant to speak, \"Talia? I need you to tell me the truth if not it will be more serious with the discipline master.\" I reluctantly nodded and say, \"I'm sorry, Mrs Chan. I know, I shouldn't cheat but my mind when went blank, I wouldn't think.\" I know this isn't an excuse but Meena has nothing to do with me cheating, please if anything happens just blame it on me. I'm sorry.\" after saying this tears formed in my eyes teardrop, which made my eye blur. \"Talia, I expected better from you. At least you admitted yourself if not you be in more trouble. Next time before going into an exam room, calm yourself down so your mind won't go blank again. This is too serious, I'm sorry but I have to let the discipline master and your parents know.\" Mrs Chan said gently. I nodded, accepting my fate whether I like it or not.\n\nMy parents were called in, Mrs Chan explained everything to my parents. They looked disappointed at me but I just kept looking down. Mrs Chan, say trying to make my parents not be so mad at me, \"Talia has potential, it's just that she needs to be more calm. Maybe you guys think about giving her help she needs.\" When the discipline master came, he said, \"Since she admitted herself the punishment won't be severe, just that she be suspended for a day and her grade is zero.\" My parents nodded. The ride back home, my parents didn't scold me but instead... \"Talia? Why did you do this!\" mum asked. I didn't reply to her, I just kept looking out the window, feeling miserable just like the weather. Back at home, I just went into my room and stayed there till my mum came in, trying to make me feel better. \"Your not mad?\" I asked. \"I know you didn't mean to do it but promise me this won't happen again.\" mum said. I nodded then mum said that Meena and Lena are here. So mum brought them to my room.\n\nBoth Meena and Lena were so worried when they heard what happened. That's why they came to check up on me. I told them everything, they just hugged me tight. From then on I learned to always calm down before doing anything and it helps.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16083-prediction-001",
+      "written": "learnt",
+      "intended": "learned",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "The past tense form of 'learn' is 'learned'."
+    },
+    {
+      "id": "writing-16083-prediction-002",
+      "written": "it now it's just",
+      "intended": "it's now just",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "The contraction 'it's' means 'it is'. The sentence structure requires 'it's' followed by 'now just'."
+    },
+    {
+      "id": "writing-16083-prediction-003",
+      "written": "Weighted Assesment",
+      "intended": "Weighted Assessment",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "The correct spelling is 'Assessment'."
+    },
+    {
+      "id": "writing-16083-prediction-004",
+      "written": "gentel",
+      "intended": "gentle",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "The correct spelling is 'gentle'."
+    },
+    {
+      "id": "writing-16083-prediction-005",
+      "written": "score good",
+      "intended": "score well",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "The phrase 'score well' is more appropriate than 'score good'."
+    },
+    {
+      "id": "writing-16083-prediction-006",
+      "written": "they both be setting up a debate",
+      "intended": "they both were setting up a debate",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "The verb 'be' should be 'were' to match the past tense context."
+    },
+    {
+      "id": "writing-16083-prediction-007",
+      "written": "ask me be the judge",
+      "intended": "ask me to be the judge",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "The infinitive 'to be' is needed after 'ask'."
+    },
+    {
+      "id": "writing-16083-prediction-008",
+      "written": "shook my head",
+      "intended": "shook my head",
+      "category": "unsure",
+      "confidenceScore": 0.7,
+      "note": "The word 'shook' is correctly used, but the context might require further clarification."
+    },
+    {
+      "id": "writing-16083-prediction-009",
+      "written": "spining",
+      "intended": "spinning",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "The correct spelling is 'spinning'."
+    },
+    {
+      "id": "writing-16083-prediction-010",
+      "written": "hand were shaking",
+      "intended": "hands were shaking",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "The plural form 'hands' is required."
+    },
+    {
+      "id": "writing-16083-prediction-011",
+      "written": "worst",
+      "intended": "worse",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "The comparative form 'worse' is needed here."
+    },
+    {
+      "id": "writing-16083-prediction-012",
+      "written": "teardrop",
+      "intended": "teardrops",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "The plural form 'teardrops' is more appropriate."
+    },
+    {
+      "id": "writing-16083-prediction-013",
+      "written": "your not mad?",
+      "intended": "you're not mad?",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "The contraction 'you're' means 'you are'."
+    },
+    {
+      "id": "writing-16083-prediction-014",
+      "written": "went into my room",
+      "intended": "went into my room",
+      "category": "unsure",
+      "confidenceScore": 0.7,
+      "note": "The phrase is correct, but the context might require further clarification."
+    }
+  ]
+}

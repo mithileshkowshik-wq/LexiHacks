@@ -1,0 +1,57 @@
+[
+  {
+    "catalogueMode": "mock",
+    "worksheetId": "mock-phonics",
+    "title": "Phonics practice",
+    "pageStart": 1,
+    "pageEnd": 3,
+    "targetCategories": ["phonological"],
+    "skill": "sound-to-letter correspondence",
+    "difficulty": "primary",
+    "description": "Three focused pages of phonological practice for local development."
+  },
+  {
+    "catalogueMode": "mock",
+    "worksheetId": "mock-spelling",
+    "title": "Spelling-pattern practice",
+    "pageStart": 4,
+    "pageEnd": 6,
+    "targetCategories": ["orthographic"],
+    "skill": "letter sequence and spelling patterns",
+    "difficulty": "primary",
+    "description": "Three focused pages of orthographic spelling practice for local development."
+  },
+  {
+    "catalogueMode": "mock",
+    "worksheetId": "mock-morphology",
+    "title": "Word-parts practice",
+    "pageStart": 7,
+    "pageEnd": 9,
+    "targetCategories": ["morphological"],
+    "skill": "prefixes, suffixes, and base words",
+    "difficulty": "primary",
+    "description": "Three focused pages of morphology practice for local development."
+  },
+  {
+    "catalogueMode": "mock",
+    "worksheetId": "mock-capitals",
+    "title": "Capital-letter practice",
+    "pageStart": 10,
+    "pageEnd": 11,
+    "targetCategories": ["capitalisation"],
+    "skill": "capital-letter editing",
+    "difficulty": "primary",
+    "description": "Two focused pages of capitalisation practice for local development."
+  },
+  {
+    "catalogueMode": "mock",
+    "worksheetId": "mock-punctuation",
+    "title": "Punctuation practice",
+    "pageStart": 12,
+    "pageEnd": 14,
+    "targetCategories": ["punctuation"],
+    "skill": "sentence punctuation editing",
+    "difficulty": "primary",
+    "description": "Three focused pages of punctuation practice for local development."
+  }
+]

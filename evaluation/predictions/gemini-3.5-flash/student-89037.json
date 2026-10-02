@@ -1,0 +1,39 @@
+{
+  "sampleId": "student-89037",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-89037.jpg",
+  "model": "gemini-3.5-flash",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 10861,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "kow",
+      "intended": "Kow",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "The surname should start with a capital letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.33,
+        "y": 0.04,
+        "z": 0.1,
+        "w": 0.05
+      }
+    },
+    {
+      "written": "Swims",
+      "intended": "swims",
+      "category": "capitalisation",
+      "confidenceScore": 0.85,
+      "note": "The verb 'swims' should not be capitalised.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.22,
+        "y": 0.62,
+        "z": 0.13,
+        "w": 0.05
+      }
+    }
+  ]
+}

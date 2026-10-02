@@ -1,0 +1,128 @@
+[
+  {
+    "caseId": "long-o-single",
+    "familyId": "long-o-spelling",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "C",
+      "level": "secondary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 7
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "orthographic",
+        "written": "bote",
+        "intended": "boat",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow"
+    ]
+  },
+  {
+    "caseId": "long-o-multiple",
+    "familyId": "long-o-spelling",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "C",
+      "level": "secondary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 7
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "orthographic",
+        "written": "bote",
+        "intended": "boat",
+        "note": ""
+      },
+      {
+        "id": "e2",
+        "category": "orthographic",
+        "written": "groe",
+        "intended": "grow",
+        "note": ""
+      },
+      {
+        "id": "e3",
+        "category": "orthographic",
+        "written": "roap",
+        "intended": "rope",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow"
+    ]
+  },
+  {
+    "caseId": "vccv-single",
+    "familyId": "vccv-syllabication",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "B",
+      "level": "primary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 5
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "phonological",
+        "written": "pi-cnic",
+        "intended": "pic-nic",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "das-src-0390-band-b-y1t1w5-reading-and-spelling"
+    ]
+  },
+  {
+    "caseId": "vccv-multiple",
+    "familyId": "vccv-syllabication",
+    "studentContext": {
+      "programme": "SLP",
+      "band": "B",
+      "level": "primary",
+      "programmeYear": 1,
+      "term": 1,
+      "week": 5
+    },
+    "errors": [
+      {
+        "id": "e1",
+        "category": "phonological",
+        "written": "ba-sket",
+        "intended": "bas-ket",
+        "note": ""
+      },
+      {
+        "id": "e2",
+        "category": "phonological",
+        "written": "na-pkin",
+        "intended": "nap-kin",
+        "note": ""
+      },
+      {
+        "id": "e3",
+        "category": "phonological",
+        "written": "su-nset",
+        "intended": "sun-set",
+        "note": ""
+      }
+    ],
+    "acceptableResourceIds": [
+      "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "das-src-0390-band-b-y1t1w5-reading-and-spelling"
+    ]
+  }
+]

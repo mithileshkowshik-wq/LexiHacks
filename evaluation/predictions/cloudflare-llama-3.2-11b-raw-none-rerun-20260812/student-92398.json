@@ -1,0 +1,29 @@
+{
+  "sampleId": "student-92398",
+  "model": "@cf/meta/llama-3.2-11b-vision-instruct",
+  "provider": "cloudflare",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 9933,
+  "transcript": "The sun is shining brightly in the sky. I like to play outside when it is warm. My favret color is blue. I like to eat apples and banannas.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-92398-prediction-001",
+      "written": "The sun is shining brightly in the sky. I like to play outside when it is warm. My favret color is blue. I like to eat apples and banannas.",
+      "intended": "The sun is shining brightly in the sky. I like to play outside when it is warm. My favourite colour is blue. I like to eat apples and bananas.",
+      "category": "orthographic",
+      "confidenceScore": 1,
+      "note": "spelling errors: favret, banannas"
+    },
+    {
+      "id": "student-92398-prediction-002",
+      "written": "The sun is shining brightly in the sky. I like to play outside when it is warm. My favret color is blue. I like to eat apples and banannas.",
+      "intended": "The sun is shining brightly in the sky. I like to play outside when it is warm. My favourite colour is blue. I like to eat apples and bananas.",
+      "category": "capitalisation",
+      "confidenceScore": 1,
+      "note": "missing capitalisation at the start of sentences"
+    }
+  ]
+}

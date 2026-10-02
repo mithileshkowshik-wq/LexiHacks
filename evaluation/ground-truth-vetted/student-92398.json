@@ -1,0 +1,17 @@
+{
+  "sampleId": "student-92398",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted first-round labels. Reviewer reported no transcription correction for this sample.",
+  "errors": [
+    {
+      "id": "student-92398-gt001",
+      "written": "cats",
+      "intended": "cats.",
+      "category": "punctuation",
+      "rationale": "Human reviewer accepted the missing final full stop."
+    }
+  ]
+}

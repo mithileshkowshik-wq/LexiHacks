@@ -1,0 +1,899 @@
+You are assisting a Dyslexia Association of Singapore educator.
+
+Your task is to select the most suitable EXISTING DAS teaching resources for this student.
+
+You have four sources of information:
+
+1. the student's actual observed errors;
+2. the student's current programme context;
+3. a closed list of eligible DAS resource candidates;
+4. relevant DAS instructional knowledge.
+
+Use semantic reasoning.
+
+Do not simply choose the resource whose title contains the same words as the error.
+
+Infer the underlying learning need from the student's actual written and intended forms.
+
+DAS teacher knowledge should guide your reasoning.
+
+IMPORTANT RULES
+
+- The resource candidate list is a CLOSED SET.
+- You may only select resource IDs provided below.
+- Never invent a resource.
+- Never invent a worksheet ID.
+- Never invent a page number.
+- Never modify a supplied resource ID.
+
+PRIORITIES
+
+1. The resource should directly address the observed error pattern.
+2. Correct learning skill is more important than exact week.
+3. Programme and student level should be suitable.
+4. Target skills should align with the observed errors.
+5. Use DAS instructional knowledge to guide the decision.
+6. Year and term compatibility are useful.
+7. Week proximity is a weaker preference because remediation may use earlier material.
+
+STUDENT CONTEXT
+
+Programme: SLP
+Band: C
+Level: secondary
+Programme Year: 1
+Term: 1
+Week: 7
+
+OBSERVED STUDENT ERRORS
+
+ERROR 1
+Written: bote
+Intended: boat
+Reviewed category: orthographic
+Note:
+
+ELIGIBLE RESOURCE CANDIDATES
+
+RESOURCE 1
+
+ID: das-src-0446-introduction-words-with-multiple-meanings
+Title: Introduction Words with Multiple Meanings
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 7
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Programme Guide for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 2
+
+ID: das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow
+Title: Part 1 (Phonics) Review of Long o ō, o-e, oa, ow
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 7
+
+Target skills:
+letter-sound-correspondence, sentence-construction, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation.
+
+RESOURCE 3
+
+ID: das-src-0448-w7-year-1-term-1
+Title: W7 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 7
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 4
+
+ID: das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew
+Title: Part 1 (Phonics) Review of Long u ū, u-e, oo, ue, ew
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 5
+
+Target skills:
+letter-sound-correspondence, sentence-construction, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation.
+
+RESOURCE 5
+
+ID: das-src-0441-w5-year-1-term-1
+Title: W5 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 5
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 6
+
+ID: das-src-0443-sample-copy-of-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-
+Title: (sample)Copy of Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 6
+
+Target skills:
+letter-sound-correspondence, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context.
+
+RESOURCE 7
+
+ID: das-src-0444-part-1-phonics-review-of-long-a-a-e-ai-ay-ea-eigh-ei-ey
+Title: Part 1 (Phonics) Review of Long a ā, a-e, ai, ay, ea, eigh, ei, ey
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 6
+
+Target skills:
+letter-sound-correspondence, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, sentence construction, vocabulary and context.
+
+RESOURCE 8
+
+ID: das-src-0445-w6-year-1-term-1
+Title: W6 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 6
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 9
+
+ID: das-src-0449-part-1-syllabication-v-v-vowel-vowel
+Title: Part 1 (Syllabication) V V (Vowel Vowel)
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 8
+
+Target skills:
+letter-sound-correspondence, sentence-construction, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation.
+
+RESOURCE 10
+
+ID: das-src-0450-w8-year-1-term-1
+Title: W8 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 8
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 11
+
+ID: das-src-0451-w9-year-1-term-1
+Title: W9 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 9
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 12
+
+ID: das-src-0430-teacher-copy-the-unexpected-gift
+Title: (Teacher Copy) The Unexpected Gift
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 3
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Teacher Reference for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 13
+
+ID: das-src-0431-newspaper-article
+Title: Newspaper Article
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 3
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Document for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 14
+
+ID: das-src-0432-review-ie-vs-ei-the-unexpected-gift
+Title: Review ie vs ei - The Unexpected Gift
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 3
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Document for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 15
+
+ID: das-src-0433-sample-recount-writing
+Title: Sample Recount Writing
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 3
+
+Target skills:
+narrative-writing, sentence-construction
+
+Addresses error types:
+narrative-structure-error, weak-event-sequencing, show-not-tell-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion
+
+Description:
+Writing Resource for SLP Band C, targeting narrative writing, sentence construction.
+
+RESOURCE 16
+
+ID: das-src-0434-w3-year-1-term-1
+Title: W3 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 3
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 17
+
+ID: das-src-0435-graphic-organizer-writing-about-losing-something-important
+Title: Graphic Organizer Writing About Losing Something Important
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 4
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Writing Resource for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 18
+
+ID: das-src-0436-lesson-plan-w4-y1t1
+Title: Lesson Plan W4 (Y1T1)
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 4
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Lesson Plan for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 19
+
+ID: das-src-0437-part-1-phonics-review-of-long-u-u-e-ue-ew-eu
+Title: Part 1 Phonics (review of Long u ū, u-e, ue, ew, eu)
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 4
+
+Target skills:
+letter-sound-correspondence, grammar-cloze-and-editing, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, grammar-cloze-selection-error, unable-to-locate-editing-error, incorrect-error-correction, phonetic-spelling-error, learned-word-spelling-error, dictation-word-omission
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, grammar cloze and editing, spelling and dictation.
+
+RESOURCE 20
+
+ID: das-src-0438-part-2-vocabulary-building-looking-for-something
+Title: Part 2 Vocabulary Building Looking for Something
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 4
+
+Target skills:
+vocabulary-and-context, sentence-construction
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion
+
+Description:
+Document for SLP Band C, targeting vocabulary and context, sentence construction.
+
+RESOURCE 21
+
+ID: das-src-0439-untitled-presentation
+Title: Untitled presentation
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 4
+
+Target skills:
+vocabulary-and-context
+
+Addresses error types:
+vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Slides for SLP Band C, targeting vocabulary and context.
+
+RESOURCE 22
+
+ID: das-src-0442-w10-year-1-term-1
+Title: W10 Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 10
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RESOURCE 23
+
+ID: das-src-0417-student-copy-recount-writing-w1-5
+Title: (Student Copy) Recount Writing (W1-5)
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 1
+
+Target skills:
+narrative-writing, sentence-construction
+
+Addresses error types:
+narrative-structure-error, weak-event-sequencing, show-not-tell-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion
+
+Description:
+Writing Resource for SLP Band C, targeting narrative writing, sentence construction.
+
+RESOURCE 24
+
+ID: das-src-0418-teacher-copy-personal-narrative-recount-writing-week-1-5
+Title: (Teacher Copy) Personal Narrative Recount Writing (Week 1-5)
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 1
+
+Target skills:
+narrative-writing, sentence-construction, vocabulary-and-context
+
+Addresses error types:
+narrative-structure-error, weak-event-sequencing, show-not-tell-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error, synonym-antonym-confusion, context-clue-error
+
+Description:
+Teacher Reference for SLP Band C, targeting narrative writing, sentence construction, vocabulary and context.
+
+RESOURCE 25
+
+ID: das-src-0419-week-1-year-1-term-1
+Title: (Week 1) Year 1 Term 1
+
+Programme: SLP
+Band: C
+Level: secondary
+Year: 1
+Term: 1
+Week: 1
+
+Target skills:
+letter-sound-correspondence, morpheme-identification, reading-comprehension, sentence-construction, vocabulary-and-context, spelling-and-dictation
+
+Addresses error types:
+sound-symbol-retrieval, letter-sound-substitution, morpheme-boundary-error, base-word-recognition-error, literal-comprehension-error, main-idea-error, supporting-detail-error, inference-error, fragment-or-incomplete-sentence, sentence-order-error, sentence-type-confusion, vocabulary-meaning-error
+
+Description:
+Document for SLP Band C, targeting letter sound correspondence, morpheme identification, reading comprehension.
+
+RELEVANT DAS TEACHER KNOWLEDGE
+
+DAS KNOWLEDGE 1
+
+Learned Word Spelling Error
+
+---
+title: "Learned Word Spelling Error"
+category: error-type
+documentType: "teacher_knowledge"
+tags: ["das", "error-type", "instructional"]
+summary: "Misspells a taught learned or sight word while another skill is being assessed."
+sources:
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf"
+relationships:
+  - target: "[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]"
+    type: related_to
+  - target: "[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]"
+    type: uses
+provenance:
+  extracted: 0.42
+  inferred: 0.53
+  ambiguous: 0.05
+base_confidence: 0.61
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+error_code: "learned-word-spelling-error"
+target_skill: "spelling-and-dictation"
+diagnostic_status: "instructional-only"
+verification_status: "unverified"
+---
+# Learned Word Spelling Error
+
+## Observable evidence
+
+Misspells a taught learned or sight word while another skill is being assessed.
+
+## Interpretation
+
+This is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]
+
+## Likely target skill
+
+- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]
+
+## Recommendation rule
+
+Select a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.
+
+DAS KNOWLEDGE 2
+
+Spelling and Dictation
+
+---
+title: "Spelling and Dictation"
+category: skill
+documentType: "teacher_knowledge"
+tags: ["das", "skill", "literacy", "spelling"]
+summary: "Instructional skill node for spelling and dictation, linking observable errors, prerequisites, and source-grounded resources."
+sources:
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf"
+relationships:
+  - target: "[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]"
+    type: derived_from
+  - target: "[[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]"
+    type: uses
+  - target: "[[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]"
+    type: uses
+provenance:
+  extracted: 0.60
+  inferred: 0.35
+  ambiguous: 0.05
+base_confidence: 0.69
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+skill_id: "spelling-and-dictation"
+prerequisites: ["phoneme-segmentation", "letter-sound-correspondence"]
+verification_status: "unverified"
+---
+# Spelling and Dictation
+
+## Instructional interpretation
+
+This skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.
+
+## Prerequisites
+
+- [[wiki/projects/das-learning-resources/skills/phoneme-segmentation]]
+- [[wiki/projects/das-learning-resources/skills/letter-sound-correspondence]]
+
+## Observable error types
+
+- [[wiki/projects/das-learning-resources/error-types/phonetic-spelling-error]]
+- [[wiki/projects/das-learning-resources/error-types/learned-word-spelling-error]]
+- [[wiki/projects/das-learning-resources/error-types/dictation-word-omission]]
+
+## Selection guidance
+
+Prefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.
+
+DAS KNOWLEDGE 3
+
+DAS Instructional Methodology Bedrock
+
+---
+title: "DAS Instructional Methodology Bedrock"
+category: concept
+documentType: "teacher_knowledge"
+tags: ["das", "methodology", "literacy", "dyslexia", "instruction"]
+summary: "Evidence-grounded teaching model that governs how errors, skills, prerequisites, differentiation, monitoring, and resources are interpreted."
+sources:
+  - "_raw/Copy for Partners/SLP Band A - Year 1 Term 1/1. Year 1 Term 1 Week 1/Year 1  Term 1 Week 1.docx"
+  - "_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx"
+  - "_raw/Copy for Partners/SLP Band C Secondary - Year 1 Term 1 W1-W10/Y1T1 W1-5 LPs/Year 1 Term 1 Week 1/(Week 1) Year 1 Term 1.docx"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Morphology Packs/Morphology Teaching Resource - PACK 2-2022.pdf"
+provenance:
+  extracted: 0.62
+  inferred: 0.33
+  ambiguous: 0.05
+base_confidence: 0.76
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+---
+# DAS Instructional Methodology Bedrock
+
+This page is the governing interpretation layer for the staged knowledge base. Error categories, skills, prerequisites, and resource assignments should be read through this model rather than inferred from filenames alone.
+
+## Evidence base
+
+The corpus contains 451 files: 111 ELL-MLP resources and 340 SLP resources. Corpus-wide extraction found explicit lesson-structure signals in 169 files, monitoring signals in 44, differentiation signals in 48, and teacher-guidance signals in 43. These recurring structures support the bedrock below; they do not by themselves define official policy beyond what individual documents state.
+
+## Governing teaching model
+
+1. **Regulation and readiness precede instruction.** Standardised lesson plans open and close with CALM'ED practices.
+2. **Teaching is cumulative.** Lessons review prior concepts before introducing a new concept, and sound/card drills revisit accumulated patterns.
+3. **Errors are interpreted diagnostically.** Teachers identify whether breakdown concerns retrieval, sound-symbol knowledge, blending, segmentation, morphology, language comprehension, or response construction before selecting support. ^[inferred]
+4. **Prompting is graduated.** Typical sequences move from questioning and retrieval cues, to keywords or visuals, to modelling/giving the sound, followed by trace-and-sound or renewed blending.
+5. **Practice i
+
+DAS KNOWLEDGE 4
+
+Graduated Error-Correction and Retrieval Support
+
+---
+title: "Graduated Error-Correction and Retrieval Support"
+category: concept
+documentType: "teacher_knowledge"
+tags: ["das", "error-correction", "scaffolding", "phonics", "spelling"]
+summary: "Prompt hierarchy for diagnosing retrieval, sound-symbol, blending, spelling, morphology, and sentence-production errors before supplying answers."
+sources:
+  - "_raw/Copy for Partners/SLP Band A - Year 1 Term 1/2. Year 1 Term 1 Week 2/Year 1  Term 1 Week 2.docx"
+  - "_raw/Copy for Partners/SLP Band B Year 1 Term 1 Primary/Band B Year 1 Term 1 Week 1 (Pri)/Band B Y1T1W1 Lesson Plan (Pri)_.docx"
+relationships:
+  - target: "[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]"
+    type: derived_from
+provenance:
+  extracted: 0.82
+  inferred: 0.16
+  ambiguous: 0.02
+base_confidence: 0.76
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+---
+# Graduated Error-Correction and Retrieval Support
+
+Recurring prompts distinguish an unsupported wrong answer from a stable skill gap:
+
+- Ask for the phonogram sound or position.
+- Prompt for a keyword; show the keyword/image if retrieval fails.
+- Give the sound only after retrieval prompts fail.
+- Trace and sound three times after the sound is retrieved or supplied.
+- Blend incrementally before reading the whole word.
+- Use fingerspelling for phonetic spelling errors.
+- Identify morphemes and syllable boundaries for more advanced words.
+- Prompt capitalization and punctuation separately from phonetic spelling.
+- Supply learned/sight-word spellings where the task is testing another target.
+
+The recommendation engine should therefore distinguish the observed error from the amount and type of prompting required. ^[inferred]
+
+DAS KNOWLEDGE 5
+
+Dictation Word Omission
+
+---
+title: "Dictation Word Omission"
+category: error-type
+documentType: "teacher_knowledge"
+tags: ["das", "error-type", "instructional"]
+summary: "Omits one or more words from a dictated phrase or sentence."
+sources:
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band B/40) Writing (Text types).pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band C/1) Narrative lesson plans.pdf"
+relationships:
+  - target: "[[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]"
+    type: related_to
+  - target: "[[wiki/projects/das-learning-resources/concepts/graduated-error-correction]]"
+    type: uses
+provenance:
+  extracted: 0.42
+  inferred: 0.53
+  ambiguous: 0.05
+base_confidence: 0.61
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+error_code: "dictation-word-omission"
+target_skill: "spelling-and-dictation"
+diagnostic_status: "instructional-only"
+verification_status: "unverified"
+---
+# Dictation Word Omission
+
+## Observable evidence
+
+Omits one or more words from a dictated phrase or sentence.
+
+## Interpretation
+
+This is an instructional error category, not a diagnosis. Confirm the response across more than one item and record the prompts required before treating it as a stable skill gap. ^[inferred]
+
+## Likely target skill
+
+- [[wiki/projects/das-learning-resources/skills/spelling-and-dictation]]
+
+## Recommendation rule
+
+Select a resource only after checking prerequisites and the source-defined band, level, differentiation, and task purpose. Monitoring materials require separate teacher judgement.
+
+DAS KNOWLEDGE 6
+
+Long-Vowel Patterns
+
+---
+title: "Long-Vowel Patterns"
+category: skill
+documentType: "teacher_knowledge"
+tags: ["das", "skill", "literacy", "phonics", "spelling"]
+summary: "Instructional skill node for long-vowel patterns, linking observable errors, prerequisites, and source-grounded resources."
+sources:
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/1) Introduction.pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/2) A1.pdf"
+  - "_raw/Copy for Partners/ELL-MLP Teaching Resources/Band A/3) A2.pdf"
+relationships:
+  - target: "[[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]"
+    type: derived_from
+  - target: "[[wiki/projects/das-learning-resources/skills/short-vowels]]"
+    type: uses
+  - target: "[[wiki/projects/das-learning-resources/skills/syllable-types]]"
+    type: uses
+provenance:
+  extracted: 0.60
+  inferred: 0.35
+  ambiguous: 0.05
+base_confidence: 0.69
+lifecycle: draft
+lifecycle_changed: "2026-07-24T05:46:51+00:00"
+tier: supporting
+created: "2026-07-24T05:46:51+00:00"
+updated: "2026-07-24T05:46:51+00:00"
+skill_id: "long-vowels"
+prerequisites: ["short-vowels", "syllable-types"]
+verification_status: "unverified"
+---
+# Long-Vowel Patterns
+
+## Instructional interpretation
+
+This skill category is used to connect observable errors to suitable resources. It is subordinate to [[wiki/projects/das-learning-resources/concepts/das-instructional-methodology-bedrock]]; matching a keyword is not sufficient when prerequisites, band, level, or response demand conflict.
+
+## Prerequisites
+
+- [[wiki/projects/das-learning-resources/skills/short-vowels]]
+- [[wiki/projects/das-learning-resources/skills/syllable-types]]
+
+## Observable error types
+
+- [[wiki/projects/das-learning-resources/error-types/long-vowel-pattern-confusion]]
+
+## Selection guidance
+
+Prefer resources with explicit source-content evidence for this skill. Check programme, band, level, week, ability variant, teacher-copy status, and monitoring status before recommendation.
+
+Select up to THREE resources.
+
+Order them from best to worst.
+
+Return JSON only.
+
+Use exactly this structure:
+
+{
+  "selections": [
+    {
+      "resourceId": "exact supplied resource ID",
+      "rationale": "brief explanation connecting the resource to the student's observed errors"
+    }
+  ]
+}

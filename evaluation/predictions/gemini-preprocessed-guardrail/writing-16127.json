@@ -1,0 +1,108 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "latencyMs": 23177,
+  "transcript": "one Day I was runing back home because I need to go pee! so\nI was So ahchen that I pee e on my pant back home, so I call my\nmom on my phoen and say I pee on my pant She say hurry come back\nhome! So I did I run back home and wash myslef up before going sleep.",
+  "illegibleNote": "The word 'ahchen' in line 2 is clearly written but has unclear intended meaning (possibly 'anxious', 'aching', or 'urgent').",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence starting word should be capitalized."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Mid-sentence word 'day' capitalized unnecessarily."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing double 'n' in 'running'."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Incorrect tense consistency; past tense 'needed' required."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "So",
+      "intended": "so",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Inappropriate capitalization mid-sentence."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "ahchen",
+      "intended": "anxious",
+      "category": "unsure",
+      "confidenceScore": 0.4,
+      "note": "Unclear intended word ('anxious', 'aching', or 'urgent')."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Plural noun 'pants' written in singular form."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb form required."
+    },
+    {
+      "id": "writing-16127-prediction-009",
+      "written": "phoen",
+      "intended": "phone",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Transposed letters in 'phone'."
+    },
+    {
+      "id": "writing-16127-prediction-010",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Past tense verb required."
+    },
+    {
+      "id": "writing-16127-prediction-011",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Plural noun 'pants' written in singular form."
+    },
+    {
+      "id": "writing-16127-prediction-012",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Transposed 'e' and 'l' in 'myself'."
+    }
+  ]
+}

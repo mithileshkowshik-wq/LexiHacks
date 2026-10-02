@@ -1,0 +1,24 @@
+{
+  "sampleId": "student-191379",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-191379.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted first-round labels. The Hoops/Hops candidate was rejected as a transcription hallucination and is not included.",
+  "errors": [
+    {
+      "id": "student-191379-gt001",
+      "written": "He run",
+      "intended": "He runs",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the third-person singular verb-ending correction."
+    },
+    {
+      "id": "student-191379-gt002",
+      "written": "The fox hunt",
+      "intended": "The fox hunts",
+      "category": "morphological",
+      "rationale": "Human reviewer accepted the third-person singular verb-ending correction."
+    }
+  ]
+}

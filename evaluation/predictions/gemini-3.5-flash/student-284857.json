@@ -1,0 +1,95 @@
+{
+  "sampleId": "student-284857",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-284857.pdf",
+  "model": "gemini-3.5-flash",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 23025,
+  "illegibleNote": "The faint scribble after 'races' on the final line is illegible.",
+  "errors": [
+    {
+      "written": "at",
+      "intended": "in",
+      "category": "unsure",
+      "confidenceScore": 0.7,
+      "note": "Incorrect preposition choice of 'at' instead of 'in' or 'on'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.57,
+        "y": 0.28,
+        "z": 0.03,
+        "w": 0.03
+      }
+    },
+    {
+      "written": "plonned",
+      "intended": "planned",
+      "category": "orthographic",
+      "confidenceScore": 0.75,
+      "note": "Vowel substitution of 'o' for 'a' in 'planned'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.3,
+        "y": 0.51,
+        "z": 0.11,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "The proper noun 'Friday' is not capitalised.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.71,
+        "y": 0.51,
+        "z": 0.11,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "beanch",
+      "intended": "bench",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Incorrect spelling of 'bench' with an extra 'a' (vowel insertion).",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.65,
+        "y": 0.61,
+        "z": 0.11,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "want",
+      "intended": "went",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Vowel substitution of 'a' for 'e' in the word 'went'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.71,
+        "y": 0.71,
+        "z": 0.06,
+        "w": 0.04
+      }
+    },
+    {
+      "written": "races",
+      "intended": "race",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "Incorrect plural form 'races' used after the singular article 'a'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.39,
+        "y": 0.77,
+        "z": 0.08,
+        "w": 0.04
+      }
+    }
+  ]
+}

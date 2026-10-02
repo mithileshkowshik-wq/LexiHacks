@@ -1,0 +1,9 @@
+{
+  "sampleId": "student-89037",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-89037.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted true negative. The model proposed no errors and the reviewer added none.",
+  "errors": []
+}

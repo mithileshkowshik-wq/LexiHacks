@@ -1,0 +1,21 @@
+{
+  "sampleId": "student-89037",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 7774,
+  "transcript": "NAME: Shawn kow SCH LEVEL / BAND: DATE: 8 May 16\nRewrite these sentences\n1. he ran\nHe ran.\n2. Fox hunts\nFox hunts.\n3. i sang,\nI sang.\n4. Pam Swims.\nPam swims.\n5. tom Hops\nTom hops.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-89037-prediction-001",
+      "written": "kow",
+      "intended": "Kow",
+      "category": "capitalisation",
+      "confidenceScore": 0.85,
+      "note": "Surname should start with a capital letter."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "sampleId": "student-121606",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-121606.jpg",
+  "model": "gemini-2.5-flash",
+  "pipeline": "direct-vision",
+  "status": "failed",
+  "latencyMs": 1803,
+  "failureReason": "model-request-failed",
+  "failureDetail": "{\"error\":{\"code\":404,\"message\":\"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/migrate-to-interactions).\",\"status\":\"NOT_FOUND\"}}",
+  "errors": []
+}

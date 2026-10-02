@@ -1,0 +1,61 @@
+{
+  "sampleId": "student-191379",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "guardrailProfile": "minimal",
+  "latencyMs": 10125,
+  "transcript": "Dani 23/4/17\nHe ran\nThe fox hunt\nI sang\nPam swims in water\nTom hops",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Subject-verb agreement error; singular noun 'fox' requires 'hunts'."
+    },
+    {
+      "id": "student-191379-prediction-002",
+      "written": "He ran",
+      "intended": "He ran.",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "Missing full stop at the end of the sentence."
+    },
+    {
+      "id": "student-191379-prediction-003",
+      "written": "The fox hunt",
+      "intended": "The fox hunts.",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "Missing full stop at the end of the sentence."
+    },
+    {
+      "id": "student-191379-prediction-004",
+      "written": "I sang",
+      "intended": "I sang.",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "Missing full stop at the end of the sentence."
+    },
+    {
+      "id": "student-191379-prediction-005",
+      "written": "Pam swims in water",
+      "intended": "Pam swims in water.",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "Missing full stop at the end of the sentence."
+    },
+    {
+      "id": "student-191379-prediction-006",
+      "written": "Tom hops",
+      "intended": "Tom hops.",
+      "category": "punctuation",
+      "confidenceScore": 0.8,
+      "note": "Missing full stop at the end of the sentence."
+    }
+  ]
+}

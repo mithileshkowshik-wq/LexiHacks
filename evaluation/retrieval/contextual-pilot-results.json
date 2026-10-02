@@ -1,0 +1,410 @@
+{
+  "generatedAt": "2026-08-12T07:01:41.973Z",
+  "corpusRoot": "/home/yongz/KnowledgeVault/_deploy/azure-knowledge-vault",
+  "corpusDocuments": 578,
+  "summary": {
+    "queries": 2,
+    "top1Hits": 0,
+    "top3Hits": 0,
+    "familiesAllVariantsAt3": 0,
+    "families": 2
+  },
+  "queries": [
+    {
+      "queryId": "long-o-context-1",
+      "familyId": "long-o-band-b-secondary-y1t1w4",
+      "rank": 8,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    },
+    {
+      "queryId": "vccv-context-1",
+      "familyId": "vccv-band-b-primary-y1t1w4",
+      "rank": 33,
+      "top1Hit": false,
+      "top3Hit": false,
+      "failureReason": "wrong-resource-family-outranks-family"
+    }
+  ],
+  "rankings": {
+    "long-o-context-1": [
+      {
+        "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+        "score": 12,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+          "title": "Differentiation - Short vowel a T1 Wk 2 LA",
+          "summary": "Differentiated Worksheet for SLP Band A, targeting short vowels, letter sound correspondence, reading comprehension.",
+          "targetSkills": [
+            "short-vowels",
+            "letter-sound-correspondence",
+            "reading-comprehension",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "short-vowel-confusion",
+            "incorrect-medial-vowel",
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "literal-comprehension-error",
+            "main-idea-error",
+            "supporting-detail-error",
+            "inference-error",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "A",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "differentiated-worksheet"
+        }
+      },
+      {
+        "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+        "score": 12,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+          "title": "Differentiation - Short vowel a T1 Wk 2 MA",
+          "summary": "Differentiated Worksheet for SLP Band A, targeting short vowels, letter sound correspondence, spelling and dictation.",
+          "targetSkills": [
+            "short-vowels",
+            "letter-sound-correspondence",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "short-vowel-confusion",
+            "incorrect-medial-vowel",
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "A",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "differentiated-worksheet"
+        }
+      },
+      {
+        "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+        "score": 10,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+          "title": "Sounds of ed word cards Activity (Lexia Literacy)",
+          "summary": "Visual Or Organiser for SLP Band B, targeting suffix ed, morpheme identification, sentence construction.",
+          "targetSkills": [
+            "suffix-ed",
+            "morpheme-identification",
+            "sentence-construction",
+            "vocabulary-and-context",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "suffix-ed-omission",
+            "suffix-ed-pronunciation-confusion",
+            "past-tense-marker-error",
+            "morpheme-boundary-error",
+            "base-word-recognition-error",
+            "fragment-or-incomplete-sentence",
+            "sentence-order-error",
+            "sentence-type-confusion",
+            "vocabulary-meaning-error",
+            "synonym-antonym-confusion",
+            "context-clue-error",
+            "phonetic-spelling-error"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "B",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "visual-or-organiser"
+        }
+      },
+      {
+        "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+        "score": 10,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+          "title": "Sounds of ed word cards Activity (Lexia Literacy)",
+          "summary": "Visual Or Organiser for SLP Band B, targeting suffix ed, morpheme identification, sentence construction.",
+          "targetSkills": [
+            "suffix-ed",
+            "morpheme-identification",
+            "sentence-construction",
+            "vocabulary-and-context",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "suffix-ed-omission",
+            "suffix-ed-pronunciation-confusion",
+            "past-tense-marker-error",
+            "morpheme-boundary-error",
+            "base-word-recognition-error",
+            "fragment-or-incomplete-sentence",
+            "sentence-order-error",
+            "sentence-type-confusion",
+            "vocabulary-meaning-error",
+            "synonym-antonym-confusion",
+            "context-clue-error",
+            "phonetic-spelling-error"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "B",
+          "level": "secondary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "visual-or-organiser"
+        }
+      },
+      {
+        "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew.md",
+        "score": 9,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0440-part-1-phonics-review-of-long-u-u-e-oo-ue-ew",
+          "title": "Part 1 (Phonics) Review of Long u ū, u-e, oo, ue, ew",
+          "summary": "Document for SLP Band C, targeting letter sound correspondence, sentence construction, spelling and dictation.",
+          "targetSkills": [
+            "letter-sound-correspondence",
+            "sentence-construction",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "fragment-or-incomplete-sentence",
+            "sentence-order-error",
+            "sentence-type-confusion",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "C",
+          "level": "secondary",
+          "year": 1,
+          "term": 1,
+          "week": 5,
+          "resourceType": "document"
+        }
+      }
+    ],
+    "vccv-context-1": [
+      {
+        "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0127-differentiation-short-vowel-a-t1-wk-2-la.md",
+        "score": 13,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0127-differentiation-short-vowel-a-t1-wk-2-la",
+          "title": "Differentiation - Short vowel a T1 Wk 2 LA",
+          "summary": "Differentiated Worksheet for SLP Band A, targeting short vowels, letter sound correspondence, reading comprehension.",
+          "targetSkills": [
+            "short-vowels",
+            "letter-sound-correspondence",
+            "reading-comprehension",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "short-vowel-confusion",
+            "incorrect-medial-vowel",
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "literal-comprehension-error",
+            "main-idea-error",
+            "supporting-detail-error",
+            "inference-error",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "A",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "differentiated-worksheet"
+        }
+      },
+      {
+        "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma.md",
+        "score": 13,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0128-differentiation-short-vowel-a-t1-wk-2-ma",
+          "title": "Differentiation - Short vowel a T1 Wk 2 MA",
+          "summary": "Differentiated Worksheet for SLP Band A, targeting short vowels, letter sound correspondence, spelling and dictation.",
+          "targetSkills": [
+            "short-vowels",
+            "letter-sound-correspondence",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "short-vowel-confusion",
+            "incorrect-medial-vowel",
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "A",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "differentiated-worksheet"
+        }
+      },
+      {
+        "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+        "score": 11,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0249-sounds-of-ed-word-cards-activity-lexia-literacy",
+          "title": "Sounds of ed word cards Activity (Lexia Literacy)",
+          "summary": "Visual Or Organiser for SLP Band B, targeting suffix ed, morpheme identification, sentence construction.",
+          "targetSkills": [
+            "suffix-ed",
+            "morpheme-identification",
+            "sentence-construction",
+            "vocabulary-and-context",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "suffix-ed-omission",
+            "suffix-ed-pronunciation-confusion",
+            "past-tense-marker-error",
+            "morpheme-boundary-error",
+            "base-word-recognition-error",
+            "fragment-or-incomplete-sentence",
+            "sentence-order-error",
+            "sentence-type-confusion",
+            "vocabulary-meaning-error",
+            "synonym-antonym-confusion",
+            "context-clue-error",
+            "phonetic-spelling-error"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "B",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "visual-or-organiser"
+        }
+      },
+      {
+        "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy.md",
+        "score": 11,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0376-sounds-of-ed-word-cards-activity-lexia-literacy",
+          "title": "Sounds of ed word cards Activity (Lexia Literacy)",
+          "summary": "Visual Or Organiser for SLP Band B, targeting suffix ed, morpheme identification, sentence construction.",
+          "targetSkills": [
+            "suffix-ed",
+            "morpheme-identification",
+            "sentence-construction",
+            "vocabulary-and-context",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "suffix-ed-omission",
+            "suffix-ed-pronunciation-confusion",
+            "past-tense-marker-error",
+            "morpheme-boundary-error",
+            "base-word-recognition-error",
+            "fragment-or-incomplete-sentence",
+            "sentence-order-error",
+            "sentence-type-confusion",
+            "vocabulary-meaning-error",
+            "synonym-antonym-confusion",
+            "context-clue-error",
+            "phonetic-spelling-error"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "B",
+          "level": "secondary",
+          "year": 1,
+          "term": 1,
+          "week": 2,
+          "resourceType": "visual-or-organiser"
+        }
+      },
+      {
+        "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+        "blobPath": "wiki/projects/das-learning-resources/resources/das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la.md",
+        "score": 9,
+        "compatibility": 0,
+        "metadata": {
+          "resourceId": "das-src-0148-differentiation-additional-worksheet-consonant-g-t1-wk-4-la",
+          "title": "Differentiation (additional worksheet) - Consonant G T1 Wk 4 LA",
+          "summary": "Differentiated Worksheet for SLP Band A, targeting consonants and digraphs, letter sound correspondence, reading comprehension.",
+          "targetSkills": [
+            "consonants-and-digraphs",
+            "letter-sound-correspondence",
+            "reading-comprehension",
+            "spelling-and-dictation"
+          ],
+          "addressesErrorTypes": [
+            "consonant-sound-confusion",
+            "digraph-confusion",
+            "sound-symbol-retrieval",
+            "letter-sound-substitution",
+            "literal-comprehension-error",
+            "main-idea-error",
+            "supporting-detail-error",
+            "inference-error",
+            "phonetic-spelling-error",
+            "learned-word-spelling-error",
+            "dictation-word-omission"
+          ],
+          "documentType": "resource",
+          "programme": "SLP",
+          "band": "A",
+          "level": "primary",
+          "year": 1,
+          "term": 1,
+          "week": 4,
+          "resourceType": "differentiated-worksheet"
+        }
+      }
+    ]
+  }
+}

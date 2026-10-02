@@ -1,0 +1,25 @@
+{
+  "sampleId": "student-89037",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-89037.jpg",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 10067,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "kow",
+      "intended": "Kow",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "The student's surname starts with a lowercase letter rather than a capital letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.34,
+        "y": 0.05,
+        "z": 0.09,
+        "w": 0.04
+      }
+    }
+  ]
+}

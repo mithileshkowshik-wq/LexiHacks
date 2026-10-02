@@ -1,0 +1,84 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": 46484,
+  "transcript": "one bay I was runing back home becaue I need to go pee! so\nI was so ahchen thaitt I pee e on my pant back home, so I call my\nmon on my phoep and say I pee on my pant She say hurry come back\nhome! so I did I run back home and wash myslef up before going sleep",
+  "illegibleNote": "The word written as 'ahchen' on line 2 is unclear in meaning/intention.",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence start should be capitalized."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "bay",
+      "intended": "day",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Letter b/d reversal writing 'bay' for 'day'."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Missing second 'n' in running."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "becaue",
+      "intended": "because",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Missing 's' in because."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "thaitt",
+      "intended": "that",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Incorrect spelling 'thaitt'."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural suffix -s."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "mon",
+      "intended": "mom",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Substituted 'n' for 'm' at the end of mom."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "phoep",
+      "intended": "phone",
+      "category": "phonological",
+      "confidenceScore": 0.85,
+      "note": "Written as 'phoep' instead of 'phone'."
+    },
+    {
+      "id": "writing-16127-prediction-009",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Letter transposition 'le' instead of 'el'."
+    }
+  ]
+}

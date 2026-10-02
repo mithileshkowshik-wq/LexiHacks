@@ -1,0 +1,25 @@
+{
+  "sampleId": "student-92398",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 11279,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "ligth",
+      "intended": "light",
+      "category": "orthographic",
+      "confidenceScore": 0.98,
+      "note": "Letter transposition error where 't' and 'h' are swapped at the end of the word.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.803,
+        "y": 0.188,
+        "z": 0.052,
+        "w": 0.032
+      }
+    }
+  ]
+}

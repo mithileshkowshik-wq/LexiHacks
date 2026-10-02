@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-08-12T10:00:16.782Z",
+  "summary": {
+    "totalCases": 4,
+    "completed": 4,
+    "candidateRetention": {
+      "hits": 4,
+      "total": 4,
+      "percentage": "100.0"
+    },
+    "geminiTop1": {
+      "hits": 4,
+      "total": 4,
+      "percentage": "100.0"
+    },
+    "geminiTop3": {
+      "hits": 4,
+      "total": 4,
+      "percentage": "100.0"
+    }
+  },
+  "results": [
+    {
+      "caseId": "long-o-single",
+      "familyId": "long-o-spelling",
+      "status": "OK",
+      "candidateRetained": true,
+      "acceptableCandidatePositions": [
+        2
+      ],
+      "selectedIds": [
+        "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+        "das-src-0448-w7-year-1-term-1"
+      ],
+      "invalidSelections": [],
+      "top1": true,
+      "top3": true,
+      "selections": [
+        {
+          "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+          "rationale": "The student wrote 'bote' instead of 'boat', representing an orthographic spelling error where the split digraph 'o-e' pattern was substituted for the correct vowel digraph 'oa' representing the long o sound (/ō/). This resource specifically reviews long o spelling patterns including 'o-e', 'oa', and 'ow', directly addressing the underlying phonics and orthographic error."
+        },
+        {
+          "resourceId": "das-src-0448-w7-year-1-term-1",
+          "rationale": "This comprehensive weekly resource for SLP Band C (Year 1 Term 1 Week 7) covers letter-sound correspondence and spelling/dictation for the current instructional week, providing broader context and reinforcement for phonics and spelling errors aligned with the student's level."
+        }
+      ]
+    },
+    {
+      "caseId": "long-o-multiple",
+      "familyId": "long-o-spelling",
+      "status": "OK",
+      "candidateRetained": true,
+      "acceptableCandidatePositions": [
+        2
+      ],
+      "selectedIds": [
+        "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+        "das-src-0448-w7-year-1-term-1"
+      ],
+      "invalidSelections": [],
+      "top1": true,
+      "top3": true,
+      "selections": [
+        {
+          "resourceId": "das-src-0447-part-1-phonics-review-of-long-o-o-e-oa-ow",
+          "rationale": "Directly targets the phonics and orthographic patterns for Long O (ō, o-e, oa, ow), which directly addresses all three observed spelling errors: 'bote' for 'boat' (oa/o-e confusion), 'groe' for 'grow' (ow/o-e confusion), and 'roap' for 'rope' (o-e/oa confusion). It matches the student's programme context (SLP Band C, Secondary Y1 T1 W7) and key skills (spelling and dictation, letter-sound correspondence)."
+        },
+        {
+          "resourceId": "das-src-0448-w7-year-1-term-1",
+          "rationale": "Matches the student's exact programme context for Week 7 (SLP Band C, Year 1 Term 1) and includes coverage of target skills like letter-sound correspondence and spelling & dictation that encompass the weekly phonics focus on Long O vowel patterns."
+        }
+      ]
+    },
+    {
+      "caseId": "vccv-single",
+      "familyId": "vccv-syllabication",
+      "status": "OK",
+      "candidateRetained": true,
+      "acceptableCandidatePositions": [
+        4
+      ],
+      "selectedIds": [
+        "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+        "das-src-0300-y1t1w5-reading-and-spelling-la",
+        "das-src-0302-y1t1w5-reading-and-spelling-ma"
+      ],
+      "invalidSelections": [],
+      "top1": true,
+      "top3": true,
+      "selections": [
+        {
+          "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+          "rationale": "Directly targets spelling-and-dictation and letter-sound-correspondence for SLP Band B Year 1 Term 1 Week 5, explicitly addressing phonetic spelling errors and syllable division patterns required for remediating errors like pi-cnic vs pic-nic."
+        },
+        {
+          "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+          "rationale": "Provides differentiated worksheet practice in spelling-and-dictation and letter-sound-correspondence to address phonetic spelling errors and syllable structure."
+        },
+        {
+          "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+          "rationale": "Offers targeted differentiated reading and spelling practice focusing on spelling, dictation, and letter-sound relationships for syllable division remediation."
+        }
+      ]
+    },
+    {
+      "caseId": "vccv-multiple",
+      "familyId": "vccv-syllabication",
+      "status": "OK",
+      "candidateRetained": true,
+      "acceptableCandidatePositions": [
+        4
+      ],
+      "selectedIds": [
+        "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+        "das-src-0300-y1t1w5-reading-and-spelling-la",
+        "das-src-0302-y1t1w5-reading-and-spelling-ma"
+      ],
+      "invalidSelections": [],
+      "top1": true,
+      "top3": true,
+      "selections": [
+        {
+          "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+          "rationale": "Directly matches student level, programme, year, term, and week (SLP Band B Y1T1W5) and explicitly addresses 'phonetic-spelling-error' and 'spelling-and-dictation' needed to remediate syllable division and phonological spelling errors."
+        },
+        {
+          "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+          "rationale": "Provides differentiated reading and spelling instruction targeted specifically at letter-sound correspondence and phonetic spelling error remediation for student needs."
+        },
+        {
+          "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+          "rationale": "Offers targeted reading and spelling practice addressing phonetic spelling errors, suitable for progressive skill remediation within the current programme scope."
+        }
+      ]
+    }
+  ]
+}

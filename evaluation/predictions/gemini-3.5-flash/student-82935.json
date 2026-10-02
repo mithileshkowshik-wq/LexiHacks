@@ -1,0 +1,39 @@
+{
+  "sampleId": "student-82935",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-82935.pdf",
+  "model": "gemini-3.5-flash",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 11053,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "at",
+      "intended": "in",
+      "category": "unsure",
+      "confidenceScore": 0.85,
+      "note": "Incorrect preposition choice, using 'at' instead of 'in'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.38,
+        "y": 0.268,
+        "z": 0.03,
+        "w": 0.025
+      }
+    },
+    {
+      "written": "bed room",
+      "intended": "bedroom",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "The compound word 'bedroom' was written with an incorrect space as two separate words.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.48,
+        "y": 0.265,
+        "z": 0.11,
+        "w": 0.03
+      }
+    }
+  ]
+}

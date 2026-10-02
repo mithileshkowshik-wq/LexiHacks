@@ -1,0 +1,191 @@
+{
+  "retained": 16,
+  "top1": 0,
+  "top3": 0,
+  "results": [
+    {
+      "queryId": "sequencing-example-pair",
+      "retained": true,
+      "candidatePositions": [
+        14
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": null,
+      "selectedIds": []
+    },
+    {
+      "queryId": "sequencing-skill-description",
+      "retained": true,
+      "candidatePositions": [
+        14
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": null,
+      "selectedIds": []
+    },
+    {
+      "queryId": "sequencing-teacher-observation",
+      "retained": true,
+      "candidatePositions": [
+        14
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": null,
+      "selectedIds": []
+    },
+    {
+      "queryId": "sequencing-multi-example",
+      "retained": true,
+      "candidatePositions": [
+        14
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": null,
+      "selectedIds": []
+    },
+    {
+      "queryId": "vccv-example-pair",
+      "retained": true,
+      "candidatePositions": [
+        6
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "Gemini returned worksheet categories unsupported by the evidence.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "vccv-skill-description",
+      "retained": true,
+      "candidatePositions": [
+        6
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "Gemini returned worksheet categories unsupported by the evidence.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "vccv-teacher-observation",
+      "retained": true,
+      "candidatePositions": [
+        6
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "Gemini returned worksheet categories unsupported by the evidence.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "vccv-multi-example",
+      "retained": true,
+      "candidatePositions": [
+        6
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "synonym-example-pair",
+      "retained": true,
+      "candidatePositions": [
+        5,
+        11,
+        12
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "synonym-skill-description",
+      "retained": true,
+      "candidatePositions": [
+        5,
+        11,
+        12
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "synonym-teacher-observation",
+      "retained": true,
+      "candidatePositions": [
+        5,
+        11,
+        12
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "synonym-multi-example",
+      "retained": true,
+      "candidatePositions": [
+        5,
+        11,
+        12
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "long-o-example-pair",
+      "retained": true,
+      "candidatePositions": [
+        2
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "long-o-skill-description",
+      "retained": true,
+      "candidatePositions": [
+        2
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "long-o-teacher-observation",
+      "retained": true,
+      "candidatePositions": [
+        2
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    },
+    {
+      "queryId": "long-o-multi-example",
+      "retained": true,
+      "candidatePositions": [
+        2
+      ],
+      "hit1": false,
+      "hit3": false,
+      "errorReason": "API_ERROR: Gemini returned HTTP 429.",
+      "selectedIds": []
+    }
+  ]
+}

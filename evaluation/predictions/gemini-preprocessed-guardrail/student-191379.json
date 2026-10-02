@@ -1,0 +1,28 @@
+{
+  "sampleId": "student-191379",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "latencyMs": 13759,
+  "transcript": "Dani 23/4/17\nHe run\nThe fox hunt\nI sang\nPam swims in water\nTom hops",
+  "illegibleNote": "The 'He' on the first line has some faint overwriting/strikethrough.",
+  "errors": [
+    {
+      "id": "student-191379-prediction-001",
+      "written": "run",
+      "intended": "runs",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Subject-verb agreement: 'He run' should be 'He runs' or 'He ran'."
+    },
+    {
+      "id": "student-191379-prediction-002",
+      "written": "hunt",
+      "intended": "hunts",
+      "category": "morphological",
+      "confidenceScore": 0.85,
+      "note": "Subject-verb agreement: 'The fox hunt' should be 'The fox hunts'."
+    }
+  ]
+}

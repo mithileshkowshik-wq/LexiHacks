@@ -1,0 +1,93 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gemini-flash-latest",
+  "provider": "gemini",
+  "pipeline": "direct-vision",
+  "guardrails": false,
+  "guardrailProfile": "none",
+  "latencyMs": 14127,
+  "transcript": "one Day I was runing back home because I need to go pee! so\nI was so ahchen that I pee on my pant back home, so I call my\nmom on my phone and say I pee on my pant She say hurry come back\nhome! so I did I run back home and wash myslef up before going sleep.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence starts with a lowercase letter."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Capital letter used mid-sentence."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.98,
+      "note": "Missing doubled consonant 'n' in 'running'."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb tense; should be past tense 'needed'."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "ahchen",
+      "intended": "urgent",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "Unclear intended word; possibly phonological attempt at 'anxious' or 'urgent'."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.95,
+      "note": "Plural noun 'pants' written as singular 'pant'."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": 0.92,
+      "note": "Incorrect tense; should be past tense 'called'."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.92,
+      "note": "Incorrect tense; should be past tense 'said'."
+    },
+    {
+      "id": "writing-16127-prediction-009",
+      "written": "She",
+      "intended": "she",
+      "category": "capitalisation",
+      "confidenceScore": 0.88,
+      "note": "Unnecessary capitalisation mid-sentence."
+    },
+    {
+      "id": "writing-16127-prediction-010",
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.98,
+      "note": "Transposition of letters 'e' and 'l'."
+    }
+  ]
+}

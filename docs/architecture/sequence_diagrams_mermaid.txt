@@ -1,0 +1,619 @@
+LEXIPATH — IMPLEMENTATION-GROUNDED SEQUENCE DIAGRAMS
+====================================================
+
+Scope
+-----
+These nine Mermaid sequence diagrams are aligned to the current client and server implementation.
+Names in messages and participant labels match the codebase wherever practical. The diagrams do
+not preserve conceptual classes or methods that are absent from the implementation.
+
+Important recommendation lifecycle finding
+------------------------------------------
+The current RecommendationReport model is latest-only: `student` is unique and regeneration uses
+one atomic `RecommendationReport.findOneAndUpdate(..., { upsert: true })`. It has no `status`,
+`supersedes`, `supersededBy`, `markSuperseded()`, or report history. `isOutdated` is computed when
+GET latest compares source Sample timestamps with `generatedAt`, it is not persisted.
+
+Therefore, the feedback requesting status/supersession fields describes a possible future schema
+change, not the current implementation. UC6 below reflects the implemented atomic replacement,
+which also satisfies the feedback that old/new replacement must be one logical database operation.
+If explicit supersession history remains a grading requirement, the model/controller must change
+before those messages can truthfully appear in an implementation sequence diagram.
+
+Corrections made to the supplied diagrams
+-----------------------------------------
+- UC1: Removed the nonexistent SampleReport/addReportEntry flow. Errors are embedded in Sample,
+  POST returns 202 before fire-and-forget analysis, and the client polls GET Sample.
+- UC2: Replaced ReportController/SampleReport with sampleController.getSample and Sample. Uncertainty
+  is a UI state derived from confidenceScore < confidenceThreshold, not an error category.
+- UC3: GET latest is read-only and never invokes generateReport or RecommendationEngine.
+- UC4: Uses studentController.getTrends and Sample. The page fetches all-time data once, then applies
+  date ranges and sample inclusion locally, the fewer-than-two decision is also client-side.
+- UC5: Retrieves Sample before accessing its embedded error. Removed nonexistent optional notes,
+  correctedAt, correction history, SampleReport methods, and persisted stale-report flags.
+- UC6: Removed nonexistent markSuperseded(), status/history writes, old-vs-new comparison, and
+  server-side flag dismissal. Successful generation atomically upserts the one latest report,
+  failed generation leaves the previous report unchanged.
+- UC7: Removed JWT/token lifelines. Login returns a safe account object and the client stores that
+  object in localStorage, server API routes are not token-protected.
+- UC8 and UC9: New diagrams derived from the implemented AccountPage and reset-password pages.
+
+
+UC1 — Upload Student Writing Sample for Analysis
+Primary endpoint: POST /api/samples/:studentId
+Implementation: UploadSamplePage, api.uploadSample, sampleController.createSample,
+Student/Sample models, errorClassificationEngine.runAnalysis
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as UploadSamplePage
+    participant API as client/src/lib/api.js
+    participant C as sampleController.createSample
+    participant DB as Student / Sample models
+    participant E as errorClassificationEngine
+    participant AI as Gemini API
+
+    Teacher->>UI: Choose files, title and taskType
+    Teacher->>UI: Select Analyse sample
+    UI->>API: uploadSample(studentId, form fields and files)
+    API->>C: POST /api/samples/:studentId (multipart)
+    C->>C: uploadSamples via Multer
+    C->>DB: Student.findById(studentId)
+
+    alt Student missing or upload invalid
+        DB-->>C: null or validation failure
+        C-->>API: 400/422 error
+        API-->>UI: throw upload error
+        UI-->>Teacher: Show inline alert and retain form
+    else Valid upload
+        C->>C: toPageFiles(files) and content validation
+        C->>DB: Sample.create(status = UPLOADED, pages, taskType)
+        DB-->>C: created Sample
+        C-->>API: 202 serialized Sample
+        API-->>UI: created sampleId and UPLOADED status
+        C->>E: runAnalysis(sampleId) (fire-and-forget)
+        E->>DB: Sample.findById(sampleId)
+        DB-->>E: Sample with private page paths
+
+        alt Mock analysis mode
+            E->>E: analyseSample() using mock result
+        else Gemini analysis mode
+            E->>E: Read all page bytes and buildPrompt(sample)
+            loop Until success or retry limit
+                E->>AI: models.generateContent(prompt + page images)
+                AI-->>E: Structured JSON result or failure
+            end
+            E->>E: validateAnalysisResult(result)
+        end
+
+        alt Analysis succeeds
+            E->>DB: sample.save(errors, illegibleNote, status = ANALYSED, analysedAt)
+        else Analysis fails
+            E->>DB: sample.save(status = FAILED, analysisError, analysedAt)
+        end
+
+        loop Every 2 seconds, up to 30 attempts
+            UI->>API: getSample(sampleId)
+            API->>C: GET /api/samples/:sampleId
+            C->>DB: Sample.findById(sampleId)
+            DB-->>C: current Sample
+            C-->>API: toClientSample(sample)
+            API-->>UI: analysisStatus
+        end
+
+        alt analysisStatus = ANALYSED or REVIEWED
+            UI-->>Teacher: Show success and Open error report
+        else analysisStatus = FAILED
+            UI-->>Teacher: Show human-readable analysis failure
+        else Polling times out
+            UI-->>Teacher: Offer Check again or return to profile
+        end
+    end
+```
+
+
+UC2 — View Categorised Error Pattern Report
+Primary endpoint: GET /api/samples/:sampleId
+Implementation: SampleReportPage, api.getSample, sampleController.getSample, Sample model
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as SampleReportPage
+    participant API as client/src/lib/api.js
+    participant C as sampleController.getSample
+    participant DB as Sample model
+    participant Scan as ScanViewer
+
+    Teacher->>UI: Open error report for sampleId
+    UI->>API: getSample(sampleId)
+    API->>C: GET /api/samples/:sampleId
+    C->>DB: Sample.findById(sampleId)
+
+    alt Sample not found
+        DB-->>C: null
+        C-->>API: 404 Sample not found
+        API-->>UI: request error
+        UI-->>Teacher: Show Sample not found
+    else Sample exists
+        DB-->>C: Sample with embedded errors
+        C->>C: toClientSample(sample)<br/>computeStatistics(non-dismissed errors)
+        C-->>API: Serialized Sample and confidenceThreshold
+        API-->>UI: Sample report data
+        UI->>UI: Group live errors by category
+        UI->>Scan: Render page and locationOnScan boxes
+
+        loop For each displayed scan page
+            Scan->>API: sampleImageUrl(sampleId, pageIndex)
+            API->>C: GET /api/samples/:sampleId/images/:index
+            C->>DB: Sample.findById(sampleId)
+            DB-->>C: private imagePath
+            C-->>Scan: Image bytes via sendFile (path is not exposed)
+        end
+
+        opt confidenceScore < confidenceThreshold
+            UI->>UI: Render Uncertain card state
+            Note over UI: Uncertain is a confidence state, not a category.<br/>The stored category remains one of the fixed categories or unsure.
+        end
+
+        UI-->>Teacher: Display grouped errors, counts and scan locations
+    end
+```
+
+
+UC3 — View Recommended Intervention Strategies with Rationale
+Primary endpoint: GET /api/students/:studentId/recommendations/latest
+Implementation: RecommendationsPage, api.getLatestRecommendations,
+recommendationController.getLatestStudentRecommendations, RecommendationReport/Sample models
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as RecommendationsPage
+    participant API as client/src/lib/api.js
+    participant C as recommendationController.getLatestStudentRecommendations
+    participant RR as RecommendationReport model
+    participant S as Sample model
+
+    Teacher->>UI: Open recommendations
+    Note over UI: The page also loads student metadata and trend totals in parallel.<br/>Viewing does not call generateRecommendations().
+    UI->>API: getLatestRecommendations(studentId)
+    API->>C: GET /api/students/:studentId/recommendations/latest
+    C->>C: assertObjectId(studentId)
+    C->>RR: findOne({ student: studentId })
+
+    alt No recommendation report exists
+        RR-->>C: null
+        C-->>API: 404 RECOMMENDATION_NOT_FOUND
+        API-->>UI: null (expected no-report result)
+        UI-->>Teacher: Show Generate recommendations or Upload sample state
+    else Current report exists
+        RR-->>C: latest-only RecommendationReport
+        C->>S: exists(samples changed or added since generatedAt)
+        S-->>C: freshness match or no match
+        C->>C: reportResponse(report, isOutdated)
+        C-->>API: 200 { report }
+        API-->>UI: Existing report with computed isOutdated
+        UI-->>Teacher: Display strategies, evidence and rationale
+        opt isOutdated = true
+            UI-->>Teacher: Show Refresh now warning
+        end
+    end
+
+    Note over C,RR: No RecommendationEngine call and no database write occur in UC3.
+```
+
+
+UC4 — Compare Error Trends Across Multiple Writing Samples
+Primary endpoint: GET /api/students/:studentId/trends
+Implementation: ErrorTrendsPage, api.getStudentTrends, studentController.getTrends,
+Student/Sample models, client/src/lib/trends.js
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as ErrorTrendsPage
+    participant API as client/src/lib/api.js
+    participant C as studentController.getTrends
+    participant Student as Student model
+    participant Sample as Sample model
+    participant T as client/src/lib/trends.js
+
+    Teacher->>UI: Open Error trends
+    UI->>API: getStudentTrends(studentId)
+    Note over UI,API: Current page requests all-time data once.<br/>The endpoint still supports optional from/to query parameters.
+    API->>C: GET /api/students/:studentId/trends
+    C->>Student: findById(studentId)
+
+    alt Student missing
+        Student-->>C: null
+        C-->>API: 404 Student not found
+        API-->>UI: request error
+        UI-->>Teacher: Show Student not found
+    else Student exists
+        Student-->>C: Student
+        C->>C: Validate optional YYYY-MM-DD from/to
+        C->>Sample: find(status in ANALYSED/REVIEWED)<br/>sort({ createdAt: 1 })
+        Sample-->>C: Chronological Samples with embedded errors
+        C->>C: Exclude dismissed errors and aggregate category counts
+        C-->>API: totals and per-sample trends[]
+        API-->>UI: trendData
+        UI->>T: prepareTrendSamples(trendData.trends)
+        T-->>UI: Five chartable category series<br/>plus all-category totalErrors
+
+        Teacher->>UI: Choose date range and sample subset
+        UI->>T: filterSamplesByRange/customRange()
+        UI->>T: applySampleSelection()
+        UI->>T: summariseTrends(includedSamples)
+        T-->>UI: summary and comparison
+
+        alt Fewer than 2 included samples
+            UI-->>Teacher: Show insufficient trend guidance
+        else At least 2 included samples
+            UI-->>Teacher: Render TrendChart and summary
+        end
+    end
+
+    Note over UI,T: Uncertainty is not a category. The five chart lines omit unsure,<br/>totalErrors still includes every non-dismissed error, including unsure.
+```
+
+
+UC5 — Edit, Remove, Confirm, or Manually Add an Error
+Primary endpoint: PATCH /api/samples/:sampleId/errors/:errorIndex
+Implementation: SampleReportPage.patchError/addMissedError, api.updateSampleError,
+sampleController.reclassifyError, Sample model
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as SampleReportPage
+    participant API as client/src/lib/api.js
+    participant C as sampleController.reclassifyError
+    participant DB as Sample model
+
+    Teacher->>UI: Choose an error correction action
+
+    alt Reclassify existing error
+        UI->>API: updateSampleError(sampleId, errorIndex, { category })
+        Note over UI: RECLASSIFY_ORDER offers the five educator categories.<br/>The unsure fallback is not offered as a manual choice.
+    else Remove or restore existing error
+        UI->>API: updateSampleError(sampleId, errorIndex, { dismissed })
+    else Confirm uncertain error
+        UI->>API: updateSampleError(sampleId, errorIndex, { confidenceScore: 1 })
+        Note over UI: Confirmation changes confidence only,<br/>uncertain is not an error category.
+    else Record an error missed by AI
+        UI->>API: updateSampleError(sampleId, "new", { written, category })
+    end
+
+    API->>C: PATCH /api/samples/:sampleId/errors/:errorIndex
+    C->>DB: Sample.findById(sampleId)
+
+    alt Sample missing
+        DB-->>C: null
+        C-->>API: 404 Sample Not found
+        API-->>UI: request error
+        UI-->>Teacher: Show inline save failure
+    else Sample retrieved
+        DB-->>C: Sample with embedded errors
+        C->>C: Validate errorIndex and supplied patch fields
+
+        alt Invalid index, category, dismissed, confidence, or written text
+            C-->>API: 400/404 validation error
+            API-->>UI: request error
+            UI-->>Teacher: Show inline save failure
+        else Valid existing-error patch
+            C->>C: Mutate sample.errors[errorIndex] in memory
+            C->>DB: sample.save()
+            DB-->>C: Updated Sample
+            C->>C: toClientSample() recomputes live statistics
+            C-->>API: 200 full updated Sample
+            API-->>UI: Fresh report and counts
+            UI-->>Teacher: Repaint groups, counts and corrected card
+        else Valid new manual error
+            C->>C: sample.errors.push({ written, category,<br/>confidenceScore: 1, dismissed: false })
+            C->>DB: sample.save()
+            DB-->>C: Updated Sample
+            C->>C: toClientSample() recomputes live statistics
+            C-->>API: 200 full updated Sample
+            API-->>UI: Fresh report and counts
+            UI-->>Teacher: Show educator-identified error
+        end
+    end
+
+    opt A recommendation report was loaded earlier in this visit
+        UI->>UI: Increment local corrections count and show outdated warning
+        Note over UI,DB: No recommendation status is written here.<br/>A later GET latest computes isOutdated from Sample.updatedAt.
+    end
+```
+
+
+UC6 — Regenerate Intervention Recommendations
+Primary endpoint: POST /api/students/:studentId/recommendations
+Implementation: RecommendationsPage.handleGenerate (also called from SampleReportPage),
+api.generateRecommendations, recommendationController.generateStudentRecommendations,
+generateReport, RecommendationEngine, RecommendationReport.findOneAndUpdate
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as RecommendationsPage / SampleReportPage
+    participant API as client/src/lib/api.js
+    participant C as recommendationController.generateStudentRecommendations
+    participant DB as Student / Sample models
+    participant G as generateReport
+    participant E as RecommendationEngine
+    participant X as Azure Storage / Gemini API
+    participant RR as RecommendationReport model
+
+    Teacher->>UI: Select Generate or Refresh recommendations
+    UI->>API: generateRecommendations(studentId)
+    API->>C: POST /api/students/:studentId/recommendations
+    C->>C: assertObjectId(studentId)
+    C->>DB: Student.findById(studentId)
+
+    alt Student missing
+        DB-->>C: null
+        C-->>API: 404 STUDENT_NOT_FOUND
+        API-->>UI: generation error
+        UI-->>Teacher: Keep current report and show error
+    else Student exists
+        DB-->>C: Student
+        C->>DB: Sample.find({ student, status in ANALYSED/REVIEWED })<br/>sort({ createdAt: 1 })
+        DB-->>C: Analysed Samples
+        C->>G: generateReport(student, samples)
+        G->>G: Exclude dismissed errors and build evidence
+
+        alt No active errors
+            G-->>C: 422 NO_ACTIVE_ERRORS
+            C-->>API: generation error
+            API-->>UI: error, existing report retained
+            UI-->>Teacher: Show generation failure
+        else Active evidence exists
+            G->>E: createInterventionStrategies(input, 4)
+            alt Mock recommendation mode
+                E->>E: findWorksheets() and mockStrategies()
+            else Gemini recommendation mode
+                E->>X: Fetch approved worksheet catalogue and grounding context
+                X-->>E: Approved worksheets and selected context
+                E->>X: callGemini(strategyRequest)
+                X-->>E: Structured strategy response
+                E->>E: Validate evidence IDs, worksheet IDs and categories
+            end
+            E-->>G: Up to four grounded strategies
+            G-->>C: { basedOnSamples, strategies }
+
+            C->>RR: findOneAndUpdate({ student }, { $set: generated + generatedAt },<br/>{ upsert: true, returnDocument: "after" })
+            Note over C,RR: One atomic latest-only replacement.<br/>No old report read, markSuperseded(), status, or history record.
+
+            alt Concurrent first-upsert duplicate-key race
+                RR-->>C: E11000
+                C->>RR: findOne({ student })
+                RR-->>C: Winning current report
+            else Upsert succeeds
+                RR-->>C: Replaced/current RecommendationReport
+            end
+
+            C-->>API: 201 { report }
+            API-->>UI: Newly generated current report
+            UI-->>Teacher: Replace displayed report
+        end
+    end
+
+    Note over G,RR: Persistence occurs only after generation succeeds,<br/>therefore a generation failure leaves the previous report unchanged.
+```
+
+
+UC7 — Log In
+Primary endpoint: POST /api/auth/login
+Implementation: LoginPage, api.login, authController.login, Account model, bcryptjs,
+client/src/lib/session.js
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as LoginPage
+    participant API as client/src/lib/api.js
+    participant C as authController.login
+    participant A as Account model
+    participant B as bcryptjs
+    participant S as client/src/lib/session.js
+
+    Teacher->>UI: Enter username and password
+    UI->>API: login({ username, password })
+    API->>C: POST /api/auth/login
+
+    alt Username or password missing
+        C-->>API: 400 Username and password are required
+        API-->>UI: request error
+        UI-->>Teacher: Show inline error
+    else Credentials supplied
+        C->>A: Account.findOne({ username })
+        A-->>C: Account or null
+        opt Account exists
+            C->>B: compare(password, account.passwordHash)
+            B-->>C: true or false
+        end
+
+        alt Account missing or password mismatch
+            C-->>API: 401 Incorrect username or password
+            API-->>UI: request error
+            UI-->>Teacher: Show same inline error
+        else Credentials valid
+            C->>C: toClientAccount(account)<br/>exclude passwordHash and reset fields
+            C-->>API: 200 safe account object
+            API-->>UI: account
+            UI->>S: saveSession(account)
+            S->>S: localStorage.setItem("lexipath.session", account)
+            UI-->>Teacher: Navigate to requested route or caseload
+        end
+    end
+
+    Note over UI,S: No JWT is issued. This is a client-side route gate only,<br/>the server API does not authenticate subsequent requests.
+```
+
+
+UC8 — Change Password
+Primary endpoint: PATCH /api/auth/change-password
+Implementation: AccountPage.ChangePasswordForm, api.changePassword,
+authController.changePassword, passwordPolicy.validatePasswordStrength, Account model, bcryptjs
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant UI as AccountPage.ChangePasswordForm
+    participant API as client/src/lib/api.js
+    participant C as authController.changePassword
+    participant P as passwordPolicy.validatePasswordStrength
+    participant A as Account model
+    participant B as bcryptjs
+
+    Teacher->>UI: Enter current password, new password and confirmation
+    UI->>UI: Check client password rules and matching confirmation
+
+    alt Client validation fails
+        UI-->>Teacher: Disable submit or show mismatch guidance
+    else Client validation passes
+        UI->>API: changePassword({ username, currentPassword, newPassword })
+        API->>C: PATCH /api/auth/change-password
+        C->>A: Account.findOne({ username })
+        A-->>C: Account or null
+        opt Account exists
+            C->>B: compare(currentPassword, account.passwordHash)
+            B-->>C: true or false
+        end
+
+        alt Account missing or current password incorrect
+            C-->>API: 401 Current password is incorrect
+            API-->>UI: request error
+            UI-->>Teacher: Show inline error
+        else Current password valid
+            C->>P: validatePasswordStrength(newPassword)
+            P-->>C: problems[]
+            alt Server password policy fails
+                C-->>API: 400 password requirements
+                API-->>UI: request error
+                UI-->>Teacher: Show inline error
+            else New password valid
+                C->>B: hash(newPassword, 10)
+                B-->>C: new passwordHash
+                C->>A: account.save(passwordHash)
+                A-->>C: saved Account
+                C-->>API: 200 password updated message
+                API-->>UI: success
+                UI-->>Teacher: Show Password updated and clear fields
+            end
+        end
+    end
+```
+
+
+UC9 — Reset a Forgotten Password
+Primary endpoints: POST /api/auth/forgot-password and POST /api/auth/reset-password/:token
+Implementation: ForgotPasswordPage, ResetPasswordPage, authController.forgotPassword/resetPassword,
+Account model, emailService.sendPasswordResetEmail, Resend API, passwordPolicy, bcryptjs
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Teacher
+    participant F as ForgotPasswordPage / ResetPasswordPage
+    participant API as client/src/lib/api.js
+    participant C as authController
+    participant A as Account model
+    participant Mail as emailService
+    participant R as Resend API
+    participant P as passwordPolicy
+    participant B as bcryptjs
+
+    Teacher->>F: Enter username and request reset link
+    F->>API: requestPasswordReset({ username })
+    API->>C: POST /api/auth/forgot-password
+    C->>A: Account.findOne({ username })
+    A-->>C: Account or null
+
+    opt Account exists
+        C->>C: crypto.randomBytes(32) and set 1-hour expiry
+        C->>A: account.save(resetToken, resetTokenExpires)
+        A-->>C: saved Account
+        C->>Mail: sendPasswordResetEmail({ to, resetLink })
+        Mail->>R: POST /emails
+        R-->>Mail: accepted or error
+        Mail-->>C: email result
+    end
+
+    C-->>API: 200 generic response in both account cases
+    API-->>F: Reset request accepted
+    F-->>Teacher: Show Check your email
+    Note over C,F: Identical response prevents username enumeration.
+
+    opt Teacher follows emailed /reset-password/:token link
+        Teacher->>F: Enter and confirm new password
+        F->>F: Check client password rules and confirmation
+
+        alt Client validation fails
+            F-->>Teacher: Disable submit or show mismatch guidance
+        else Client validation passes
+            F->>API: resetPassword(token, { password })
+            API->>C: POST /api/auth/reset-password/:token
+            C->>P: validatePasswordStrength(password)
+            P-->>C: problems[]
+
+            alt Server password policy fails
+                C-->>API: 400 password requirements
+                API-->>F: request error
+                F-->>Teacher: Show inline error
+            else Password policy passes
+                C->>A: findOne({ resetToken: token,<br/>resetTokenExpires: { $gt: now } })
+                A-->>C: Account or null
+
+                alt Token invalid or expired
+                    C-->>API: 400 invalid or expired link
+                    API-->>F: request error
+                    F-->>Teacher: Show inline error
+                else Token valid
+                    C->>B: hash(password, 10)
+                    B-->>C: new passwordHash
+                    C->>A: account.save(passwordHash,<br/>resetToken = null, resetTokenExpires = null)
+                    A-->>C: saved Account
+                    C-->>API: 200 password updated message
+                    API-->>F: success
+                    F-->>Teacher: Show Password updated and link to sign in
+                end
+            end
+        end
+    end
+```
+
+
+Implementation evidence by use case
+-----------------------------------
+UC1: client/src/pages/UploadSamplePage.jsx, client/src/hooks/useSamplePolling.js,
+     client/src/lib/api.js, server/routes/samples.js, server/controllers/sampleController.js,
+     server/services/errorClassificationEngine.js, server/models/sample.js
+UC2: client/src/pages/SampleReportPage.jsx, client/src/components/ScanViewer.jsx,
+     server/controllers/sampleController.js, server/models/sample.js
+UC3: client/src/pages/RecommendationsPage.jsx, server/controllers/recommendationController.js,
+     server/models/recommendationReport.js, server/models/sample.js
+UC4: client/src/pages/ErrorTrendsPage.jsx, client/src/lib/trends.js,
+     server/controllers/studentController.js, server/models/sample.js
+UC5: client/src/pages/SampleReportPage.jsx, client/src/lib/api.js,
+     server/controllers/sampleController.js, server/models/sample.js
+UC6: client/src/pages/RecommendationsPage.jsx, server/controllers/recommendationController.js,
+     server/services/generateReport.js, server/services/recommendationEngine.js,
+     server/models/recommendationReport.js
+UC7: client/src/pages/LoginPage.jsx, client/src/lib/session.js,
+     server/controllers/authController.js, server/models/account.js
+UC8: client/src/pages/AccountPage.jsx, server/controllers/authController.js,
+     server/services/passwordPolicy.js, server/models/account.js
+UC9: client/src/pages/ForgotPasswordPage.jsx, client/src/pages/ResetPasswordPage.jsx,
+     server/controllers/authController.js, server/services/emailService.js,
+     server/services/passwordPolicy.js, server/models/account.js

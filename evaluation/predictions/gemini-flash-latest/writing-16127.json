@@ -1,0 +1,123 @@
+{
+  "sampleId": "writing-16127",
+  "sourceFile": "samples/Narrative Writing/Narrative Writing/Writing_16127.jpg",
+  "model": "gemini-flash-latest",
+  "pipeline": "direct-vision",
+  "status": "ok",
+  "latencyMs": 15233,
+  "illegibleNote": "",
+  "errors": [
+    {
+      "written": "one",
+      "intended": "One",
+      "category": "capitalisation",
+      "confidenceScore": 0.95,
+      "note": "Sentence starts with a lowercase letter instead of a capital letter.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.111,
+        "y": 0.385,
+        "z": 0.043,
+        "w": 0.022
+      }
+    },
+    {
+      "written": "bay",
+      "intended": "day",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Letter reversal of 'd' written as 'b'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.158,
+        "y": 0.386,
+        "z": 0.041,
+        "w": 0.025
+      }
+    },
+    {
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Double-letter error with a missing middle 'n'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.258,
+        "y": 0.388,
+        "z": 0.062,
+        "w": 0.024
+      }
+    },
+    {
+      "written": "becaue",
+      "intended": "because",
+      "category": "orthographic",
+      "confidenceScore": 0.85,
+      "note": "Omission of letter 's' in 'because'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.453,
+        "y": 0.388,
+        "z": 0.071,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "thaitt",
+      "intended": "that",
+      "category": "orthographic",
+      "confidenceScore": 0.9,
+      "note": "Extra letter 'i' inserted and trailing consonant doubled.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.274,
+        "y": 0.422,
+        "z": 0.052,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing plural marker '-s'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.452,
+        "y": 0.424,
+        "z": 0.047,
+        "w": 0.023
+      }
+    },
+    {
+      "written": "phoen",
+      "intended": "phone",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Letter transposition of 'e' and 'o'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.252,
+        "y": 0.461,
+        "z": 0.058,
+        "w": 0.024
+      }
+    },
+    {
+      "written": "myslef",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.95,
+      "note": "Letter transposition of 'e' and 'l'.",
+      "locationOnScan": {
+        "page": 0,
+        "x": 0.525,
+        "y": 0.499,
+        "z": 0.058,
+        "w": 0.027
+      }
+    }
+  ]
+}

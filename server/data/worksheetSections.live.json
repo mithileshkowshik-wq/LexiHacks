@@ -1,0 +1,68 @@
+[
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-08709925d250e3e9",
+    "title": "Editing word forms",
+    "pageStart": 12,
+    "pageEnd": 13,
+    "targetCategories": ["morphological"],
+    "skill": "word forms and inflections",
+    "difficulty": "secondary",
+    "description": "Editing practice and answers covering word-form choices, derivation, and verb inflections."
+  },
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-d790b0b4deae69a7",
+    "title": "Capital letters in sentences",
+    "pageStart": 9,
+    "pageEnd": 10,
+    "targetCategories": ["capitalisation"],
+    "skill": "sentence-initial capitals",
+    "difficulty": "primary",
+    "description": "Worksheet and answer page for rewriting basic sentences with an initial capital letter."
+  },
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-bd5c6790d05285db",
+    "title": "Commas in a series of actions",
+    "pageStart": 24,
+    "pageEnd": 25,
+    "targetCategories": ["punctuation"],
+    "skill": "commas in series action predicates",
+    "difficulty": "primary",
+    "description": "Worksheet and answer page for separating three or more actions with commas and a connector."
+  },
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-3f46a8c9bda746a6",
+    "title": "Consonant digraph sound and trace",
+    "pageStart": 81,
+    "pageEnd": 83,
+    "targetCategories": ["phonological"],
+    "skill": "sh, ch, and th sound-to-letter correspondence",
+    "difficulty": "primary",
+    "description": "Three focused pages for sounding, tracing, and identifying sh, ch, and th."
+  },
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-703fc681e448a159",
+    "title": "Building adverbs with -ly",
+    "pageStart": 8,
+    "pageEnd": 9,
+    "targetCategories": ["morphological"],
+    "skill": "adding the suffix -ly",
+    "difficulty": "primary",
+    "description": "Worksheet and answer page for forming and applying -ly adverbs from base words."
+  },
+  {
+    "catalogueMode": "live",
+    "worksheetId": "azure-719a668d4be858ab",
+    "title": "One-one-one doubling rule",
+    "pageStart": 196,
+    "pageEnd": 198,
+    "targetCategories": ["orthographic"],
+    "skill": "consonant doubling before vowel suffixes",
+    "difficulty": "primary",
+    "description": "Rule explanation, worked answers, and practice for doubling a final consonant before a vowel suffix."
+  }
+]

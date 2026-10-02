@@ -1,0 +1,27 @@
+{
+  "sampleId": "student-92398",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-92398.pdf",
+  "taskType": "Edit&Diagram 3",
+  "grade": "unknown",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "Independent second-round visual evaluation by GPT-5.5 with guardrails. Evaluated from rendered PDF page only; ignored name/date and treated crossed-out/scribbled areas cautiously. Approximate transcript: \"John took a nap in his room. / Birds can fly because they have wings and light bones. / We planned to visit her in the morning. / The girl set [illegible/unclear mark] on the bed in the room. / Peter ran as fast as he could [unclear extra marks] from cats\".",
+  "illegibleNote": "The fourth line has an unclear/crossed span after 'set'; the fifth line has unclear marks between 'could' and 'from'. These were not guessed as words except in low-confidence candidate errors.",
+  "errors": [
+    {
+      "id": "student-92398-e01",
+      "written": "set",
+      "intended": "sat",
+      "category": "orthographic",
+      "rationale": "In the sentence 'The girl set ... on the bed', the verb likely should be 'sat'. The mark is readable as 'set' but retained as a candidate because the line includes nearby corrections/unclear marks.",
+      "confidence": 0.66
+    },
+    {
+      "id": "student-92398-e02",
+      "written": "could [unclear] from cats",
+      "intended": "could away from cats",
+      "category": "unsure",
+      "rationale": "The final sentence appears to have unclear marks between 'could' and 'from cats'; it may be attempting the phrase 'away from cats', but guardrails require an unsure/low-confidence label rather than guessing.",
+      "confidence": 0.34
+    }
+  ]
+}

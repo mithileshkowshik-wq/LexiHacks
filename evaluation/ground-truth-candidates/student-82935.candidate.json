@@ -1,0 +1,17 @@
+{
+  "sampleId": "student-82935",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-82935.pdf",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "candidate",
+  "reviewerNotes": "AI-generated candidate labels from hermes-gpt-5.6-visual-review using isolated raw-image inference and the full transcription guardrail profile. Human vetting is required before copying this file to ground-truth-vetted/.",
+  "errors": [
+    {
+      "id": "student-82935-e001",
+      "written": "at his bed room",
+      "intended": "in his bedroom",
+      "category": "unsure",
+      "rationale": "The location phrase likely needs 'in', and 'bedroom' is normally one word; this combines grammar and orthography. AI confidence: 0.74."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sampleId": "student-390968",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-390968.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted expansion label. Blank verdict was accepted as instructed by the reviewer.",
+  "errors": [
+    {
+      "id": "student-390968-e001",
+      "written": "I sang,",
+      "intended": "I sang.",
+      "category": "punctuation",
+      "rationale": "The standalone sentence appears to end with a comma rather than a full stop. AI confidence: 0.80."
+    }
+  ]
+}

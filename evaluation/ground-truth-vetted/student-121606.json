@@ -1,0 +1,45 @@
+{
+  "sampleId": "student-121606",
+  "sourceFile": "samples/Edit&Diagram 1/Edit&Diagram 1/Student-121606.jpg",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted expansion labels. Two rows accepted, two explicitly corrected, and one reviewer-missed error added.",
+  "errors": [
+    {
+      "id": "student-121606-e001",
+      "written": "Fox hunt",
+      "intended": "Fox hunts",
+      "category": "morphological",
+      "rationale": "Third-person singular verb likely requires -s. AI confidence: 0.90."
+    },
+    {
+      "id": "student-121606-e002",
+      "written": "I am sang",
+      "intended": "I sang",
+      "category": "morphological",
+      "rationale": "The auxiliary 'am' is incompatible with the past-tense form 'sang'. AI confidence: 0.78."
+    },
+    {
+      "id": "student-121606-e003",
+      "written": "Pam Swimming?",
+      "intended": "Pam swims.",
+      "category": "morphological",
+      "rationale": "Human reviewer preserved the exact question mark in 'Pam Swimming?'."
+    },
+    {
+      "id": "student-121606-e004",
+      "written": "tom Jump",
+      "intended": "Tom jumps.",
+      "category": "morphological",
+      "rationale": "Human reviewer preserved the exact lowercase 'tom Jump'."
+    },
+    {
+      "id": "student-121606-e005",
+      "written": "he run.",
+      "intended": "He ran.",
+      "category": "morphological",
+      "rationale": "Human reviewer identified incorrect verb tense plus lowercase sentence opening; classified as morphological because the fixed taxonomy has no combined grammar category."
+    }
+  ]
+}

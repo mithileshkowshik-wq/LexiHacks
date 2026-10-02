@@ -1,0 +1,132 @@
+{
+  "sampleId": "writing-16127",
+  "model": "gpt-5.5",
+  "provider": "independent-agent-visual-review",
+  "pipeline": "direct-vision",
+  "guardrails": true,
+  "latencyMs": null,
+  "transcript": "",
+  "illegibleNote": "Low confidence on the words transcribed as 'achen', 'nd', 'myslft', and the ending phrase 'going slip'; these were not normalized in written fields.",
+  "errors": [
+    {
+      "id": "writing-16127-e01",
+      "written": "Day",
+      "intended": "day",
+      "category": "capitalisation",
+      "confidenceScore": 0.72,
+      "note": "The word appears mid-phrase in 'one Day' and is capitalized where a lowercase common noun is expected."
+    },
+    {
+      "id": "writing-16127-e02",
+      "written": "runing",
+      "intended": "running",
+      "category": "orthographic",
+      "confidenceScore": 0.76,
+      "note": "Likely missing doubled consonant in 'running'."
+    },
+    {
+      "id": "writing-16127-e03",
+      "written": "becaue",
+      "intended": "because",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "The word appears to omit the 's' in 'because'."
+    },
+    {
+      "id": "writing-16127-e04",
+      "written": "need",
+      "intended": "needed",
+      "category": "morphological",
+      "confidenceScore": 0.58,
+      "note": "In the past-tense narrative context, the verb appears to need past-tense morphology; category confidence is lower because this is a grammar/tense judgment."
+    },
+    {
+      "id": "writing-16127-e05",
+      "written": "So",
+      "intended": "so",
+      "category": "capitalisation",
+      "confidenceScore": 0.55,
+      "note": "The word appears after a clause boundary/comma-like pause rather than sentence start; marked as candidate only because punctuation is unclear."
+    },
+    {
+      "id": "writing-16127-e06",
+      "written": "achen",
+      "intended": "aching",
+      "category": "unsure",
+      "confidenceScore": 0.42,
+      "note": "The handwriting is unclear; 'achen' may be an attempted spelling of 'aching', but guardrails require low confidence rather than normalizing silently."
+    },
+    {
+      "id": "writing-16127-e07",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.77,
+      "note": "Likely missing plural/lexical final -s in 'pants'."
+    },
+    {
+      "id": "writing-16127-e08",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": 0.57,
+      "note": "Past-tense narrative context suggests the verb should carry past-tense -ed; lower confidence because it is a grammar/tense correction."
+    },
+    {
+      "id": "writing-16127-e09",
+      "written": "nd",
+      "intended": "and",
+      "category": "orthographic",
+      "confidenceScore": 0.61,
+      "note": "The word between 'phone' and 'say' appears to omit the initial 'a' of 'and'."
+    },
+    {
+      "id": "writing-16127-e10",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.58,
+      "note": "Past-tense narrative context suggests 'said'; lower confidence because this is a grammar/tense correction."
+    },
+    {
+      "id": "writing-16127-e11",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.72,
+      "note": "Second apparent instance of missing final -s in 'pants'."
+    },
+    {
+      "id": "writing-16127-e12",
+      "written": "She say",
+      "intended": "She said",
+      "category": "morphological",
+      "confidenceScore": 0.56,
+      "note": "Subject-verb phrase appears to need past-tense 'said'; marked lower-confidence because grammar/tense categories are constrained."
+    },
+    {
+      "id": "writing-16127-e13",
+      "written": "washe",
+      "intended": "washed",
+      "category": "morphological",
+      "confidenceScore": 0.62,
+      "note": "Likely missing past-tense ending consonant in 'washed'."
+    },
+    {
+      "id": "writing-16127-e14",
+      "written": "myslft",
+      "intended": "myself",
+      "category": "orthographic",
+      "confidenceScore": 0.48,
+      "note": "The word appears to be an attempted spelling of 'myself', but the final letters are unclear; low confidence retained under guardrails."
+    },
+    {
+      "id": "writing-16127-e15",
+      "written": "slip",
+      "intended": "sleep",
+      "category": "phonological",
+      "confidenceScore": 0.51,
+      "note": "Ending phrase appears to use 'slip' for 'sleep'; low confidence because the word is partly blurred near the ruled line."
+    }
+  ]
+}

@@ -1,0 +1,1186 @@
+{
+  "source": "docs/testing/LexiPath_Test_Case_Tables_Integration_Revised.pdf",
+  "total": 236,
+  "cases": [
+    {
+      "id": "UT-UC1-01",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-02",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-03",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-04",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-05",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-06",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-07",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC1-08",
+      "useCase": "UC1",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC1-01",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-02",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-03",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-04",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-05",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-06",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-07",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-08",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-09",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC1-10",
+      "useCase": "UC1",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC1-01",
+      "useCase": "UC1",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC1-02",
+      "useCase": "UC1",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC1-03",
+      "useCase": "UC1",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC1-01",
+      "useCase": "UC1",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC1-02",
+      "useCase": "UC1",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC1-03",
+      "useCase": "UC1",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC1-04",
+      "useCase": "UC1",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC1-05",
+      "useCase": "UC1",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC2-01",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-02",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-03",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-04",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-05",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-06",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC2-07",
+      "useCase": "UC2",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC2-01",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-02",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-03",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-04",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-05",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-06",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-07",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-08",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-09",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC2-10",
+      "useCase": "UC2",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC2-01",
+      "useCase": "UC2",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC2-02",
+      "useCase": "UC2",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC2-01",
+      "useCase": "UC2",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC2-02",
+      "useCase": "UC2",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC2-03",
+      "useCase": "UC2",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC2-04",
+      "useCase": "UC2",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC3-01",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC3-02",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC3-03",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC3-04",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC3-05",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC3-06",
+      "useCase": "UC3",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC3-01",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-02",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-03",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-04",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-05",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-06",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-07",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-08",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-09",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-10",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-11",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC3-12",
+      "useCase": "UC3",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC3-01",
+      "useCase": "UC3",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC3-02",
+      "useCase": "UC3",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC3-03",
+      "useCase": "UC3",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC3-01",
+      "useCase": "UC3",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC3-02",
+      "useCase": "UC3",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC3-03",
+      "useCase": "UC3",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC3-04",
+      "useCase": "UC3",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC4-01",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-02",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-03",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-04",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-05",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-06",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC4-07",
+      "useCase": "UC4",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC4-01",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-02",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-03",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-04",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-05",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-06",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-07",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-08",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-09",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC4-10",
+      "useCase": "UC4",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC4-01",
+      "useCase": "UC4",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC4-02",
+      "useCase": "UC4",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC4-03",
+      "useCase": "UC4",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC4-01",
+      "useCase": "UC4",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC4-02",
+      "useCase": "UC4",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC4-03",
+      "useCase": "UC4",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC4-04",
+      "useCase": "UC4",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC5-01",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-02",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-03",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-04",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-05",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-06",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-07",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-08",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC5-09",
+      "useCase": "UC5",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC5-01",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-02",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-03",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-04",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-05",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-06",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-07",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-08",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-09",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC5-10",
+      "useCase": "UC5",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC5-01",
+      "useCase": "UC5",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC5-02",
+      "useCase": "UC5",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC5-03",
+      "useCase": "UC5",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC5-04",
+      "useCase": "UC5",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC5-01",
+      "useCase": "UC5",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC5-02",
+      "useCase": "UC5",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC5-03",
+      "useCase": "UC5",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC5-04",
+      "useCase": "UC5",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC5-05",
+      "useCase": "UC5",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC6-01",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-02",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-03",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-04",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-05",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-06",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-07",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-08",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC6-09",
+      "useCase": "UC6",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC6-01",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-02",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-03",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-04",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-05",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-06",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-07",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-08",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-09",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-10",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC6-11",
+      "useCase": "UC6",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC6-01",
+      "useCase": "UC6",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC6-02",
+      "useCase": "UC6",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC6-03",
+      "useCase": "UC6",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC6-04",
+      "useCase": "UC6",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC6-01",
+      "useCase": "UC6",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC6-02",
+      "useCase": "UC6",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC6-03",
+      "useCase": "UC6",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC6-04",
+      "useCase": "UC6",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC6-05",
+      "useCase": "UC6",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC7-01",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC7-02",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC7-03",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC7-04",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC7-05",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC7-06",
+      "useCase": "UC7",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC7-01",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-02",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-03",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-04",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-05",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-06",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-07",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-08",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-09",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC7-10",
+      "useCase": "UC7",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC7-01",
+      "useCase": "UC7",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC7-02",
+      "useCase": "UC7",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC7-03",
+      "useCase": "UC7",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC7-01",
+      "useCase": "UC7",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC7-02",
+      "useCase": "UC7",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC7-03",
+      "useCase": "UC7",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC7-04",
+      "useCase": "UC7",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC8-01",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC8-02",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC8-03",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC8-04",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC8-05",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC8-06",
+      "useCase": "UC8",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC8-01",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-02",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-03",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-04",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-05",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-06",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-07",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-08",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-09",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-10",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC8-11",
+      "useCase": "UC8",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC8-01",
+      "useCase": "UC8",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC8-02",
+      "useCase": "UC8",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC8-03",
+      "useCase": "UC8",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC8-01",
+      "useCase": "UC8",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC8-02",
+      "useCase": "UC8",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC8-03",
+      "useCase": "UC8",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC8-04",
+      "useCase": "UC8",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC8-05",
+      "useCase": "UC8",
+      "level": "Robustness"
+    },
+    {
+      "id": "UT-UC9-01",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-02",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-03",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-04",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-05",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-06",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-07",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-08",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "UT-UC9-09",
+      "useCase": "UC9",
+      "level": "Unit"
+    },
+    {
+      "id": "BI-UC9-01",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-02",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-03",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-04",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-05",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-06",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-07",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-08",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-09",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-10",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-11",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-12",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-13",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-14",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "BI-UC9-15",
+      "useCase": "UC9",
+      "level": "Bottom-up integration"
+    },
+    {
+      "id": "E2E-UC9-01",
+      "useCase": "UC9",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC9-02",
+      "useCase": "UC9",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC9-03",
+      "useCase": "UC9",
+      "level": "System E2E"
+    },
+    {
+      "id": "E2E-UC9-04",
+      "useCase": "UC9",
+      "level": "System E2E"
+    },
+    {
+      "id": "RB-UC9-01",
+      "useCase": "UC9",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC9-02",
+      "useCase": "UC9",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC9-03",
+      "useCase": "UC9",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC9-04",
+      "useCase": "UC9",
+      "level": "Robustness"
+    },
+    {
+      "id": "RB-UC9-05",
+      "useCase": "UC9",
+      "level": "Robustness"
+    }
+  ]
+}

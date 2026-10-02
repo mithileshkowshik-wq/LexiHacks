@@ -1,0 +1,124 @@
+{
+  "sampleId": "writing-16127",
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "provider": "openrouter",
+  "pipeline": "preprocessed-vision",
+  "guardrails": true,
+  "latencyMs": 68048,
+  "transcript": "one Day I was run back home because I red to go peel so\nI was so alchen that I pee in my pant back home, so I call my\nmom on my phoep and she I pregnany pant she say hurry come back\nhome! so I run back home and wash myself up before going sleep.",
+  "illegibleNote": "",
+  "errors": [
+    {
+      "id": "writing-16127-prediction-001",
+      "written": "one Day",
+      "intended": "One day",
+      "category": "capitalisation",
+      "confidenceScore": 0.9,
+      "note": "Sentence start should be capitalized; 'Day' should not be."
+    },
+    {
+      "id": "writing-16127-prediction-002",
+      "written": "run",
+      "intended": "running",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "Incorrect verb tense/form."
+    },
+    {
+      "id": "writing-16127-prediction-003",
+      "written": "red",
+      "intended": "need",
+      "category": "orthographic",
+      "confidenceScore": 0.7,
+      "note": "Phonetic misspelling of 'need'."
+    },
+    {
+      "id": "writing-16127-prediction-004",
+      "written": "peel",
+      "intended": "pee",
+      "category": "orthographic",
+      "confidenceScore": 0.7,
+      "note": "Context suggests 'pee'."
+    },
+    {
+      "id": "writing-16127-prediction-005",
+      "written": "alchen",
+      "intended": "aching",
+      "category": "orthographic",
+      "confidenceScore": 0.6,
+      "note": "Phonetic misspelling."
+    },
+    {
+      "id": "writing-16127-prediction-006",
+      "written": "pee",
+      "intended": "pee",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "Likely intended 'pee', but context is slightly ambiguous."
+    },
+    {
+      "id": "writing-16127-prediction-007",
+      "written": "pant",
+      "intended": "pants",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Pluralization error."
+    },
+    {
+      "id": "writing-16127-prediction-008",
+      "written": "call",
+      "intended": "called",
+      "category": "morphological",
+      "confidenceScore": 0.8,
+      "note": "Incorrect verb tense."
+    },
+    {
+      "id": "writing-16127-prediction-009",
+      "written": "phoep",
+      "intended": "phone",
+      "category": "orthographic",
+      "confidenceScore": 0.8,
+      "note": "Phonetic misspelling."
+    },
+    {
+      "id": "writing-16127-prediction-010",
+      "written": "I pregnany pant",
+      "intended": "I peed in my pants",
+      "category": "orthographic",
+      "confidenceScore": 0.5,
+      "note": "Highly phonetic/unclear transcription of intended meaning."
+    },
+    {
+      "id": "writing-16127-prediction-011",
+      "written": "say",
+      "intended": "said",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb tense."
+    },
+    {
+      "id": "writing-16127-prediction-012",
+      "written": "come back",
+      "intended": "come back",
+      "category": "unsure",
+      "confidenceScore": 0.5,
+      "note": "Grammar/tense issue in direct speech."
+    },
+    {
+      "id": "writing-16127-prediction-013",
+      "written": "run",
+      "intended": "ran",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Incorrect verb tense."
+    },
+    {
+      "id": "writing-16127-prediction-014",
+      "written": "going sleep",
+      "intended": "going to sleep",
+      "category": "morphological",
+      "confidenceScore": 0.9,
+      "note": "Missing preposition/infinitive marker."
+    }
+  ]
+}

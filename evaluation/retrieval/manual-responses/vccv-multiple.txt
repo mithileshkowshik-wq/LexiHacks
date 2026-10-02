@@ -1,0 +1,16 @@
+{
+  "selections": [
+    {
+      "resourceId": "das-src-0286-band-b-y1t1w5-reading-and-spelling",
+      "rationale": "Directly matches student level, programme, year, term, and week (SLP Band B Y1T1W5) and explicitly addresses 'phonetic-spelling-error' and 'spelling-and-dictation' needed to remediate syllable division and phonological spelling errors."
+    },
+    {
+      "resourceId": "das-src-0300-y1t1w5-reading-and-spelling-la",
+      "rationale": "Provides differentiated reading and spelling instruction targeted specifically at letter-sound correspondence and phonetic spelling error remediation for student needs."
+    },
+    {
+      "resourceId": "das-src-0302-y1t1w5-reading-and-spelling-ma",
+      "rationale": "Offers targeted reading and spelling practice addressing phonetic spelling errors, suitable for progressive skill remediation within the current programme scope."
+    }
+  ]
+}

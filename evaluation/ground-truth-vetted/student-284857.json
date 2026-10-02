@@ -1,0 +1,24 @@
+{
+  "sampleId": "student-284857",
+  "sourceFile": "samples/Edit&Diagram 3/Edit&Diagram 3/Student-284857.pdf",
+  "taskType": "SHORT_ANSWER",
+  "grade": "UNKNOWN",
+  "reviewStatus": "vetted",
+  "reviewerNotes": "Human-vetted expansion labels. Both blank verdicts were accepted as instructed by the reviewer.",
+  "errors": [
+    {
+      "id": "student-284857-e001",
+      "written": "friday",
+      "intended": "Friday",
+      "category": "capitalisation",
+      "rationale": "Day of the week should begin with a capital letter. AI confidence: 0.98."
+    },
+    {
+      "id": "student-284857-e002",
+      "written": "for a running races.",
+      "intended": "for a running race.",
+      "category": "morphological",
+      "rationale": "Singular determiner 'a' requires singular 'race'. AI confidence: 0.86."
+    }
+  ]
+}
