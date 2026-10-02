@@ -24,7 +24,8 @@ const frontendEntry = path.join(publicDirectory, 'index.html');
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
 // Cloud Run probes readiness without a login or any student information.
-app.get('/healthz', (req, res) => {
+// /api/health also works through the public Cloud Run gateway.
+app.get(['/healthz', '/api/health'], (req, res) => {
   const ready = mongoose.connection.readyState === 1;
   res.status(ready ? 200 : 503).json({ status: ready ? 'ok' : 'unavailable' });
 });

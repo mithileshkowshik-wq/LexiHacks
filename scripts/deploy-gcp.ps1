@@ -32,7 +32,7 @@ $arguments = @(
     '--network=lexipath-network', '--subnet=lexipath-subnet', '--vpc-egress=all-traffic',
     "--add-volume=mount-path=/app/server/samples,type=cloud-storage,bucket=$bucket,mount-options=uid=1000;gid=1000",
     "--add-volume=mount-path=/app/knowledge,type=cloud-storage,bucket=$knowledgeBucket,readonly=true,mount-options=uid=1000;gid=1000",
-    '--startup-probe=httpGet.path=/healthz,httpGet.port=8080,timeoutSeconds=5,periodSeconds=10,failureThreshold=24',
+    '--startup-probe=httpGet.path=/api/health,httpGet.port=8080,timeoutSeconds=5,periodSeconds=10,failureThreshold=24',
     '--allow-unauthenticated'
 )
 # Public access reaches the sign-in page; feature APIs still require the app JWT.

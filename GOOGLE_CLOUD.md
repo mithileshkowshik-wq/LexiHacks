@@ -1,6 +1,6 @@
 # LexiPath on Google Cloud
 
-This repository is prepared for a **single Google Cloud Run service** hosting both the React website and Express API. Preparation is local; no Google Cloud resources have been created and no deployment has been performed.
+This repository is prepared for a **single Google Cloud Run service** hosting both the React website and Express API. The app is now live in `lexihacks`. See [CLOUD_DEPLOYMENT.md](CLOUD_DEPLOYMENT.md) for its URL, tested behavior, and the existing infrastructure reused. The setup stages below describe the fuller static-NAT configuration; those network resources are not part of the current deployment.
 
 ## How it works
 
@@ -33,7 +33,7 @@ The app starts analysis after returning the upload response. Deployment therefor
 - `scripts/build-knowledge.py`: extracts teaching text and packages approved PDFs from Data.
 - `scripts/upload-knowledge.ps1`: validates and uploads only the prepared teaching bundle.
 - `scripts/create-cloud-account.ps1` and `server/scripts/bootstrapAccount.js`: create a login with your chosen private password; no public demo password is automatically seeded in the cloud.
-- `/healthz`: returns HTTP 200 when MongoDB is connected and 503 otherwise, without exposing student or account information.
+- `/api/health` (and local compatibility route `/healthz`): returns HTTP 200 when MongoDB is connected and 503 otherwise, without exposing student or account information.
 - Tests for readiness and safe account creation.
 
 Local `.env` files and Desktop Start/Stop shortcuts continue to work as before. The cloud build reads none of the local `.env` files.
@@ -128,7 +128,7 @@ The upload command copies the prepared corpus to the private knowledge bucket. D
 - Visit the returned HTTPS address and sign in with your chosen credentials.
 - Create a fictional student and upload a small synthetic JPG/PNG or PDF.
 - Wait for analysis; check review, corrections, trends, live recommendations and worksheet PDF downloads.
-- Open `/healthz` and confirm `{ "status": "ok" }`.
+- Open `/api/health` and confirm `{ "status": "ok" }`.
 - Verify scans remain readable after a new revision is deployed.
 - Check Cloud Run and account-job logs for failures without logging keys or scan contents.
 
@@ -146,7 +146,7 @@ Setting minimum instances to zero while retaining the current background analysi
 
 The frontend production build passed. The full server suite passed with 390 tests passing and 1 optional live test skipped; all 48 client tests and 28 focused recommendation/storage tests passed. Server lint passed; client lint has one existing account-page warning. Setup, upload and deployment scripts parse successfully as PowerShell. Actual local Atlas + Gemini + teaching-folder retrieval, worksheet download and saved intervention reports passed using temporary fictional data, which was removed.
 
-Docker and the Google Cloud CLI are not installed on this laptop, so the Linux container image, source build permissions, bucket mount, Atlas networking, and deployed live Gemini flow must be verified during the first cloud deployment. No claim of a completed or tested Google Cloud deployment is made.
+The Google Cloud CLI is installed inside the Desktop LexiPath workspace. The existing Linux cloud deployment, mounted teaching resources, Atlas connection, and live Gemini workflow have now passed an end-to-end cloud verification with synthetic data. The static-NAT setup script was not used for the existing service; see CLOUD_DEPLOYMENT.md.
 
 ## Official references
 

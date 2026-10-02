@@ -27,9 +27,11 @@ test('readiness requires MongoDB and exposes no account or student data', async 
     [2, 503, { status: 'unavailable' }],
   ]) {
     Object.defineProperty(mongoose.connection, 'readyState', { value: state, configurable: true });
-    const response = await fetch(`${url}/healthz`);
-    assert.equal(response.status, status);
-    assert.deepEqual(await response.json(), body);
+    for (const route of ['/healthz', '/api/health']) {
+      const response = await fetch(url + route);
+      assert.equal(response.status, status);
+      assert.deepEqual(await response.json(), body);
+    }
   }
 });
 

@@ -41,3 +41,6 @@
 **/samples/**
 **/uploads/**
 **/*.log
+# Legacy private worksheet override is not a cloud build input.
+server/data/worksheetSections.live.json
+**/dist/**
